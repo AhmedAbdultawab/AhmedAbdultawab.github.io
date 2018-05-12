@@ -8,6 +8,31 @@
   <link rel="icon"
       type="image/png"
       href="/favicon.png">
+
+<style>
+#item{
+  width:70%;
+  height:90%;
+  max-width: 14em;
+  max-height: 19em;
+  border:0;
+  border-radius:25px;
+}
+
+img {
+  webkit-filter: brightness(100%);
+}
+
+img:hover {
+-webkit-filter: brightness(70%);
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+</style>
+
 </head>
 
         <div class="card animated slideInDown"  id="dropdown" style="box-shadow: 3px 3px 5px #d3d3d3;border-radius:15px;border-color:#ff7975;top:-3em;;height:90%;width:15em;right:5%;background-color:#f95c57;position:fixed;z-index:3;">
@@ -38,13 +63,13 @@
 
           <div class="col-lg-3">
               <a href="www.google.com">
-                <img src="SgtPeppers.png" class="animated fadeIn" alt="HTML tutorial" style="width:70%;height:90%;border:0;border-radius:25px;-webkit-animation-delay: 0.8s;">
+                <img src="SgtPeppers.png" class="animated fadeIn" alt="HTML tutorial" id="item" style="-webkit-animation-delay: 0.8s;">
               </a>
           </div>
 
-          <div class="col-lg-3" style="margin-left:-6em;">
+          <div class="col-lg-3" style="margin-left:-6em;display:block;" >
               <a href="www.google.com">
-                <img src="Queens.jpg" class="animated fadeIn" alt="HTML tutorial" style="width:70%;height:90%;border:0;border-radius:25px;-webkit-animation-delay: 1.2s;">
+                <img src="Queens.jpg" class="animated fadeIn" alt="HTML tutorial"  id="item" style="-webkit-animation-delay: 1.2s;">
               </a>
           </div>
 
@@ -53,7 +78,7 @@
         <div class="row h-50 w-100" style="margin-top:-0.8em;">
         <div class="col-lg-3">
             <a href="www.google.com">
-              <img src="Actor.jpg" class="animated fadeIn" alt="HTML tutorial" style="width:70%;height:90%;border:0;border-radius:25px;-webkit-animation-delay: 1s;">
+              <img src="Actor.jpg" class="animated fadeIn" alt="HTML tutorial"  id="item" style="-webkit-animation-delay: 1s;">
             </a>
         </div>
         </div>
