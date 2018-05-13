@@ -8,6 +8,47 @@
   <link rel="icon"
       type="image/png"
       href="/favicon.png">
+
+<style>
+
+
+#item {
+  width:100%;
+  height:100%;
+  max-width: 14em;
+  max-height: 19em;
+  border:0;
+  border-radius:25px;
+}
+
+img {
+    webkit-filter: brightness(100%);
+}
+
+img:hover {
+-webkit-filter: brightness(70%);
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.container {
+    color: white;
+
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    font-weight: bold;
+    bottom: 10%;
+    left: 10%;
+}
+
+</style>
+
 </head>
 
         <div class="card animated slideInDown"  id="dropdown" style="box-shadow: 3px 3px 5px #d3d3d3;border-radius:15px;border-color:#ff7975;top:-3em;;height:90%;width:15em;right:5%;background-color:#f95c57;position:fixed;z-index:3;">
@@ -33,10 +74,117 @@
 
     <div class="card animated fadeInRight w-100"  style="margin-left:2%;margin-top:2%;margin-right:2%; border-radius:25px; border-color:white;height:92%;">
       <div class="card-body">
-        <h1 style="font-size:10em;font-weight:bold;" >Ahmed<br>Sameh<span style="color:#f95c57;">.</span></h1>
-        <a id="selection" href="/selection.html"> Selection </a>
+
+        <div class="container" style="margin-left:2em;">
+
+
+              <div class="row text-center text-lg-left">
+
+
+                <div class="col-lg-3 col-md-4 col-xs-6" style="margin-left:-1.5em;">
+                  <div class="d-block mb-4 h-50">
+                    <a href="google.com">
+                    <img class="img-fluid img-thumbnail animated fadeIn" id = "item" src="SgtPeppers.png" alt="" style="-webkit-animation-delay: 0.8s;">
+                    </a>
+                  </div>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-4 col-xs-6" style="margin-left:-1.5em;">
+                  <div class="d-block mb-4 h-50">
+                    <a href="google.com">
+                    <img class="img-fluid img-thumbnail animated fadeIn" id = "item"  src="Actor.jpg" alt="" style="-webkit-animation-delay: 1.2s;">
+                    </a>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4 col-xs-6" style="margin-left:-1.5em;">
+                  <div class="d-block mb-4 h-50">
+                    <a href="google.com">
+                    <img class="img-fluid img-thumbnail animated fadeIn" id = "item"  src="Queens.jpg" alt="" style="-webkit-animation-delay: 1.6s;">
+                    </a>
+                  </div>
+                </div>
+
+
+
+              </div> <!-- end of row-->
+
+              <div class="row text-center text-lg-left" style="margin-top:-2.5em;">
+
+                  <div class="col-lg-3 col-md-4 col-xs-6" style="margin-left:-1.5em;">
+                    <div class="d-block mb-4 h-50">
+                      <a href="google.com">
+                      <img class="img-fluid img-thumbnail animated fadeIn" id = "item" src="SgtPeppers.png" alt="" style="-webkit-animation-delay: 1s;">
+                      </a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-lg-3 col-md-4 col-xs-6" style="margin-left:-1.5em;">
+                    <div class="d-block mb-4 h-50">
+                      <a href="google.com">
+                      <img class="img-fluid img-thumbnail animated fadeIn" id = "item" src="Actor.jpg" alt="" style="-webkit-animation-delay: 1.375s;">
+                      </a>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-3 col-md-4 col-xs-6" style="margin-left:-1.5em;">
+                    <div class="d-block mb-4 h-50">
+
+                        <a href="google.com">
+                        <img class="img-fluid img-thumbnail animated fadeIn" id = "item" src="Queens.jpg" alt="" style="-webkit-animation-delay: 1.75s;">
+                        </a>
+
+                    </div>
+                  </div>
+
+
+
+</div>
+
+            </div>
+
+<!--
+        <div class="row h-50 w-100">
+
+          <div class="col-lg-3">
+              <a href="www.google.com">
+                <div class="container">
+                  <img src="SgtPeppers.png" class="animated fadeIn" alt="HTML tutorial" id="item" style="-webkit-animation-delay: 0.8s;">
+                  <h2 class="bottom-left"> Bottom Left</h2>
+                </div>
+              </a>
+          </div>
+
+          <div class="col-lg-3" style="margin-left:-6em;display:block;" >
+              <a href="www.google.com">
+                <img src="Queens.jpg" class="animated fadeIn" alt="HTML tutorial"  id="item" style="-webkit-animation-delay: 1.2s;">
+              </a>
+          </div>
+
+        </div>
+
+        <div class="row h-50 w-100" style="margin-top:-0.8em;">
+
+        <div class="col-lg-3">
+            <a href="www.google.com">
+              <img src="Actor.jpg" class="animated fadeIn" alt="HTML tutorial"  id="item" style="-webkit-animation-delay: 1s;">
+            </a>
+        </div>
+
+        </div>
+
+
       </div>
+
+    -->
     </div>
+</div>
 
 </div>
 
@@ -59,4 +207,6 @@
         $("#dropdown").show();
         $("#bookmark").hide();
     });
+
+
 </script>
