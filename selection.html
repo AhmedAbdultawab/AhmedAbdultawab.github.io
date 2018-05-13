@@ -31,6 +31,21 @@ img:hover {
 -ms-transition: all 0.5s ease;
 transition: all 0.5s ease;
 }
+
+.container {
+    position: relative;
+    color: white;
+
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    font-weight: bold;
+    bottom: 8px;
+    left: 16px;
+}
+
 </style>
 
 </head>
@@ -63,7 +78,10 @@ transition: all 0.5s ease;
 
           <div class="col-lg-3">
               <a href="www.google.com">
-                <img src="SgtPeppers.png" class="animated fadeIn" alt="HTML tutorial" id="item" style="-webkit-animation-delay: 0.8s;">
+                <div class="container">
+                  <img src="SgtPeppers.png" class="animated fadeIn" alt="HTML tutorial" id="item" style="-webkit-animation-delay: 0.8s;">
+                  <h2 class="bottom-left"> Bottom Left</h2>
+                </div>
               </a>
           </div>
 
@@ -76,11 +94,13 @@ transition: all 0.5s ease;
         </div>
 
         <div class="row h-50 w-100" style="margin-top:-0.8em;">
+
         <div class="col-lg-3">
             <a href="www.google.com">
               <img src="Actor.jpg" class="animated fadeIn" alt="HTML tutorial"  id="item" style="-webkit-animation-delay: 1s;">
             </a>
         </div>
+
         </div>
 
 
