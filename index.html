@@ -34,7 +34,7 @@
     <div class="card animated fadeInRight w-100"  style="margin-left:2%;margin-top:2%;margin-right:2%; border-radius:25px; border-color:white;height:92%;">
       <div class="card-body">
         <h1 style="font-size:10em;font-weight:bold;" >Ahmed<br>Sameh<span style="color:#f95c57;">.</span></h1>
-        <a  href="/selection.html"> Selection </a>
+        <a id="selection" > Selection </a>
       </div>
     </div>
 
@@ -59,4 +59,11 @@
         $("#dropdown").show();
         $("#bookmark").hide();
     });
+
+    $("#selection").click(function() {
+      $('#yourElement').animateCss('rotateOutUpLeft', function() {
+        location.href = '/selection.html';
+      });
+    });
+
 </script>
