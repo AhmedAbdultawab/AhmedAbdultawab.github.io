@@ -8,9 +8,95 @@
   <link rel="icon"
       type="image/png"
       href="/favicon.png">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <style>
 
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 4; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+   -webkit-animation-name: zoom;
+   -webkit-animation-duration: 0.6s;
+   animation-name: zoom;
+   animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+   from {-webkit-transform:scale(0)}
+   to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+   from {transform:scale(0)}
+   to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+   .modal-content {
+       width: 100%;
+   }
+}
 
 #item {
   width:100%;
@@ -21,12 +107,12 @@
   border-radius:25px;
 }
 
-img {
+#thumb {
     webkit-filter: brightness(100%);
     box-shadow: 3px 3px 5px #d3d3d3;
 }
 
-img:hover {
+#thumb:hover {
 -webkit-filter: brightness(70%);
 -webkit-transition: all 0.5s ease;
 -moz-transition: all 0.5s ease;
@@ -38,6 +124,13 @@ transition: all 0.5s ease;
 .container {
     color: white;
 
+}
+
+.flexbox {
+ display:flex;
+ justify-content:center;
+ align-items: center;
+ flex-flow: column;
 }
 
 /* Bottom left text */
@@ -68,7 +161,7 @@ transition: all 0.5s ease;
 
 
 
-<body style="background-color:#efefef;height:100%;margin:0;padding:0;font-family: 'proxima_nova_altbold', Georgia, sans-serif;" class="h-100">
+<body style="background-color:#efefef;height:100%;margin:0;padding:0;" class="h-100">
 
 
 <div class="row" style ="height:100em;" >
@@ -76,13 +169,75 @@ transition: all 0.5s ease;
     <div class="card animated fadeInRight w-100"  style="margin-left:2%;margin-top:2%;margin-right:2%; border-radius:25px; border-color:white;height:92%;">
       <div class="card-body">
 
-        <div class="row">
-          <div class="col-lg-1">
+        <div class="row" style="margin-top:2em;margin-bottom:5em;"> <!-- Title and Problem -->
+          <div class="col-lg-2">
           </div>
+          <div class="col-lg-4">
+            <h2 style="font-size:4em;text-align:right;margin-right:0.4em;font-family: 'proxima_nova_altbold', Georgia, sans-serif;s"> Redesigning the THIMUN Online Platform</h2>
+          </div>
+
           <div class="col-lg-3">
-            <h2 style="10em;"> My Name Jeff</h2>
+            <div class="row" style="margin-top:1em;">
+              <h2 style="font-size:2.2em;color:grey;font-family: 'proxima_nova_altbold', Georgia, sans-serif;"> Problem </h2>
+            </div>
+
+            <div class="row">
+              <p> We were approached by the Hague Model United Nations, an high school debating platform, to redesign their web platform, OMUN. The website is supposed to allow --- students to , shcuedlue, find----, however it was highly unusable because </p>
+            </div>
+
           </div>
+
         </div>
+
+
+        <div class="row">
+
+          <img class="myImg" src="ogsite.png" alt="Trolltunga, Norway" width="300" height="400">
+          <img class="myImg" src="http://www.worldlandtrust.org/sites/default/files/rainforest-reserve-regua-brazil.jpg" alt="Trolltunga, Norway" width="300" height="200">
+
+
+          <!-- copy this block + styling + script-->
+          <!-- The Modal -->
+          <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none';document.getElementById('bookmark').style.display='block'">
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+          </div>
+
+        </div>
+
+        <div class="row"> <!-- proccess -->
+          <div class="col-lg-2 flexbox">
+            <img src="ogsite.png" style="width:100%;" >
+          </div>
+
+          <div class="col-lg-1 flexbox">
+            <img src="Arrow.png" style="width:100%;" >
+          </div>
+
+          <div class="col-lg-2">
+          </div>
+
+          <div class="col-lg-1 flexbox">
+            <img src="Arrow.png" style="width:100%;" >
+          </div>
+
+          <div class="col-lg-2">
+          </div>
+
+          <div class="col-lg-1 flexbox">
+            <img src="Arrow.png" style="width:100%;" >
+          </div>
+
+          <div class="col-lg-2">
+          </div>
+
+
+        </div>
+
 
         <div class="row" style="margin-bottom:10em;">
           <div class = "col-lg-1">
@@ -158,6 +313,30 @@ transition: all 0.5s ease;
 
 
 </body>
+<script>
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    document.getElementById('bookmark').style.display='none';
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
 
 <script type="text/javascript">
 
