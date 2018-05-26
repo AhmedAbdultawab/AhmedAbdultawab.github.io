@@ -8,18 +8,14 @@
   <link rel="icon"
       type="image/png"
       href="/favicon.png">
-  <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="bower_components/aos/dist/aos.js"></script>
 <style>
-
 #siteimg{
   box-shadow: 0.25em 0.25em 0.5em #d8d8d8;
   width:100%;
   height:25em;
   border-radius:25px;"
 }
-
 #header{
     font-size:2.2em;
     color:grey;
@@ -33,9 +29,7 @@
    cursor: pointer;
    transition: 0.3s;
 }
-
 .myImg:hover {opacity: 0.7;}
-
 /* The Modal (background) */
 .modal {
    display: none; /* Hidden by default */
@@ -50,7 +44,6 @@
    background-color: rgb(0,0,0); /* Fallback color */
    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
-
 /* Modal Content (Image) */
 .modal-content {
    margin: auto;
@@ -59,7 +52,6 @@
    border-radius:8px;
    max-width: 700px;
 }
-
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
    margin: auto;
@@ -71,7 +63,6 @@
    padding: 10px 0;
    height: 150px;
 }
-
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
    -webkit-animation-name: zoom;
@@ -79,17 +70,14 @@
    animation-name: zoom;
    animation-duration: 0.6s;
 }
-
 @-webkit-keyframes zoom {
    from {-webkit-transform:scale(0)}
    to {-webkit-transform:scale(1)}
 }
-
 @keyframes zoom {
    from {transform:scale(0)}
    to {transform:scale(1)}
 }
-
 /* The Close Button */
 .close {
    position: absolute;
@@ -100,28 +88,23 @@
    font-weight: bold;
    transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
    color: #bbb;
    text-decoration: none;
    cursor: pointer;
 }
-
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
    .modal-content {
        width: 100%;
    }
 }
-
 .graphheader{
 font-family: 'proxima_nova_altbold', Georgia, sans-serif;
 }
-
 #graphcol{
 }
-
 #item {
   width:100%;
   height:100%;
@@ -131,12 +114,10 @@ font-family: 'proxima_nova_altbold', Georgia, sans-serif;
   border:0;
   border-radius:25px;
 }
-
 #thumb {
     webkit-filter: brightness(100%);
     box-shadow: 3px 3px 5px #d3d3d3;
 }
-
 #thumb:hover {
 -webkit-filter: brightness(70%);
 -webkit-transition: all 0.5s ease;
@@ -145,19 +126,15 @@ font-family: 'proxima_nova_altbold', Georgia, sans-serif;
 -ms-transition: all 0.5s ease;
 transition: all 0.5s ease;
 }
-
 .container {
     color: white;
-
 }
-
 .flexbox {
  display:flex;
  justify-content:center;
  align-items: center;
  flex-flow: column;
 }
-
 /* Bottom left text */
 .bottom-left {
     position: absolute;
@@ -165,7 +142,6 @@ transition: all 0.5s ease;
     bottom: 10%;
     left: 10%;
 }
-
 </style>
 
 </head>
@@ -303,7 +279,7 @@ transition: all 0.5s ease;
           </div>
 
           <div class = "col-lg-7">
-            <img src="Thimun.png" data-aos="fade-zoom-in"  style="-webkit-animation-delay: 0.5s;" id = "siteimg"  >
+            <img src="Thimun.png"   class="animated fadeInLeft" style="-webkit-animation-delay: 0.5s;" id = "siteimg"  >
           </div>
           <div class = "col-lg-2 animated fadeInRight" style="-webkit-animation-delay: 0.5s;" >
             <div class="row">
@@ -336,7 +312,6 @@ transition: all 0.5s ease;
 
 <!--
         <div class="row h-50 w-100">
-
           <div class="col-lg-3">
               <a href="www.google.com">
                 <div class="container">
@@ -345,28 +320,20 @@ transition: all 0.5s ease;
                 </div>
               </a>
           </div>
-
           <div class="col-lg-3" style="margin-left:-6em;display:block;" >
               <a href="www.google.com">
                 <img src="Queens.jpg" class="animated fadeIn" alt="HTML tutorial"  id="item" style="-webkit-animation-delay: 1.2s;">
               </a>
           </div>
-
         </div>
-
         <div class="row h-50 w-100" style="margin-top:-0.8em;">
-
         <div class="col-lg-3">
             <a href="www.google.com">
               <img src="Actor.jpg" class="animated fadeIn" alt="HTML tutorial"  id="item" style="-webkit-animation-delay: 1s;">
             </a>
         </div>
-
         </div>
-
-
       </div>
-
     -->
     </div>
 </div>
@@ -381,7 +348,6 @@ transition: all 0.5s ease;
 </body>
 <script>
 var modal = document.getElementById('myModal');
-
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = $('.myImg');
 var modalImg = $("#img01");
@@ -393,10 +359,8 @@ $('.myImg').click(function(){
     modalImg.attr('src', newSrc);
     captionText.innerHTML = this.alt;
 });
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
@@ -405,24 +369,16 @@ span.onclick = function() {
 
 
 <script type="text/javascript">
-
     $(document).ready(function() {
     $("#dropdown").hide();
-
-
-
      });
-
     $("#bookmark").click(function() {
         $("#dropdown").show();
         $("#bookmark").hide();
     });
-
-
 </script>
 
 <script>
-
 $(window).scroll(function() {
    var hT = $('#scroll-to').offset().top,
        hH = $('#scroll-to').outerHeight(),
@@ -433,8 +389,4 @@ $(window).scroll(function() {
     $('#scroll-to').show();
    }
 });
-</script>
-
-<script>
-  AOS.init();
 </script>
