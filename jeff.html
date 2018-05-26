@@ -13,6 +13,9 @@
 
 #siteimg{
   box-shadow: 0.25em 0.25em 0.5em #d8d8d8;
+  width:100%;
+  height:25em;
+  border-radius:25px;"
 }
 
 #header{
@@ -23,8 +26,11 @@
 /* Style the Image Used to Trigger the Modal */
 .myImg {
    border-radius: 10px;
-   width:100%;
-   height:60%;
+   display: block;
+   max-width:14em;
+   max-height:22em;
+   width: auto;
+   height: auto;
    cursor: pointer;
    transition: 0.3s;
 }
@@ -115,6 +121,7 @@ font-family: 'proxima_nova_altbold', Georgia, sans-serif;
 }
 
 #graphcol{
+  max-width: 8%;
 }
 
 #item {
@@ -226,9 +233,9 @@ transition: all 0.5s ease;
 
         </div>
 
-        <div class="row" style="margin-bottom:7em;margin-left:3em;height:18%;width:100%;max-height:41em;" id="scroll-to"> <!-- proccess -->
+        <div class="row" style="margin-bottom:7em;margin-left:3em;height:40%;width:100%;max-height:41em;" id="scroll-to"> <!-- proccess -->
 
-          <div class="col-sm-2 flexbox" id="graphcol">
+          <div class="col-sm-2 flexbox">
             <div class="row">
             <img class="myImg animated fadeInLeft" src="ogsite.png" alt="Trolltunga, Norway"  style="-webkit-animation-delay: 0.8s;">
             </div>
@@ -237,10 +244,10 @@ transition: all 0.5s ease;
           </div>
 
           <div class="col-sm-1 flexbox" id="graphcol">
-            <img src="Arrow.png" style="width:100%;max-width:6em;margin-bottom:6em;" >
+            <img src="Arrow.png" style="width:100%;height:auto;margin-bottom:6em;" >
           </div>
 
-          <div class="col-sm-2 flexbox" id="graphcol">
+          <div class="col-sm-2 flexbox" >
             <div class="row">
             <img class="myImg animated fadeInLeft" src="analysis.png" alt="Trolltunga, Norway" style="-webkit-animation-delay: 1s;">
             </div>
@@ -249,10 +256,10 @@ transition: all 0.5s ease;
           </div>
 
           <div class="col-sm-1 flexbox" id="graphcol">
-            <img src="Arrow.png" style="width:100%;max-width:6em;margin-bottom:6em;" >
+            <img src="Arrow.png" style="width:100%;height:auto;margin-bottom:6em;" >
           </div>
 
-          <div class="col-sm-2 flexbox" id="graphcol">
+          <div class="col-sm-2 flexbox" >
             <div class="row" style="margin-top:1em;">
             <img class="myImg animated fadeInLeft" src="paperdesign.png" alt="Trolltunga, Norway"   style="-webkit-animation-delay: 1.15s;">
             </div>
@@ -261,15 +268,15 @@ transition: all 0.5s ease;
           </div>
 
           <div class="col-sm-1 flexbox" id="graphcol">
-            <img src="Arrow.png" style="width:100%;max-width:6em;margin-bottom:6em;" >
+            <img src="Arrow.png" style="width:100%;height:auto;margin-bottom:6em;" >
           </div>
 
-          <div class="col-sm-2 flexbox" id="graphcol">
+          <div class="col-sm-2 flexbox" >
             <div class="row">
             <img class="myImg animated fadeInLeft" src="mockup.png" alt="Trolltunga, Norway"  style="-webkit-animation-delay: 1.3s;">
             </div>
 
-            <div class="row" style="margin-top:1em;"> <h2 class="graphheader"> Prototyping </h2> <p> We design the thingy and do some stuff that make anotherl ine</p> </div>
+            <div class="row" style="margin-top:1em;"> <h2 class="graphheader"> Prototyping </h2> <p> We design the thingy and do some stuff that ine</p> </div>
           </div>
 
 
@@ -298,9 +305,9 @@ transition: all 0.5s ease;
           </div>
 
           <div class = "col-lg-7">
-            <img src="Thimun.png" id = "siteimg" style="width:100%; height:25em;border-radius:25px;" >
+            <img src="Thimun.png" class="animated fadeInLeft" style="-webkit-animation-delay: 0.5s;" id = "siteimg"  >
           </div>
-          <div class = "col-lg-2">
+          <div class = "col-lg-2 animated fadeInRight" style="-webkit-animation-delay: 0.5s;" >
             <div class="row">
             <h2 class="graphheader"> Landing Page</h2>
           </div>
@@ -314,13 +321,13 @@ transition: all 0.5s ease;
 
         <div class="row">
           <div class="col-lg-1"></div>
-          <div class = "col-lg-2">
+          <div class = "col-lg-2 animated fadeInLeft" style="-webkit-animation-delay: 0.5s;">
             <p style="text-align: right; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;"> This page does this and that a heart that's filled up like a landfill bring down the government</p>
           </div>
-          <div class = "col-lg-8">
-            <img src="general assembly.png" style="width:100%; height:25em;border-radius:25px;" >
+          <div class = "col-lg-7">
+            <img src="general assembly.png" class="animated fadeInRight" style="-webkit-animation-delay: 0.5s;"  id = "siteimg"  >
           </div>
-          <div class="col-lg-1"></div>
+          <div class="col-lg-2"></div>
         </div>
 
 
