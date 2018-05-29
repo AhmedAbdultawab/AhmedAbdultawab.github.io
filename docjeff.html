@@ -1,5 +1,4 @@
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
@@ -16,10 +15,6 @@
 .wow{
    visibility: hidden; }
 
-.img-fluid {
-     max-width: 100%;
-     height: auto;
-   }
 
 #siteimg{
   box-shadow: 0.25em 0.25em 0.5em #d8d8d8;
@@ -36,8 +31,7 @@
 .myImg {
    border-radius: 10px;
    width:100%;
-   height:30em;
-   display: block;
+   height:60%;
    cursor: pointer;
    transition: 0.3s;
 }
@@ -182,32 +176,71 @@ transition: all 0.5s ease;
     <div class="card animated fadeInRight w-100"  style="margin-left:2.7%;margin-top:2%;margin-right:1%; border-radius:25px; border-color:white;height:92%;width:92%;">
       <div class="card-body">
 
-
-
-
-        <div class = "row">
-          <div class = "col-sm-2"> </div>
-          <div class = "col-sm-1" > <img class="img rounded float-left animated fadeInLeft" style="max-width: 10em;height:auto;" src="ogsite.png" alt="Trolltunga, Norway"  style="-webkit-animation-delay: 0.8s;"> </div>
-          <div class = "col-sm-1" > <img class="img- rounded float-left animated fadeInLeft" style="max-width: 10em;height:auto;" src="ogsite.png" alt="Trolltunga, Norway"  style="-webkit-animation-delay: 0.8s;"> </div>
-          <div class = "col-sm-8"></div>
-        </div>
-
-        <div class = "row" style="margin-top:2em;">
-          <div class = "col-sm-2"> </div>
-          <div class = "col-sm-1" > <img class="img-fluid rounded float-left animated fadeInLeft" style="max-width: 100%;height:auto;" src="ogsite.png" alt="Trolltunga, Norway"  style="-webkit-animation-delay: 0.8s;"> </div>
-          <div class = "col-sm-5" style="margin-left:1em;">
+        <div class="row" style="margin-top:2em;margin-bottom:5em;"> <!-- Title and Problem -->
+          <div class="col-sm-6">
             <div class="row">
-              <h2 style="font-size:4em;text-align:left;font-family: 'proxima_nova_altbold', Georgia, sans-serif;"> Player App </h2>
+              <div class="col-sm-1"> </div>
+              <div class="col-sm-5">
+                <h2 style="font-size:20em;text-align:right;margin-right:0.4em;font-family: 'proxima_nova_altbold', Georgia, sans-serif;"> D</h2>
+              </div>
+              <div class="col-sm-1"> </div>
+              <div class="col-sm-5">
+                <h2 style="font-size:20em;text-align:right;margin-right:0.4em;font-family: 'proxima_nova_altbold', Georgia, sans-serif;"> O</h2>
+              </div>
             </div>
-            <div class="row" style="margin-top:-0.7em;"> <h2 style="font-size:2em;"> Hey there </h2> </div>
-            <div class="row"> <p> We were approached by the Hague Model United Nations, an high school debating platform, to redesign their web platform, OMUN. The website is s </p> </div>
           </div>
-            <div class = "col-sm-4"> </div>
+
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-1"> </div>
+              <div class="col-sm-5">
+                <h2 style="font-size:20em;text-align:right;margin-right:0.4em;font-family: 'proxima_nova_altbold', Georgia, sans-serif;"> C</h2>
+              </div>
+              <div class="col-sm-1"> </div>
+              <div class="col-sm-5">
+                <h2 style="font-size:20em;text-align:right;margin-right:0.4em;font-family: 'proxima_nova_altbold', Georgia, sans-serif;"> *</h2>
+              </div>
+            </div>
+          </div>
+
+
         </div>
 
+
+        <div class="row" style="margin-top:2em;margin-bottom:7em;"> <!-- Title and Problem -->
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-1"> </div>
+              <div class="col-sm-5">
+                <h2 style="font-size:20em;text-align:right;margin-right:0.4em;font-family: 'proxima_nova_altbold', Georgia, sans-serif;"> D</h2>
+              </div>
+              <div class="col-sm-1"> </div>
+              <div class="col-sm-5">
+                <h2 style="font-size:20em;text-align:right;margin-right:0.4em;font-family: 'proxima_nova_altbold', Georgia, sans-serif;"> E</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-1"> </div>
+              <div class="col-sm-5">
+                <h2 style="font-size:20em;text-align:right;margin-right:0.4em;font-family: 'proxima_nova_altbold', Georgia, sans-serif;"> S</h2>
+              </div>
+              <div class="col-sm-1"> </div>
+              <div class="col-sm-5">
+                <h2 style="font-size:20em;text-align:right;margin-right:0.4em;font-family: 'proxima_nova_altbold', Georgia, sans-serif;"> I</h2>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
 
 
         <div class="row">
+
+
           <!-- copy this block + styling + script-->
           <!-- The Modal -->
           <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none';document.getElementById('bookmark').style.display='block'">
@@ -226,6 +259,7 @@ transition: all 0.5s ease;
 
           <div class="col-sm-2 flexbox" id="graphcol">
             <div class="row">
+            <img class="myImg animated fadeInLeft" src="ogsite.png" alt="Trolltunga, Norway"  style="-webkit-animation-delay: 0.8s;">
             </div>
 
             <div class="row" style="margin-top:1em;" > <h2 class="graphheader"> Old Site </h2> <p> We design the thingy from the old crappy site and also do stuff</p> </div>
