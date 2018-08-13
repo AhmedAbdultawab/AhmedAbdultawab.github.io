@@ -2,8 +2,11 @@
 $('document').ready(function() {
 
   if (document.referrer == "http://ahmedsameh.me/selection.html"){
-    console.log("i'm the referrer man");
-
+    console.log("play animation");
+    $("#fakecard").show();
+    $("#maincard").addClass("animated fadeInRight");
+  } else{
+    $("#maincard").addClass("animated fadeInUp");
   }
 
   AOS.init();

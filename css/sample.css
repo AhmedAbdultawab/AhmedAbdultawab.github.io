@@ -36,6 +36,7 @@
 
 
 #fakecard{
+  visibility: hidden;
   position: fixed;
   margin-left:2%;
   margin-top:2%;
