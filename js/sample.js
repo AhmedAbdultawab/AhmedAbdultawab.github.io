@@ -1,10 +1,7 @@
 
 $('document').ready(function() {
-  if (document.referrer === 'ahmedsameh.me/selection.html') {
-    console.log("hello");
-  } else {
-    console.log("no referral");
-  }
+
+    console.log(document.referrer);
 
   AOS.init();
   $("#dropdown").hide();
