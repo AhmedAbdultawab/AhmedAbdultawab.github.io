@@ -1,7 +1,10 @@
 
 $('document').ready(function() {
 
-    console.log(document.referrer);
+  if (document.referrer == "http://ahmedsameh.me/selection.html"){
+    console.log("i'm the referrer man");
+
+  }
 
   AOS.init();
   $("#dropdown").hide();
