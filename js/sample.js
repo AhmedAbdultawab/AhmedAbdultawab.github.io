@@ -1,6 +1,12 @@
-new WOW().init();
 
 $('document').ready(function() {
+  if (document.referrer === 'ahmedsameh.me/selection.html') {
+    console.log("hello");
+  } else {
+    console.log("no referral");
+  }
+
+  AOS.init();
   $("#dropdown").hide();
 
 //Bookmark control
