@@ -6,6 +6,7 @@ $('document').ready(function() {
     $("#fakecard").show();
     $("#maincard").addClass("animated fadeInRight");
   } else{
+    $("#maincard").css("-webkit-animation-delay", "0");
     $("#maincard").addClass("animated fadeInUp");
   }
 
