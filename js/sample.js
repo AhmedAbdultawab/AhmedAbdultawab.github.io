@@ -5,6 +5,7 @@ $('document').ready(function() {
     console.log("play animation");
     $("#fakecard").show();
     $("#maincard").addClass("animated fadeInRight");
+    document.referrer = ""
   } else{
     $("#maincard").css("-webkit-animation-delay", "0");
     $("#maincard").addClass("animated fadeInUp");
@@ -31,7 +32,7 @@ var captionText = document.getElementById("caption");
 
 $('.myImg').click(function() {
   modal.style.display = "block";
-  document.getElementById('bookmark').style.display = 'none';
+  $(".bookmark").css("visibility","none");
   var newSrc = this.src;
   modalImg.attr('src', newSrc);
   captionText.innerHTML = this.alt;
