@@ -77,11 +77,19 @@
   margin: 0;
 }
 
+.cardcol{
+  display: flex;
+  flex: 0 0 18%;
+  max-width: 18%;
+}
 
 /* Style the Image Used to Trigger the Modal */
 .myImg {
    border-radius: 10px;
-   max-height: 300px;
+   min-width: 200px;
+   min-height: 300px;
+   width: 100%;
+   height: 40vh;
    cursor: pointer;
    transition: 0.3s;
 }
