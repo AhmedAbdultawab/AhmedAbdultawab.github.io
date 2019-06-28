@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'TiemposHeadline-Bold';
+  src: url('TiemposHeadline-Bold.eot');
+  src: url('TiemposHeadline-Bold.woff2') format('woff2'),
+       url('TiemposHeadline-Bold.woff') format('woff'),
+       url('TiemposHeadline-Bold.ttf') format('truetype'),
+       url('TiemposHeadline-Bold.svg#TiemposHeadline-Bold') format('svg'),
+       url('TiemposHeadline-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-Medium';
+  src: url('TiemposHeadline-Medium.eot');
+  src: url('TiemposHeadline-Medium.woff2') format('woff2'),
+       url('TiemposHeadline-Medium.woff') format('woff'),
+       url('TiemposHeadline-Medium.ttf') format('truetype'),
+       url('TiemposHeadline-Medium.svg#TiemposHeadline-Medium') format('svg'),
+       url('TiemposHeadline-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-Light';
+  src: url('TiemposHeadline-Light.eot');
+  src: url('TiemposHeadline-Light.woff2') format('woff2'),
+       url('TiemposHeadline-Light.woff') format('woff'),
+       url('TiemposHeadline-Light.ttf') format('truetype'),
+       url('TiemposHeadline-Light.svg#TiemposHeadline-Light') format('svg'),
+       url('TiemposHeadline-Light.eot?#iefix') format('embedded-opentype');
+  font-weight:normal;
+  font-style: normal;
+}
+
+
+html,body{
+  height: 100%;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  box-sizing: border-box;
+  outline: none;
+
+  /* font-family:  */
+
+}
+
+
+body{
+  flex-direction: column;
+  /* background-color: #F4F3EF; */
+
+}
+
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 99;
+
+}
+
+.section1{
+  height: 100vh;
+}
+
+.section2{
+    height: 100vh;
+    margin-top:-20px;
+}
+
+
+
+.triangle{
+  z-index: -1;
+  position: absolute;
+  left:0px;
+  height: auto;
+  width:400px;
+}
+
+.egg{
+  z-index: 1;
+  position: absolute;
+  left:50%;
+  bottom:50px;
+  height: auto;
+  width:150px;
+}
+
+
+.square{
+  z-index: 1;
+  position: absolute;
+  right:40px;
+  bottom:50px;
+  height: auto;
+  width:150px;
+}
+
+.tiempos{
+  font-family: 'TiemposHeadline-Medium', 'Times New Roman', sans-serif;
+}
+
+.tiempos-bold{
+  font-family: 'TiemposHeadline-Bold', 'Times New Roman', sans-serif;
+  font-style: bold;
+}
+
+.tiempos-light{
+    font-family: 'TiemposHeadline-Light', 'Times New Roman', sans-serif;
+}
+
+h2{
+  font-size: 320px;
+  line-height: 270px;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+
+h3{
+  font-size: 50px;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+
+h4{
+  font-weight: 200;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.page_number{
+
+  position: fixed;
+  right:4%;
+  bottom:6%;
+  z-index: 99;
+  color: black;
+  font-size:30px;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity:1;
+  }
+
+}
+
+.page_name{
+  transform: rotate(-90Deg);
+  position: fixed;
+  left:25px;
+  top:30%;
+  z-index: 99;
+  color: white;
+  font-size:50px;
+}
+
+/* .page_name{
+  transform: rotate(-90Deg);
+  position: fixed;
+  left:0.5%;
+  top:30%;
+  z-index: 99;
+  color: black;
+  font-size:15px;
+} */

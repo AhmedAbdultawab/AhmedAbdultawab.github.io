@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" type="text/css" href="csstest.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="flexboxgrid.min.css" type="text/css">
+    <link rel="stylesheet" href="aos.css" >
+    <script src="aos.js"></script>
     <script src="jquery-3.3.1.min.js"></script>
     <script src="jstest.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 
+
   </head>
   <body>
 
-    <img src="left-triangle.png" class="triangle"/>
-    <img src="egg-spot.png" class="egg"/>
-    <img src="square.png" class="square"/>
-
-    <div class="yomama">
-
-    <div class="container section1">
-
-      <h2 >Ahmed Sameh.</h2>
-      <h4 class="tiempos-light"> Designer and Developer.</h4>
+    <div class="breadcrumbs">
+      <p class="tiempos">
+        <a href="#">home</a>
+        \
+      </p>
     </div>
 
 
-    <div class="container section2">
+    <div class="screen flex_col" style="justify-content:center;align-content:center;align-items:center;">
 
-        <img src="anticlimax.svg" />
-        <h3 class="tiempos-bold">Enter: The Anti-Climax</h3>
-      <h4> Surprise! This is only a temporary site. <span style="text-decoration:line-through;"> If it's any consolation though, the real site won't be much better </span> <br /> come back in 2 calendar days to see something!
-        </h4>
-    </div>
+      <p style="font-size:1.2em;font-weight:lighter;line-height:0.9em;" class="cadiz">
+        ahmed<br />
+        sameh<span style="font-size:1.4em;color:#FF6B6B;">.</span>
+      </p>
 
+      </div>
 
-  </div>
-      <div class="page_number tiempos-light">
-          01
-        </div>
+      <div class="screen">
 
-        <div class="page_name tiempos-light">
-            March
+          <div style="display:flex;flex-basis:49%;align-items: center; justify-content: flex-end;">
+            <a href="rimads.html" data-aos="fade-up" ><img  style="max-width:270px;" class="thumbnail" id="rimads" onmouseover="this.src='rimads_thumb_highlighted.png'" onmouseout="this.src='rimads_thumb.png'" border="0" src= "rimads_thumb.png"/></a>
+          </div>
+          <div style="display:flex;flex-basis:2%;">
+          </div>
+          <div style="display:flex;flex-basis:49%;align-items: center; justify-content: flex-start;;">
+              <a href="qsc.html" data-aos="fade-down"> <img style="max-width:270px;" class="thumbnail" id="qsc" onmouseover="this.src='qsc_thumb_highlighted.png'" onmouseout="this.src='qsc_thumb.png'" border="0" src= "qsc_thumb.png"/> </a>
           </div>
 
 
 
+      </div>
 
+      <div class="page_number tiempos-light">
+          01
+        </div>
+
+        <script>
+        AOS.init();
+        </script>
   </body>
 </html>

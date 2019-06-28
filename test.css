@@ -1,0 +1,542 @@
+/* Landing stylesheet
+version: 1.0
+date: 9/2/2019
+Big Thanks to Riyaz for helping me with this!!
+I decided to make this site from scratch as a demonstration of my site-making-prowess
+and because i simply don't believe in templates.
+*/
+
+
+/*importing fonts */
+
+@font-face {
+  font-family: 'TiemposHeadline-Bold';
+  src: url('TiemposHeadline-Bold.eot');
+  src: url('TiemposHeadline-Bold.woff2') format('woff2'),
+       url('TiemposHeadline-Bold.woff') format('woff'),
+       url('TiemposHeadline-Bold.ttf') format('truetype'),
+       url('TiemposHeadline-Bold.svg#TiemposHeadline-Bold') format('svg'),
+       url('TiemposHeadline-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-Medium';
+  src: url('TiemposHeadline-Medium.eot');
+  src: url('TiemposHeadline-Medium.woff2') format('woff2'),
+       url('TiemposHeadline-Medium.woff') format('woff'),
+       url('TiemposHeadline-Medium.ttf') format('truetype'),
+       url('TiemposHeadline-Medium.svg#TiemposHeadline-Medium') format('svg'),
+       url('TiemposHeadline-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-Light';
+  src: url('TiemposHeadline-Light.eot');
+  src: url('TiemposHeadline-Light.woff2') format('woff2'),
+       url('TiemposHeadline-Light.woff') format('woff'),
+       url('TiemposHeadline-Light.ttf') format('truetype'),
+       url('TiemposHeadline-Light.svg#TiemposHeadline-Light') format('svg'),
+       url('TiemposHeadline-Light.eot?#iefix') format('embedded-opentype');
+  font-weight:lighter;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Cadiz-Regular';
+  src: url('CadizWeb-Regular.eot');
+  src: url('CadizWeb-Regular.woff2') format('woff2'),
+       url('CadizWeb-Regular.woff') format('woff'),
+       url('CadizWeb-Regular.ttf') format('truetype'),
+       url('Cadiz-Regular.svg#Cadiz-Regular') format('svg'),
+       url('CadizWeb-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cadiz-Bold';
+  src: url('CadizWeb-Bold.eot');
+  src: url('CadizWeb-Bold.woff2') format('woff2'),
+       url('CadizWeb-Bold.woff') format('woff'),
+       url('CadizWeb-Bold.ttf') format('truetype'),
+       url('Cadiz-Bold.svg#Cadiz-Bold') format('svg'),
+       url('CadizWeb-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cadiz-Black';
+  src: url('CadizWeb-Black.eot');
+  src: url('CadizWeb-Black.woff2') format('woff2'),
+       url('CadizWeb-Black.woff') format('woff'),
+       url('CadizWeb-Black.ttf') format('truetype'),
+       url('Cadiz-Black.svg#Cadiz-Black') format('svg'),
+       url('CadizWeb-Black.eot?#iefix') format('embedded-opentype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+/* Remove padding and margin */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* Flex properties */
+.flex-center-all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden{
+  display: none;
+}
+
+/* Basics */
+html,body{
+  /* font */
+  width: 100%;
+  box-sizing: border-box;
+  color: #383838;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  /* blending color of edge of font with surrounding pixels on
+  lower resolutions for smoothing*/
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  /* Centering everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* #wrapper{
+  width: 1024px;
+  width:80%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+} */
+
+
+
+/* Typography */
+
+.tiempos{
+  font-family: 'TiemposHeadline-Medium', 'Times New Roman', serif;
+}
+
+.tiempos-bold{
+  font-family: 'TiemposHeadline-Bold', 'Times New Roman', serif;
+  font-style: bold;
+}
+
+.tiempos-light{
+    font-family: 'TiemposHeadline-Light', 'Times New Roman', serif;
+}
+
+.cadiz{
+  font-family: 'Cadiz-Regular', 'Open Sans', sans-serif;
+}
+
+
+.cadiz-bold{
+  font-family: 'Cadiz-Bold', 'Open Sans', sans-serif;
+}
+
+.cadiz-black{
+  font-family: 'Cadiz-Black', 'Open Sans', sans-serif;
+}
+/* Typography Elements */
+
+h1{
+  font-size: 2.2em;
+}
+h2{
+  font-size: 2.0em;
+}
+h3{
+  font-size: 1.8em;
+}
+h4{
+  font-size: 1.6em;
+}
+h5{
+  font-size: 1.4em;
+}
+p{
+  font-size: 1.2em;
+  font-family: 'Cadiz-Regular', 'Open Sans', sans-serif;
+}
+
+ul, ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* Text selection highlight */
+::selection {
+  background:#536DFE;
+  color:#FFF;
+  text-shadow:none;
+}
+
+/* Recurring Elements */
+
+.breadcrumbs{
+  position: fixed;
+  top:7%;
+  left:3%;
+  z-index: 69;
+
+  font-size: 1.3em;
+}
+
+.breadcrumbs a{
+   color: black;
+   text-decoration: none; /* no underline */
+}
+
+.breadcrumbs a:hover{
+    color: #f7e5bb;
+}
+
+#rim_hover:hover{
+    color:#61edff;
+}
+
+.page_number{
+
+  position: fixed;
+  right:4%;
+  bottom:6%;
+  z-index: 99;
+  color: black;
+  font-size:27px;
+}
+
+/* Patti Page */
+
+.screen{
+  height: 105vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.double_screen{
+  height: 210vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.screen_background{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.footer{
+  height: 5vh;
+  width: 100vw;
+  position:static;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  font-size: 1em;
+  color:#d9d3c1 ;
+
+}
+
+.flex_col{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_row{
+  display: flex;
+  flex-direction: row;
+}
+
+.col-sm-1{
+  flex-basis: 8.333333% ;
+}
+
+.col-sm-2{
+  flex-basis: 16.66666% ;
+}
+
+.col-sm-3{
+  flex-basis: 25% ;
+}
+
+.col-sm-4{
+  flex-basis: 33.333333% ;
+}
+
+.col-sm-5{
+  flex-basis: 41.66666% ;
+}
+.col-sm-6{
+  flex-basis: 50% ;
+}
+
+.col-sm-7{
+  flex-basis: 58.333333% ;
+}
+
+.col-sm-8{
+  flex-basis: 66.66666% ;
+}
+
+.col-sm-9{
+  flex-basis: 75% ;
+}
+
+.col-sm-10{
+  flex-basis: 83.33333% ;
+}
+
+.col-sm-11{
+  flex-basis: 91.66666% ;
+}
+
+.col-sm-12{
+  flex-basis: 100% ;
+}
+
+.fill-width{
+width: 100vw !important;
+}
+
+/* #cards{
+  transform: perspective(60em) rotateX(45deg) rotateZ(330deg);
+
+} */
+
+#cards{
+  transform: perspective(60em) rotateX(0) rotateZ(0);
+
+}
+
+#cards img{
+  -webkit-box-shadow: -17px 17px 13px -1px rgba(0,0,0,0.28);
+  -moz-box-shadow: -17px 17px 13px -1px rgba(0,0,0,0.28);
+  box-shadow: -17px 17px 13px -1px rgba(0,0,0,0.28);
+}
+
+#cards img:hover{
+  transform: translateY(-1em);
+}
+
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top:40px;
+  bottom:20px;
+  margin-top: 20px;
+
+}
+
+.event_img{
+  width:80%;
+  min-width:300px;
+  max-width:600px;
+  margin: 20px;
+}
+
+
+#offered_got{
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#offered_got h2{
+  font-size: 5em;
+}
+
+
+
+#patti_div{
+  position: relative;
+  background-color: white;
+
+  flex-basis:  50%; /*OF THE OUTER WRAPPER*/
+}
+
+#patti_desc{
+  position: relative;
+  background-color: grey;
+  flex-basis: 50%; /*OF THE OUTER WRAPPER*/
+
+}
+
+#patti_desc_text{
+  position: absolute;
+  width: 20vw;
+  min-width: 250px;
+  bottom:210px;
+  margin-left: 20px;
+
+  text-align: left;
+
+
+}
+
+#patti_text{
+  position: absolute;
+  font-size: 4vw;
+  right:-50px;
+  top:230px;
+  z-index: 69;
+
+  color: #FFDD58;
+}
+
+
+
+#patti_img{
+    padding-top:150px;
+    width: 23vw;
+    min-width: 220px;
+}
+
+
+#QSC_text{
+  position: absolute;
+  font-size: 7vw;
+  right:-200px;
+  top:230px;
+  z-index: 69;
+
+  font-family: 'Cadiz-Bold', 'Open Sans', sans-serif;
+  color: #FFDD58;
+}
+
+#stem_logo{
+  width: 50vw;
+  min-width: 400px;
+}
+
+#stem_logo_cell{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.thumbnail{
+    width: 23vw;
+    min-width: 220px;
+}
+
+
+#overlay {
+  position: fixed;
+  display: none;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 99;
+
+  filter: blur(0px);
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#overlay_container{
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+img.cloud-short {
+    -webkit-animation: mover-short 15s infinite  alternate;
+    animation: mover-short 15s infinite  alternate;
+}
+
+img.cloud-med {
+    -webkit-animation: mover-med 70s infinite  alternate;
+    animation: mover-med 70s infinite  alternate;
+}
+
+img.cloud-long {
+    -webkit-animation: mover-long 50s infinite  alternate;
+    animation: mover-long 50s infinite  alternate;
+}
+
+
+@-webkit-keyframes mover-short {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(+20vw); }
+}
+@keyframes mover-short {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(+20vw); }
+}
+
+@-webkit-keyframes mover-med {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(50vw); }
+}
+@keyframes mover-med {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(50vw); }
+}
+
+@-webkit-keyframes mover-long {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(+70vw); }
+}
+@keyframes mover-long {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(+70vw); }
+}
+
+
+/*============= Rimads =============*/
+
+#screenshot{
+  display: flex;
+   justify-content:center;
+   align-content:center;
+   align-items:center;
+}
+
+.salmon{
+   background: linear-gradient(0deg, rgba(253,229,222,1) 28%, rgba(255,244,236,1) 100%);
+}
