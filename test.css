@@ -231,6 +231,13 @@ ul, ol{
   width: 80vw;
   display: flex;
   flex-direction: row;
+
+    margin-top:50px;
+      margin-bottom:50px;
+}
+
+.first_screen{
+  margin-top:0px !important;
 }
 
 .double_screen{
