@@ -177,10 +177,9 @@
           <div class="col-sm-7 flex_col" style="align-items:center;align-content:center;justify-content:center;" id ="image_col" >
             <img src="qsc/coupon.jpg" onclick="zoom_in()" alt="" style="width:100%;max-width:600px;z-index:101;"  data-aos="fadeinleft" id="zoomed-in">
           </div>
-          <div class="col-sm-4 " onclick="close_overlay()" style="text-align:left;">
+          <div class="col-sm-4 flex_col " onclick="close_overlay()" style="text-align:left;justify-content:center;">
 
-              <p color:white;>
-                some text will go here, but it's not done yet!
+              <p  style="color:white;">
               </p>
 
 
@@ -195,19 +194,20 @@
         <div class="col-sm-6 flex_col" id= "cards" style="min-width:500px;justify-content:center;">
           <div class="col-sm-4 flex_row" style="background-color:l">
             <div class="col-sm-6" style="background-color:l;">
-                <img src="qsc/Volunteer.jpg"  onclick="open_overlay('qsc/volunteer.jpg')" alt="" style="width:100%;max-width:300px;" data-aos="fade-up" data-aos-duration="1000">
+                <img src="qsc/volunteer.jpg"  onclick="open_overlay('qsc/volunteer.jpg')" alt="" style="width:100%;max-width:300px;" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="250">
             </div>
             <div class="col-sm-6 " style="background-color:l;">
-
+              <img src="qsc/snap_filter_phone_shad.png"  onclick="open_overlay('qsc/snap_filter_phone.png')" alt="" style="width: 60%;max-width:250px;margin-top: -100px ;box-shadow: -17px 17px 13px -1px rgba(0,0,0,0);" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450">
             </div>
           </div>
 
           <div class="col-sm-4 flex_row" style="background-color:l;">
-            <div class="col-sm-6" style="background-color:l;">
+            <div class="col-sm-6 flex_col" style="background-color:l;justify-content:flex-end;">
+              <img src="qsc/murl-mid.jpeg"  onclick="open_overlay('qsc/mural-mid.jpeg')" alt="" style="width:120%;max-height:200px;" data-aos="fade-up" data-aos-duration="1000">
 
             </div>
             <div class="col-sm-6 flex_col" style="background-color:l;justify-content:center;align-items:center;">
-              <img src="qsc/coupon.jpg" onclick="open_overlay('qsc/coupon.jpg')" alt="" style="width:110%;max-width:350px;"  data-aos="fade-up" data-aos-duration="1300">
+              <img src="qsc/coupon.jpg" onclick="open_overlay('qsc/coupon.jpg')" alt="" style="width:110%;max-width:350px;margin-right:-100px;"  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="650">
             </div>
           </div>
         </div>
@@ -239,18 +239,21 @@
 
         </div>
         <div class="col-sm-7 flex_col">
-          <div class="col-sm-3 flex_row" data-aos="fade-down">
-            <img class="event_img" src="test.png"/>
 
+          <div class="col-sm-3 flex_row" data-aos="fade-down">
+            <img class="event_img" src="qsc/event_1.jpg"/>
           </div>
+
           <div class="col-sm-3 flex_row" data-aos="fade-up">
-            <img class="event_img" src="test.png"/>
+            <img class="event_img" src="qsc/event_2.jpg"/>
           </div>
+
           <div class="col-sm-3 flex_row" data-aos="fade-up" >
-            <img class="event_img" src="test.png"/>
+            <img class="event_img" src="qsc/event_3.jpg"/>
           </div>
+
           <div class="col-sm-3 flex_row" data-aos="fade-up" >
-            <img class="event_img" src="test.png"/>
+            <img class="event_img" src="qsc/test.png"/>
           </div>
 
         </div>
@@ -406,6 +409,7 @@
           console.log("i opened overlay");
           document.getElementById("overlay").style.display = "flex";
           document.getElementById("zoomed-in").src= image;
+          document.getElementById("zoomed-in").class = image;
           document.getElementById("cards").style.transform = "perspective(0) rotateX(0) rotateZ(0)";
           document.getElementById("cards").style.visibility = "hidden";
 
@@ -414,15 +418,21 @@
           document.getElementById("crumbs").style.filter = "blur(5px)";
           document.getElementById("page_num").style.filter = "blur(5px)";
 
-          if (image == "qsc/coupon.jpg") {
-            console.log("coupon");
-            document.getElementById("zoomed-in").style.maxWidth = "2100px";
-            document.getElementById("image_col").style.justifyContent = "center";
+          if (image == "qsc/volunteer.jpg") {
+              document.getElementById("zoomed-in").style.maxWidth = "600px";
+              document.getElementById("image_col").style.justifyContent = "flex-start";
+              }
+          else if (image == "qsc/snap_filter_phone.png") {
+              console.log("bruh");
+              document.getElementById("zoomed-in").style.maxWidth = "400px";
+              document.getElementById("image_col").style.justifyContent = "center";
 
-          } else {
-            document.getElementById("zoomed-in").style.maxWidth = "600px";
-            document.getElementById("image_col").style.justifyContent = "flex-start";
-          }
+          } else if (image == "qsc/coupon.jpg") {
+              console.log("coupon");
+              document.getElementById("zoomed-in").style.maxWidth = "2100px";
+              document.getElementById("image_col").style.justifyContent = "center";
+
+            }
 
 
           var scrollPosition = [
@@ -460,17 +470,32 @@
          picture = document.getElementById("zoomed-in")
 
 
-           if (picture.style.maxWidth == "2000px"){
-             console.log("bruh");
-             picture.style.maxWidth = "600px"
-             document.getElementById("image_col").style.justifyContent = "center";
 
-           } else if (picture.style.maxWidth == "600px"){
-             console.log("skrrrrt");
-             picture.style.maxWidth = "2000px"
+         if (picture.class == "qsc/volunteer.jpg"){
+           console.log("voln");
+           if (picture.style.maxWidth == "600px"){
+             picture.style.maxWidth = "1200px"
+             document.getElementById("image_col").style.justifyContent = "flex-start";
+           } else if (picture.style.maxWidth == "1200px"){
+              picture.style.maxWidth = "600px"
+              document.getElementById("image_col").style.justifyContent = "center";
+            }
+
+         }
+         else if (picture.class  == "qsc/snap_filter_phone.png"){
+           console.log("snapchat");
+           if (picture.style.maxWidth == "400px"){
+             picture.style.maxWidth = "650px"
              document.getElementById("image_col").style.justifyContent = "flex-start";
 
-           }
+           } else if (picture.style.maxWidth == "650px"){
+              picture.style.maxWidth = "400px"
+              document.getElementById("image_col").style.justifyContent = "center";
+            }
+
+         }
+         else if (picture.class  == "qsc/coupon.jpg"){}
+
 
 
 

@@ -360,9 +360,9 @@ width: 100vw !important;
 }
 
 .event_img{
-  width:80%;
+  width:100%;
   min-width:300px;
-  max-width:600px;
+  max-width:550px;
   margin: 20px;
 }
 
