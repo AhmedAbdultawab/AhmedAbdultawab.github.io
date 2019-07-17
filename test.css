@@ -516,6 +516,11 @@ img.cloud-long {
     animation: move-blur 15s 1s infinite;
 }
 
+.move_around_blur {
+    -webkit-animation: move-around-blur 19s 1s infinite;
+    animation: move-around-blur 19s 1s infinite;
+}
+
 /* #################### */
 /* Animations my dude */
 /* #################### */
@@ -539,6 +544,15 @@ img.cloud-long {
     50% { filter:blur(0px); margin-left:0px; }
     66% { filter:blur(1px); margin-right:70px; }
     100% { filter:blur(0px); margin-right:0px; }
+}
+
+@keyframes move-around-blur {
+    0% { filter:blur(0px);}
+    33% { filter:blur(1px); margin-left:70px;margin-top:20px;}
+    50% { filter:blur(0px); margin-left:0px;margin-top:60px; }
+    66% { filter:blur(1px); margin-right:70px;margin-top:-40px; }
+    80% { filter:blur(0.5px); margin-right:-30px;margin-top:-80px; }
+    100% { filter:blur(0px); margin-right:0px;margin-top:0px; }
 }
 
 
