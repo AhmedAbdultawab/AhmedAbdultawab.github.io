@@ -507,8 +507,8 @@ img.cloud-long {
 }
 
 .slow_blur {
-    -webkit-animation: slow-blur 12s  infinite;
-    animation: slow-blur 12s  infinite;
+    -webkit-animation: slow-blur 10s  infinite;
+    animation: slow-blur 10s  infinite;
 }
 
 .move_blur {
