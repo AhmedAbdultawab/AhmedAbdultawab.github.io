@@ -127,6 +127,33 @@ html,body{
   background-color: black;
 } */
 
+/* Media Queries bruh */
+
+@media only screen and (max-width: 670px) {
+
+  .selection_container{
+    flex-basis:100% !important;
+  }
+  .phoney .image{
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+
+  .phoney .text{
+    width: 100%;
+    height: 60% !important;
+    min-width: 0px;
+    max-width: 200px;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+  .job{
+        font-size: 3.5em !important;
+  }
+}
+
+
 
 
 /* Typography */
@@ -190,6 +217,18 @@ ul, ol{
   text-shadow:none;
 }
 
+
+.job{
+  text-decoration:none;
+  color:#2A2A2A;
+  font-size: 4em;
+  /* font-size:5.2vw; */
+  font-weight: bolder;
+}
+
+.job:hover{
+  color:white;
+}
 /* Recurring Elements */
 
 .breadcrumbs{
@@ -507,8 +546,8 @@ img.cloud-long {
 }
 
 .slow_blur {
-    -webkit-animation: slow-blur 10s  infinite;
-    animation: slow-blur 10s  infinite;
+    -webkit-animation: slow-blur 10s 0.5s infinite;
+    animation: slow-blur 10s 0.5s infinite;
 }
 
 .move_blur {
