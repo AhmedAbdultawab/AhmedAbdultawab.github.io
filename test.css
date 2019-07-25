@@ -151,6 +151,12 @@ html,body{
   .job{
         font-size: 3.5em !important;
   }
+
+  .jaime_works{
+    height: 100%;
+    width:auto !important;
+
+  }
 }
 
 
@@ -260,7 +266,7 @@ ul, ol{
   bottom:6%;
   z-index: 99;
   color: black;
-  font-size:27px;
+  font-size:15px;
 }
 
 /* Patti Page */
