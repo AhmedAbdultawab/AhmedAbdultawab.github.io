@@ -134,6 +134,25 @@ html,body{
   .selection_container{
     flex-basis:100% !important;
   }
+
+  .clouds{
+    display: none;
+  }
+
+  .clouds_small{
+    display: block !important;
+  }
+
+  /* this phone spacer will only appear if you're on the phone!*/
+  .phone_spacer{
+    display: block !important;
+  }
+
+  .pc_spacer{
+    display: none !important;
+  }
+
+
   .phoney .image{
     flex-basis: 100%;
     flex-direction: column;
@@ -157,6 +176,33 @@ html,body{
     width:auto !important;
 
   }
+
+  .projects_at_rimads{
+    height: 250vh !important;
+    margin-bottom:0 !important;
+
+  }
+
+  .done_card_body{
+    height: 400px !important;
+    width: 75% !important;
+  }
+
+  .done_card_body p{
+    font-size: 1em;
+  }
+
+  .done_card_body h2{
+    font-size: 1.5em;
+  }
+
+  .columnable{
+    flex-direction: column !important;
+  }
+
+
+
+
 }
 
 
@@ -631,6 +677,28 @@ img.cloud-long {
 
 /*============= Rimads =============*/
 
+.justify_center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.smooth{
+
+  scroll-behavior: smooth;
+
+}
+
+.clouds{
+  height:90%;
+  max-height: 500px;
+}
+
+.clouds_small{
+  height:100%;
+}
+
+
 #screenshot{
   display: flex;
    justify-content:center;
@@ -638,6 +706,94 @@ img.cloud-long {
    align-items:center;
 }
 
+.project_banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+  height: 30vh;
+
+}
+
+.project_banner h2{
+  font-size: 6em;
+  color: #55EEFF;
+}
+
+
 .salmon{
    background: linear-gradient(0deg, rgba(253,229,222,1) 28%, rgba(255,244,236,1) 100%);
+}
+
+.done_card{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.done_card_body{
+  -webkit-box-shadow: 9px 13px 94px -11px rgba(209,209,209,0.73);
+  -moz-box-shadow: 9px 13px 94px -11px rgba(209,209,209,0.73);
+  box-shadow: 9px 13px 94px -11px rgba(209,209,209,0.73);
+  border-radius: 25px;
+
+  height:430px;
+  width:60%;
+  min-width: 250px;
+  max-width: 300px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+
+
+  -webkit-transition: margin-bottom 2s, margin-top 2s;
+  transition: margin-bottom 2s, margin-top 2s;
+
+}
+
+.done_card_body:hover{
+
+    margin-bottom:20px;
+    margin-top:-20px;
+
+}
+
+
+.done_card h2{
+  color: black;
+}
+
+.done_card p{
+  color: #c7d0d6;
+}
+
+.done_card img{
+  width:65%;
+  max-height:200px;
+}
+
+.backg_red{
+  background-color: red;
+}
+
+.backg_brown{
+  background-color: brown;
+}
+
+.backg_pink{
+  background-color: pink;
+}
+
+.backg_black{
+  background-color: black;
 }
