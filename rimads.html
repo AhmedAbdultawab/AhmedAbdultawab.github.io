@@ -223,6 +223,48 @@
   </div>
 
 
+<div id="concept_container" style="height:240vh;">
+
+  <div class="screen flex_col sticky_concept ">
+
+
+
+        <div class="col-sm-8 flex_row columnable">
+
+          <div class="col-sm-9  legit_center" >
+            <img id="concept_img" src="rimads/doctor_concept.png" style="width:95%;position:relative;top:10px;"/>
+          </div>
+
+          <div class="col-sm-3 flex_col" style="text-align:left;"  >
+
+              <div class="col-sm-8 pc_spacer">
+
+              </div>
+
+              <div class="col-sm-1 justify_center cadiz-bold" >
+                <h2> Concepts </h2>
+              </div>
+
+
+              <div class="col-sm-3 cadiz" >
+                <p style="max-width:210px;" id="concept_desc">
+                  the first stage was redesigning the flow by addressing the problem through its roots
+                </p>
+              </div>
+
+
+          </div>
+
+        </div>
+
+
+  </div>
+
+
+</div>
+
+
+
 
   <div class="screen_background flex_col fill_width salmon">
 
@@ -384,6 +426,42 @@
 
   <script>
     AOS.init();
+
+    window.addEventListener("scroll", function() {
+      var concept_img = document.getElementById("concept_img");
+      var concept_container = document.getElementById("concept_container");
+      var movable = document.getElementById("movable_container");
+      var first_img_range = ((window.scrollY - concept_container.offsetTop)/concept_container.offsetHeight )* 5;
+
+
+      if (first_img_range > -0.5 && first_img_range <= 1) {
+        concept_img.style.opacity = (1 - first_img_range).toString();
+        if (concept_img.src != "rimads/doctor_concept.png"){
+          concept_img.src = "rimads/doctor_concept.png";
+        }
+
+      }
+
+      if (first_img_range > 1 ) {
+        concept_img.style.opacity = ((first_img_range - 1)).toString();
+        if (concept_img.src != "rimads/doctor_concept_2.png"){
+          concept_img.src = "rimads/doctor_concept_2.png";
+        }
+      }
+
+      // console.log("first image offset", concept_img.offsetTop);
+       console.log("first image range", first_img_range);
+      // console.log("concept opacity is", concept_img.style.opacity);
+      //
+      // if (window.scrollY > (concept_img.offsetTop )) {
+      //     console.log("You've scrolled past the second div");
+      //
+      //
+      //     console.log(concept_img.src);
+      // }
+    });
+
+
   </script>
 </body>
 

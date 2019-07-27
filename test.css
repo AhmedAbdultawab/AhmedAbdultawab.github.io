@@ -200,7 +200,9 @@ html,body{
     flex-direction: column !important;
   }
 
-
+  #concept_desc{
+    margin-top:30px;
+  }
 
 
 }
@@ -450,6 +452,14 @@ width: 100vw !important;
 
 }
 
+.sticky_concept{
+  position: -webkit-sticky;
+  position: sticky;
+  top:10vh;
+  bottom:10vh;
+  margin-bottom:0;
+}
+
 .event_img{
   width:100%;
   min-width:300px;
@@ -681,6 +691,14 @@ img.cloud-long {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.legit_center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .smooth{
