@@ -430,7 +430,7 @@
     window.addEventListener("scroll", function() {
       var concept_img = document.getElementById("concept_img");
       var concept_container = document.getElementById("concept_container");
-      var first_img_range = ((window.scrollY - concept_container.offsetTop)/concept_container.offsetHeight )* 5;
+      var first_img_range = (((window.scrollY - concept_container.offsetTop)/concept_container.offsetHeight )* 5);
 
 
       if (first_img_range > -0.5 && first_img_range <= 1) {
@@ -460,6 +460,9 @@
       // }
     });
 
+ if (typeof jQuery != 'undefined') {
+     //jQuery is loaded => print the version
+     alert(jQuery.fn.jquery); }
 
   </script>
 </body>
