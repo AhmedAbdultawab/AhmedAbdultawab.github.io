@@ -430,7 +430,6 @@
     window.addEventListener("scroll", function() {
       var concept_img = document.getElementById("concept_img");
       var concept_container = document.getElementById("concept_container");
-      var movable = document.getElementById("movable_container");
       var first_img_range = ((window.scrollY - concept_container.offsetTop)/concept_container.offsetHeight )* 5;
 
 
@@ -450,7 +449,7 @@
       }
 
       // console.log("first image offset", concept_img.offsetTop);
-       console.log("first image range", first_img_range);
+       // console.log("first image range", first_img_range);
       // console.log("concept opacity is", concept_img.style.opacity);
       //
       // if (window.scrollY > (concept_img.offsetTop )) {
