@@ -7,7 +7,9 @@ $(document).ready(function () {
       console.log($(this).scrollTop());
       let screen_height =  $('.screen').height() * 0.8;
 
-        if ($(this).scrollTop() > screen_height*3) {
+      if ($(this).scrollTop() > screen_height*4) {
+            $('.page_number').text("05");
+      } else if ($(this).scrollTop() > screen_height*3) {
               $('.page_number').text("04");
         } else if ($(this).scrollTop() > screen_height*2) {
             $('.page_number').text("03");
