@@ -275,7 +275,7 @@ ul, ol{
 .job{
   text-decoration:none;
   color:#2A2A2A;
-  /* font-size: 4em; */
+  font-size: 4em;
   /* font-size:5.2vw; */
   font-weight: bolder;
 }
