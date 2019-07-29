@@ -275,7 +275,7 @@ ul, ol{
 .job{
   text-decoration:none;
   color:#2A2A2A;
-  font-size: 4em;
+  /* font-size: 4em; */
   /* font-size:5.2vw; */
   font-weight: bolder;
 }
@@ -774,8 +774,8 @@ img.cloud-long {
   padding: 20px;
 
 
-  -webkit-transition: margin-bottom 2s, margin-top 2s;
-  transition: margin-bottom 2s, margin-top 2s;
+  transition: all 1s;
+
 
 }
 
