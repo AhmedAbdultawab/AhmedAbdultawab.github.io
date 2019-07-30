@@ -291,7 +291,7 @@ ul, ol{
   left:3%;
   z-index: 69;
 
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 .breadcrumbs a{
@@ -437,10 +437,17 @@ width: 100vw !important;
   -webkit-box-shadow: -17px 17px 13px -1px rgba(0,0,0,0.28);
   -moz-box-shadow: -17px 17px 13px -1px rgba(0,0,0,0.28);
   box-shadow: -17px 17px 13px -1px rgba(0,0,0,0.28);
+
+  transition: all 0.5s;
 }
 
 #cards img:hover{
   transform: translateY(-1em);
+}
+
+#work_screen{
+  margin-top:200px;
+  margin-bottom:300px;
 }
 
 .sticky{
@@ -461,7 +468,7 @@ width: 100vw !important;
 }
 
 .event_img{
-  width:100%;
+  width:90%;
   min-width:300px;
   max-width:550px;
   margin: 20px;
@@ -613,8 +620,8 @@ img.cloud-long {
 }
 
 .move_blur {
-    -webkit-animation: move-blur 15s 1s infinite;
-    animation: move-blur 15s 1s infinite;
+    -webkit-animation: move-blur 20s 3s infinite;
+    animation: move-blur 20s 3s infinite;
 }
 
 .move_around_blur {
@@ -641,9 +648,8 @@ img.cloud-long {
 
 @keyframes move-blur {
     0% { filter:blur(0px);}
-    33% { filter:blur(1px); margin-left:70px;}
-    50% { filter:blur(0px); margin-left:0px; }
-    66% { filter:blur(1px); margin-right:70px; }
+    33% { filter:blur(0.3px); margin-left:20px;}
+    66% { filter:blur(0.3px); margin-right:20px;margin-left:0px;}
     100% { filter:blur(0px); margin-right:0px; }
 }
 

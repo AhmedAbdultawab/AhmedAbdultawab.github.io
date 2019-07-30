@@ -19,7 +19,7 @@
       gtag('config', 'UA-144581642-1');
     </script>
 
-    
+
   </head>
   <body style="background-color:white;">
 
@@ -145,14 +145,14 @@
     </div>
   </div>
 
-  <div class="col-sm-6 flex_col" style="background-color:s;margin-left:20px;">
-    <div class="col-sm-10" style="background-color:s;align-items:center;align-content:center;justify-content:center;">
+  <div class="col-sm-6 flex_col" style="margin-left:20px;">
+    <div class="col-sm-10 " style="align-items:flex-start;align-content:flex-start;justify-content:center;">
       <img src="qsc/ideation.png" alt="bruh2" style="width:100%;min-width:350px;max-width:600px;">
     </div>
-    <div class="col-sm-2 flex_row" style="background-color:s;text-align:left;">
+    <div class="col-sm-2 flex_row" style="text-align:left;">
 
-      <div class="col-sm-6 flex_col" style="background-color:s">
-        <div class="col-sm-8" style="background-color:s;">
+      <div class="col-sm-6 flex_col" >
+        <div class="col-sm-8" >
           <p>
             He also has alot of wacky gadgets lying around
           </p>
@@ -173,10 +173,6 @@
 
 </div>
 
-
-      <div class="screen">
-
-      </div>
 
       <div id="overlay"  >
 
@@ -201,22 +197,22 @@
 
       <div class="screen flex_row fill-width" id="work_screen">
 
-        <div class="col-sm-6 flex_col" id= "cards" style="min-width:500px;justify-content:center;">
-          <div class="col-sm-4 flex_row" style="background-color:l">
-            <div class="col-sm-6" style="background-color:l;">
+        <div class="col-sm-6 flex_col" id= "cards" style="min-width:500px;margin-top:-100px;justify-content:center;">
+          <div class="col-sm-4 flex_row" style="background-color:reda">
+            <div class="col-sm-6" style="background-color:blacka;">
                 <img src="qsc/volunteer.jpg"  onclick="open_overlay('qsc/volunteer.jpg')" alt="" style="width:100%;max-width:300px;" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="250">
             </div>
-            <div class="col-sm-6 " style="background-color:l;">
+            <div class="col-sm-6 " style="background-color:greena;">
               <img src="qsc/snap_filter_phone_shad.png"  onclick="open_overlay('qsc/snap_filter_phone.png')" alt="" style="width: 60%;max-width:250px;margin-top: -100px ;box-shadow: -17px 17px 13px -1px rgba(0,0,0,0);" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450">
             </div>
           </div>
 
-          <div class="col-sm-4 flex_row" style="background-color:l;">
-            <div class="col-sm-6 flex_col" style="background-color:l;justify-content:flex-end;">
-              <!-- <img src="qsc/murl-mid.jpeg"  onclick="open_overlay('qsc/mural-mid.jpeg')" alt="" style="width:120%;max-height:200px;" data-aos="fade-up" data-aos-duration="1000"> -->
+          <div class="col-sm-4 flex_row" style="background-color:pinka;">
+            <div class="col-sm-6 flex_col" style="background-color:browna;justify-content:flex-end;align-content:flex-end;align-items:flex-end;">
+              <img src="qsc/guangzhou.png"  onclick="open_overlay('qsc/guangzhou.png')" alt="" style="width:80%;max-width:270px;margin-bottom:-170px;" data-aos="fade-up" data-aos-duration="1000">
 
             </div>
-            <div class="col-sm-6 flex_col" style="background-color:l;justify-content:center;align-items:center;">
+            <div class="col-sm-6 flex_col" style="background-color:purplea;justify-content:center;align-items:center;">
               <img src="qsc/coupon.jpg" onclick="open_overlay('qsc/coupon.jpg')" alt="" style="width:110%;max-width:350px;margin-right:-100px;"  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="650">
             </div>
           </div>
@@ -428,7 +424,7 @@
           document.getElementById("crumbs").style.filter = "blur(5px)";
           document.getElementById("page_num").style.filter = "blur(5px)";
 
-          if (image == "qsc/volunteer.jpg") {
+          if (image == "qsc/volunteer.jpg" || image == "qsc/guangzhou.png") {
               document.getElementById("zoomed-in").style.maxWidth = "600px";
               document.getElementById("image_col").style.justifyContent = "flex-start";
               }
@@ -481,7 +477,7 @@
 
 
 
-         if (picture.class == "qsc/volunteer.jpg"){
+         if (picture.class == "qsc/volunteer.jpg" || picture.class == "qsc/guangzhou.png"  ){
            console.log("voln");
            if (picture.style.maxWidth == "600px"){
              picture.style.maxWidth = "1200px"
