@@ -8,6 +8,13 @@
     <script src="jstest.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preloading content-->
+    <link rel="preload" href="qsc/STEM_theme.png" as="image">
+    <link rel="preload" href="qsc/stem_logo_white.png" as="image">
+    <link rel="preload" href="qsc/volunteer.jpg" as="image">
+    <link rel="preload" href="qsc/snap_filter_phone.png" as="image">
+
     <title></title>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144581642-1"></script>
@@ -22,6 +29,7 @@
 
   </head>
   <body style="background-color:white;">
+
 
     <div class="breadcrumbs" id="crumbs">
 
@@ -99,7 +107,7 @@
           </div>
           <div class="col-sm-2" style="text-align:left;">
             <p style="padding-left:20px;" data-aos="fade-left" data-aos-duration="1500">
-              for this project, i wanted to embrace the hand-made and crafty theme by making handmade and comical elements
+              for this project, i wanted to embrace the hand-made and crafty theme by embracing handmade and comical visuals
             </p>
             <p style="padding-left:20px;margin-top:7px;font-size:18px;color:#d9d9d9;" data-aos="fade-left" data-aos-duration="1500">
               General Ideation - June 2018
@@ -209,7 +217,7 @@
 
           <div class="col-sm-4 flex_row" style="background-color:pinka;">
             <div class="col-sm-6 flex_col" style="background-color:browna;justify-content:flex-end;align-content:flex-end;align-items:flex-end;">
-              <img src="qsc/guangzhou.png"  onclick="open_overlay('qsc/guangzhou.png')" alt="" style="width:80%;max-width:270px;margin-bottom:-170px;" data-aos="fade-up" data-aos-duration="1000">
+              <img src="qsc/guangzhou.png"  onclick="open_overlay('qsc/guangzhou.png')" alt="" style="width:80%;max-width:270px;margin-bottom:-120px;" data-aos="fade-up" data-aos-duration="1000">
 
             </div>
             <div class="col-sm-6 flex_col" style="background-color:purplea;justify-content:center;align-items:center;">
@@ -259,7 +267,7 @@
           </div>
 
           <div class="col-sm-3 flex_row" data-aos="fade-up" >
-            <img class="event_img" src="qsc/test.png"/>
+            <img class="event_img" src="qsc/event_3.jpg"/>
           </div>
 
         </div>
@@ -392,6 +400,27 @@
 
         <script>
         AOS.init();
+
+        var images = new Array()
+        function preload() {
+                console.log("i'm about to load some images!");
+        				for (i = 0; i < preload.arguments.length; i++) {
+        					images[i] = new Image()
+        					images[i].src = preload.arguments[i]
+                  console.log(preload.arguments[i]);
+        				}
+        		}
+
+
+            $(document).ready(function() {
+              console.log("bruh");
+              preload(
+                "qsc/volunteer.jpg",
+                "qsc/coupon.jpg",
+                "qsc/snap_filter_phone_shad.png"
+              )
+            });
+
 
         $(window).scroll(function () {
           var scrollTop = $(window).scrollTop();
