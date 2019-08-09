@@ -34,14 +34,16 @@
     <div class="breadcrumbs" id="crumbs">
 
       <!-- DYNAMIC BREADCRUMBS THOOOO !!!!!!!!-->
-       <!-- <div class="cadiz" id="dynamic" style="position:fixed;width:200px;font-size:40px;transform: rotate(0deg)">
-    Hello
-</div> -->
-      <p class="tiempos" >
+        <div class="cadiz" id="dynamic" style="position:fixed;width:200px;font-size:30px;transform: rotate(0deg)">
+          <a href="index.html#selection">home</a>
+          \
+          <a href="#">QSC</a>
+</div>
+      <!-- <p class="tiempos" >
         <a href="index.html#selection">home</a>
         \
         <a href="#">QSC</a>
-      </p>
+      </p> -->
     </div>
 
 
@@ -76,13 +78,13 @@
 
               </div>
               <div class="col-sm-2"  style="text-align:right;">
-                <p style="padding-right:12px;font-size:17px;font-family: 'Cadiz-Bold';">
-                  while i served there as a general, the biggest project that i took over was the STEM summer camp
+                <p style="padding-right:12px;font-size:16px;font-family: 'Cadiz-Bold';">
+                  while serving there as a graphic designer, the biggest project that i took on was the STEM summer camp
                 </p>
               </div>
             <div class="col-sm-6"  style="text-align:left;">
-              <p style="padding-left:12px;font-size:24px;">
-                a newly introduced yearly summer activity for children aged 7-14 that introduces them to fields can be creative in, such as robotics, coding, and 3d-printing, through interactive activities, games, and workshops
+              <p style="padding-left:12px;font-size:22px;">
+                a newly introduced yearly summer activity for children aged 7-14 that introduces them to fields can be creative in, such as robotics, coding, and 3d-printing, through activities, games, and workshops
               </p>
           </div>
           <div class="col-sm-2" >
@@ -184,17 +186,31 @@
 
       <div id="overlay"  >
 
-        <div id="overlay_container">
+        <div id="overlay_container" class="columnable">
           <div class="col-sm-1" onclick="close_overlay()" >
 
           </div>
           <div class="col-sm-7 flex_col" style="align-items:center;align-content:center;justify-content:center;" id ="image_col" >
             <img src="qsc/coupon.jpg" onclick="zoom_in()" alt="" style="width:100%;max-width:600px;z-index:101;"  data-aos="fadeinleft" id="zoomed-in">
           </div>
-          <div class="col-sm-4 flex_col " onclick="close_overlay()" style="text-align:left;justify-content:center;">
+          <div class="col-sm-4 flex_col " onclick="close_overlay()" style="text-align:left;align-content:flex-start;">
 
-              <p  style="color:white;">
+            <div class="col-sm-9 flex_col ">
+
+            </div>
+            <div class="col-sm-2">
+              <p class="cadiz-bold" id="overlay_title" style="font-size:1.3em;color:white;padding-bottom:10px;">
+                Title goes here dog
               </p>
+              <p  id="overlay_desc" style="color:white;max-width:300px;">
+                bruh sound effect
+
+              </p>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+
 
 
           </div>
@@ -240,13 +256,18 @@
 
         </div>
         <div class="col-sm-3 flex_col" style="text-align:left;">
-          <div class="sticky" data-aos="fade-up">
+
+
+          <div class="col-sm-1 sticky" data-aos="fade-up">
             <h2 style="font-size:3em;line-height:0.8em;" class="cadiz-black ">the event</h2>
             <p  style="margin-top:10px;">
-              This section is not done yet. so here are some placeholder images.
+              the event took place over a month,
             </p>
 
           </div>
+
+
+
 
         </div>
         <div class="col-sm-1 flex_col">
@@ -263,7 +284,7 @@
           </div>
 
           <div class="col-sm-3 flex_row" data-aos="fade-up" >
-            <img class="event_img" src="qsc/event_3.jpg"/>
+            <img class="event_img" src="qsc/event_5.jpg"/>
           </div>
 
           <div class="col-sm-3 flex_row" data-aos="fade-up" >
@@ -271,6 +292,45 @@
           </div>
 
         </div>
+      </div>
+
+      <div class="screen flex_col ">
+
+            <div class="col-sm-8 flex_row columnable">
+
+              <div class="col-sm-9 selection_container backg_red legit_center" >
+
+                  <div class ="image backg_pink" style="position:relative;width:90%;max-width:950px;">
+                    <img  src="qsc/mural-mid.jpeg" style="width:95%;z-index:97"/>
+                    <img  src="qsc/cert-mid.jpg" style="width:45%;position:absolute;top:30px;left:-40px;z-index:98;transform:rotate(20deg)" data-aos="fade-left"/>
+                    <img  src="qsc/stem-card.png" style="width:45%;position:absolute;top:30px;left:-40px;z-index:99;transform:rotate(-30deg)" data-aos="fade-left"/>
+                  </div>
+
+
+              </div>
+
+              <div class="col-sm-3 flex_col" style="text-align:left;"  >
+
+                  <div class="col-sm-7 pc_spacer">
+
+                  </div>
+
+                  <div class="col-sm-2 justify_center cadiz-bold" >
+                    <h2> ...and the stage was set! </h2>
+                  </div>
+
+
+                  <div class="col-sm-3 cadiz" >
+                    <p style="max-width:210px;" id="concept_desc">
+                       bruh sound effect number 2
+                    </p>
+                  </div>
+
+
+              </div>
+
+            </div>
+
       </div>
 
 
@@ -425,14 +485,14 @@
         $(window).scroll(function () {
           var scrollTop = $(window).scrollTop();
           if (scrollTop < 200) {
-              fontsize = 40;
+              fontsize = 30;
               rotate = 0
-          } else if (scrollTop > 600) {
+          } else if (scrollTop > 800) {
               fontsize = 20;
               rotate = -90
           } else {
-              fontsize = 40 - 20 * ((scrollTop - 200)) / 400;
-              rotate = -90  * ((scrollTop - 200)) / 400;
+              fontsize = 30 - 10 * (((scrollTop - 200)) / 600);
+              rotate = -90  * (((scrollTop - 200)) / 600);
           }
           $('#dynamic').css({
               'font-size': fontsize + "px",
@@ -453,19 +513,28 @@
           document.getElementById("crumbs").style.filter = "blur(5px)";
           document.getElementById("page_num").style.filter = "blur(5px)";
 
-          if (image == "qsc/volunteer.jpg" || image == "qsc/guangzhou.png") {
+          if (image == "qsc/volunteer.jpg" ) {
               document.getElementById("zoomed-in").style.maxWidth = "600px";
               document.getElementById("image_col").style.justifyContent = "flex-start";
-              }
+              document.getElementById("overlay_desc").innerHTML = "Instagram Poster for a Talk on Effective Argumentation";
+
+            } else if (image == "qsc/guangzhou.png") {
+              document.getElementById("zoomed-in").style.maxWidth = "600px";
+              document.getElementById("image_col").style.justifyContent = "flex-start";
+              document.getElementById("overlay_desc").innerHTML = "Poster advertising a scientific trip to the chinese cities of Guang Zho and Shen Zhen";
+
+          }
           else if (image == "qsc/snap_filter_phone.png") {
               console.log("bruh");
               document.getElementById("zoomed-in").style.maxWidth = "400px";
               document.getElementById("image_col").style.justifyContent = "center";
+              document.getElementById("overlay_title").innerHTML = "Snapchat Filter";
 
           } else if (image == "qsc/coupon.jpg") {
               console.log("coupon");
               document.getElementById("zoomed-in").style.maxWidth = "2100px";
               document.getElementById("image_col").style.justifyContent = "center";
+              document.getElementById("overlay_title").innerHTML = "Lunch Coupons";
 
             }
 

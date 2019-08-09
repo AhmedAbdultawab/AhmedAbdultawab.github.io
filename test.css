@@ -152,6 +152,11 @@ html,body{
     display: none !important;
   }
 
+   #zoomed-in{
+     height: 60vh !important;
+    width: auto !important;
+
+   }
 
   .phoney .image{
     flex-basis: 100%;
@@ -428,6 +433,59 @@ width: 100vw !important;
 
 } */
 
+.bunny_container{
+  width:90%;
+  margin: 20px;
+}
+
+.bunny_container {
+  width: 60%;
+  height:30%;
+}
+
+.circle {
+  border-radius: 20%;
+  width: 100%;
+  padding-bottom: 100%;
+  background:url('bunny_pattern.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-origin: content-box;
+}
+
+.job_screen h2{
+  font-family: 'TiemposHeadline-Bold', 'Times New Roman', serif;
+  font-weight: bolder;
+  font-size:  4vw;
+  line-height: 1;
+  color:#3D3D3D;
+  /* color: #FF6B6B; */
+  /* color:white; */
+}
+
+.job_screen h3{
+  font-family: 'Cadiz-Regular', 'Open Sans', sans-serif;
+  margin-top:5px;
+  font-size:  1.5vw;
+  color: #FF7878;
+}
+
+.job_screen a{
+  text-decoration: none;
+  color: white;
+}
+
+.job_screen a:hover h2{
+  color: #FF6B6B;
+}
+
+.job_screen a:hover h3{
+  color: #FF7878;
+}
+
+
 #cards{
   transform: perspective(60em) rotateX(0) rotateZ(0);
 
@@ -454,6 +512,15 @@ width: 100vw !important;
   position: -webkit-sticky;
   position: sticky;
   top:40px;
+  bottom:20px;
+  margin-top: 20px;
+
+}
+
+.sticky-add{
+  position: -webkit-sticky;
+  position: sticky;
+  top:180px;
   bottom:20px;
   margin-top: 20px;
 
@@ -689,6 +756,9 @@ img.cloud-long {
     0% { transform: translateX(0); }
     100% { transform: translateX(+70vw); }
 }
+
+
+
 
 
 /*============= Rimads =============*/
