@@ -101,26 +101,24 @@
         <div class="col-sm-2" >
         </div>
 
-        <div class="col-sm-10 flex_row">
+        <div class="col-sm-8 flex_row">
           <div class="col-sm-2" >
           </div>
           <div class="col-sm-5" >
             <img src="qsc/STEM_theme.png" style="width:100%;min-width:350px;max-width:560px;"/>
           </div>
-          <div class="col-sm-2" style="text-align:left;">
-            <p style="padding-left:20px;" data-aos="fade-left" data-aos-duration="1500">
+          <div class="col-sm-4" style="text-align:left;">
+            <p style="padding-left:20px;max-width: 190px;" data-aos="fade-left" data-aos-duration="1500">
               for this project, i wanted to embrace the hand-made and crafty theme by embracing handmade and comical visuals
             </p>
-            <p style="padding-left:20px;margin-top:7px;font-size:18px;color:#d9d9d9;" data-aos="fade-left" data-aos-duration="1500">
+            <p style="padding-left:20px;margin-top:7px;font-size:18px;color:#d9d9d9;max-width: 200px;" data-aos="fade-left" data-aos-duration="1500">
               General Ideation - June 2018
             </p>
           </div>
-          <div class="col-sm-3" >
-          </div>
+
         </div>
 
-        <div class="col-sm-2">
-        </div>
+
 
       </div>
 </div>
@@ -224,7 +222,7 @@
         <div class="col-sm-6 flex_col" id= "cards" style="min-width:500px;margin-top:-100px;justify-content:center;">
           <div class="col-sm-4 flex_row" style="background-color:reda">
             <div class="col-sm-6" style="background-color:blacka;">
-                <img src="qsc/volunteer.jpg"  onclick="open_overlay('qsc/volunteer.jpg')" alt="" style="width:100%;max-width:300px;" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="250">
+                <img src="qsc/volunteer.jpg"  onclick="open_overlay('qsc/volunteer.jpg')" alt="" style="width:100%;max-width:300px;z-index:105;" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="250">
             </div>
             <div class="col-sm-6 " style="background-color:greena;">
               <img src="qsc/snap_filter_phone_shad.png"  onclick="open_overlay('qsc/snap_filter_phone.png')" alt="" style="width: 60%;max-width:250px;margin-top: -100px ;box-shadow: -17px 17px 13px -1px rgba(0,0,0,0);" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450">
@@ -294,16 +292,19 @@
         </div>
       </div>
 
-      <!-- <div class="screen flex_col ">
+      <div class="screen flex_col ">
+            <div class="col-sm-2">
 
-            <div class="col-sm-8 flex_row columnable">
+            </div>
 
-              <div class="col-sm-9 selection_container backg_red legit_center" >
+            <div class="col-sm-10 flex_row columnable">
+              <div class="col-sm-9 selection_container legit_center" >
 
-                  <div class ="image backg_pink" style="position:relative;width:90%;max-width:950px;">
+                  <div class ="image" style="position:relative;width:90%;max-width:950px;" >
                     <img  src="qsc/mural-mid.jpeg" style="width:95%;z-index:97"/>
-                    <img  src="qsc/cert-mid.jpg" style="width:45%;position:absolute;top:30px;left:-40px;z-index:98;transform:rotate(20deg)" data-aos="fade-left"/>
-                    <img  src="qsc/stem-card.png" style="width:45%;position:absolute;top:30px;left:-40px;z-index:99;transform:rotate(-30deg)" data-aos="fade-left"/>
+                      <img class="shade" src="qsc/cert-mid.jpg" style="width:45%;position:absolute;top:30px;left:-40px;z-index:60;transform:rotate(20deg);" data-aos="fade-right" />
+
+                    <img class="shade" src="qsc/stem-card.png" style="width:17%;position:absolute;bottom:120px;left:-40px;z-index:102;transform:rotate(-30deg);" data-aos="fade-right"/>
                   </div>
 
 
@@ -316,22 +317,21 @@
                   </div>
 
                   <div class="col-sm-2 justify_center cadiz-bold" >
-                    <h2> ...and the stage was set! </h2>
+                    <h2 style="max-width:280px;"> ...and the stage was set! </h2>
                   </div>
 
 
                   <div class="col-sm-3 cadiz" >
-                    <p style="max-width:210px;" id="concept_desc">
-                       bruh sound effect number 2
+                    <p style="max-width:250px;font-size:1.1em" id="concept_desc">
+                       the event was coming to an end. We prepared participation certificates for each of the groups, and set up a grand reception.
                     </p>
                   </div>
-
 
               </div>
 
             </div>
 
-      </div> -->
+      </div>
 
 
       <!-- <div class="screen flex_col">
@@ -472,33 +472,9 @@
         		}
 
 
-            $(document).ready(function() {
-              console.log("bruh");
-              preload(
-                "qsc/volunteer.jpg",
-                "qsc/coupon.jpg",
-                "qsc/snap_filter_phone_shad.png"
-              )
-            });
 
 
-        $(window).scroll(function () {
-          var scrollTop = $(window).scrollTop();
-          if (scrollTop < 200) {
-              fontsize = 30;
-              rotate = 0
-          } else if (scrollTop > 800) {
-              fontsize = 20;
-              rotate = -90
-          } else {
-              fontsize = 30 - 10 * (((scrollTop - 200)) / 600);
-              rotate = -90  * (((scrollTop - 200)) / 600);
-          }
-          $('#dynamic').css({
-              'font-size': fontsize + "px",
-              'transform': "rotate(" +rotate + "deg)"
-          });
-      })
+
 
         function open_overlay(image) {
           console.log("i opened overlay");
@@ -506,7 +482,7 @@
           document.getElementById("zoomed-in").src= image;
           document.getElementById("zoomed-in").class = image;
           document.getElementById("cards").style.transform = "perspective(0) rotateX(0) rotateZ(0)";
-          document.getElementById("cards").style.visibility = "hidden";
+          // document.getElementById("cards").style.visibility = "hidden";
 
 
           document.getElementById("work_screen").style.filter = "blur(5px)";

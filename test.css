@@ -45,6 +45,18 @@ and because i simply don't believe in templates.
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'Cadiz-Light';
+    src: url('CadizWeb-Light.eot');
+    src:url('CadizWeb-Light.woff2') format('woff2'),
+        url('CadizWeb-Light.woff') format('woff'),
+        url('CadizWeb-Light.ttf') format('truetype'),
+        url('CadizWeb-Light.svg#CadizWeb-Light') format('svg'),
+        url('CadizWeb-Light.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 @font-face {
   font-family: 'Cadiz-Regular';
@@ -234,6 +246,9 @@ html,body{
   font-family: 'Cadiz-Regular', 'Open Sans', sans-serif;
 }
 
+.cadiz-light{
+  font-family: 'Cadiz-Light', 'Open Sans', sans-serif;
+}
 
 .cadiz-bold{
   font-family: 'Cadiz-Bold', 'Open Sans', sans-serif;
@@ -541,6 +556,14 @@ width: 100vw !important;
   margin: 20px;
 }
 
+
+.shade{
+  -webkit-box-shadow: -6px 16px 63px -9px rgba(150,150,150,1);
+  -moz-box-shadow: -6px 16px 63px -9px rgba(150,150,150,1);
+  box-shadow: -6px 16px 63px -9px rgba(150,150,150,1);
+  border-radius: 8px;
+
+}
 
 #offered_got{
   align-items: center;
