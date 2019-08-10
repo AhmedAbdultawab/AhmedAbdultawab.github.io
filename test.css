@@ -153,6 +153,8 @@ html,body{
 
   .clouds_small{
     display: block !important;
+    width: 80vw;
+
   }
 
   /* this phone spacer will only appear if you're on the phone!*/
