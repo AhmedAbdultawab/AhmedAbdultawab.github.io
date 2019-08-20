@@ -525,10 +525,11 @@
     AOS.init();
 
 
-    window.onload = function() {
-        var stork_wip = document.getElementById("stork_wip");
-        stork_wip.classList.add("fadeout")
-    };
+    $(document).ready(function(){
+      var stork_wip = document.getElementById("stork_wip");
+      stork_wip.classList.add("fadeout")
+    });
+
 
     window.addEventListener("scroll", function() {
       var concept_img = document.getElementById("concept_img");
