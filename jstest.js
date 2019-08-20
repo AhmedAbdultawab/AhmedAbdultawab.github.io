@@ -22,23 +22,45 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
   var scrollTop = $(window).scrollTop();
-  if (scrollTop < 200) {
-      fontsize = 30;
-      rotate = 0
-  } else if (scrollTop > 800) {
-      fontsize = 20;
-      rotate = -90
-  } else {
-      fontsize = 30 - 10 * (((scrollTop - 200)) / 600);
-      rotate = -90  * (((scrollTop - 200)) / 600);
+  var breadcrumb = document.getElementById('dynamic');
+  var start_size = 30
+  var end_size = 20
+  var end_margin_left = 0
+  var end_margin_top = 0
+
+  if (breadcrumb == null){
+    return;
   }
 
-  var breadcrumb = document.getElementById('dynamic');
+
+  if(breadcrumb.classList.contains('small')) {
+    start_size = 27;
+    end_size = 19;
+    end_margin_left = -50;
+    end_margin_top = 40;
+  }
+
+  if (scrollTop < 200) {
+      fontsize = start_size;
+      rotate = 0
+  } else if (scrollTop > 800) {
+      fontsize = end_size;
+      rotate = -90
+  } else {
+      fontsize = start_size - (start_size - end_size) * (((scrollTop - 200)) / 600);
+      rotate = -90  * (((scrollTop - 200)) / 600);
+      margin_left = end_margin_left  * (((scrollTop - 200)) / 600);
+      margin_top = end_margin_top  * (((scrollTop - 200)) / 600);
+  }
+
+
   if(breadcrumb.classList.contains('size-only')) {
     rotate = 0;}
 
   $('#dynamic').css({
       'font-size': fontsize + "px",
-      'transform': "rotate(" +rotate + "deg)"
+      'transform': "rotate(" +rotate + "deg)",
+
+      'margin-top': margin_top + "px",
   });
 })

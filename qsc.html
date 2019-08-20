@@ -1,343 +1,386 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="test.css">
-    <link rel="stylesheet" href="aos.css" >
-    <script src="aos.js"></script>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="jstest.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Preloading content-->
-    <link rel="preload" href="qsc/STEM_theme.png" as="image">
-    <link rel="preload" href="qsc/stem_logo_white.png" as="image">
-    <link rel="preload" href="qsc/volunteer.jpg" as="image">
-    <link rel="preload" href="qsc/snap_filter_phone.png" as="image">
+<head>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="aos.css">
+  <script src="aos.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="jstest.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+  <!-- Preloading content-->
+  <link rel="preload" href="qsc/STEM_theme.png" as="image">
+  <link rel="preload" href="qsc/stem_logo_white.png" as="image">
+  <link rel="preload" href="qsc/volunteer.jpg" as="image">
+  <link rel="preload" href="qsc/snap_filter_phone_x.png" as="image">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144581642-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <title></title>
 
-      gtag('config', 'UA-144581642-1');
-    </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144581642-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144581642-1');
+  </script>
 
 
-  </head>
-  <body style="background-color:white;">
+</head>
+
+<body style="background-color:white;">
 
 
-    <div class="breadcrumbs" id="crumbs">
+  <div class="breadcrumbs" id="crumbs">
 
-      <!-- DYNAMIC BREADCRUMBS THOOOO !!!!!!!!-->
-        <div class="cadiz" id="dynamic" style="position:fixed;width:200px;font-size:30px;transform: rotate(0deg)">
-          <a href="index.html#selection">home</a>
-          \
-          <a href="#">QSC</a>
-        </div>
-      <!-- <p class="tiempos" >
+    <!-- DYNAMIC BREADCRUMBS THOOOO !!!!!!!!-->
+    <div class="cadiz" id="dynamic" style="position:fixed;width:200px;font-size:30px;transform: rotate(0deg)">
+      <a href="index.html#selection">home</a> \
+      <a href="#">QSC</a>
+    </div>
+    <!-- <p class="tiempos" >
         <a href="index.html#selection">home</a>
         \
         <a href="#">QSC</a>
       </p> -->
+  </div>
+
+
+  <div class="screen first_screen">
+
+    <div id="patti_div">
+      <h1 id="QSC_text" style="text-align:left;"> Qatar<br />Scientific<br />Club</h1>
+      <img id="patti_img" src="patti.jpg" />
     </div>
 
+    <div>
+      <h3 id="patti_desc_text" data-aos="fade-left" data-aos-duration="1500" class="tiempos-light"> My Experience as a Graphic Designer & Instructor at QSC</h3>
+    </div>
 
-    <div class="screen first_screen">
+  </div>
 
-      <div id="patti_div" >
-          <h1 id= "QSC_text"  style="text-align:left;" > Qatar<br />Scientific<br />Club</h1>
-          <img id="patti_img"  src= "patti.jpg" />
-        </div>
+  <div class="screen_background" style="background-color:#F5F4F0;">
+    <div class="screen flex_col" style="background-color:#F5F4F0;">
 
-        <div >
-            <h3 id= "patti_desc_text" data-aos="fade-left" data-aos-duration="1500" class="tiempos-light"> My Experience as a Graphic Designer & Instructor at QSC</h3>
-          </div>
+      <div class="col-sm-1">
 
       </div>
 
-<div class="screen_background" style="background-color:#F5F4F0;">
-      <div class="screen flex_col" style="background-color:#F5F4F0;">
+      <div class="col-sm-7" id="stem_logo_cell" style="margin-bottom:10px;">
+        <img id="stem_logo" data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="700" data-aos-easing="ease-in-out" src="qsc/stem_logo_white.png" />
+      </div>
 
+
+      <div class="col-sm-3  flex_row" style="align-items:baseline;">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-2" style="text-align:right;">
+          <p style="padding-right:12px;font-size:16px;font-family: 'Cadiz-Bold';">
+            while serving there as a graphic designer, the biggest project that i took on was the STEM summer camp
+          </p>
+        </div>
+        <div class="col-sm-6" style="text-align:left;">
+          <p style="padding-left:12px;font-size:22px;">
+            a newly introduced yearly summer activity for children aged 7-14 that introduces them to fields can be creative in, through activities, games, and workshops
+          </p>
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="screen_background" style="background-color:white;">
+    <div class="screen flex_col" style="background-color:white;">
+
+      <div class="col-sm-2">
+      </div>
+
+      <div class="col-sm-8 flex_row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-5">
+          <img src="qsc/STEM_theme.png" style="width:100%;min-width:350px;max-width:560px;background: rgb(255,117,117);background: linear-gradient(180deg, rgba(255,117,117,1) 0%, rgba(255,197,190,1) 100%);" />
+        </div>
+        <div class="col-sm-4" style="text-align:left;">
+          <p style="padding-left:20px;max-width: 190px;" data-aos="fade-left" data-aos-duration="1500">
+            for this project, i wanted to embrace the hand-made and crafty theme by embracing handmade and comical visuals
+          </p>
+          <p style="padding-left:20px;margin-top:7px;font-size:18px;color:#d9d9d9;max-width: 200px;" data-aos="fade-left" data-aos-duration="1500">
+            General Ideation - June 2018
+          </p>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <div class="screen flex_col">
+
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-7 flex_row">
+
+      <div class="col-sm-6 flex_col" style="background-color:s;margin-right:20px;">
+        <div class="col-sm-10" style="background-color:s;align-items:center;align-content:center;justify-content:center;">
+          <img src="qsc/mascot.png" alt="bruh" style="width:100%;min-width:350px;max-width:600px;">
+        </div>
+        <div class="col-sm-2 flex_row" style="text-align:left;">
+
+          <div class="col-sm-6 flex_col">
+
+              <p>
+                A Mad Scientist is Still a Scientist
+              </p>
+
+              <p style="color:#d9d9d9;margin-top:5px;">
+                Mascot Designs
+              </p>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-sm-6 flex_col" style="margin-left:20px;">
+        <div class="col-sm-10 " style="align-items:flex-start;align-content:flex-start;justify-content:center;">
+          <img src="qsc/ideation.png" alt="bruh2" style="width:100%;min-width:350px;max-width:600px;">
+        </div>
+        <div class="col-sm-2 flex_row" style="text-align:left;">
+
+          <div class="col-sm-6 flex_col">
+            <p>
+              He also has a lot of wacky gadgets lying around
+            </p>
+
+            <p style="color:#d9d9d9;margin-top:5px;">
+              Concept Sketches
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1">
+
+    </div>
+
+  </div>
+
+
+  <div id="overlay">
+
+    <div id="overlay_container" class="columnable">
+      <div class="col-sm-1" onclick="close_overlay()">
+
+      </div>
+      <div class="col-sm-7 flex_col" style="align-items:center;align-content:center;justify-content:center;" id="image_col">
+        <img src="qsc/coupon.jpg" onclick="zoom_in()" alt="" style="width:100%;max-width:600px;z-index:101;" data-aos="fadeinleft" id="zoomed-in">
+      </div>
+      <div class="col-sm-4 flex_col " onclick="close_overlay()" style="text-align:left;align-content:flex-start;">
+
+        <div class="col-sm-9 flex_col ">
+
+        </div>
+        <div class="col-sm-2" style="margin-left:50px;">
+          <p class="cadiz-bold" id="overlay_title" style="font-size:1.3em;color:white;padding-bottom:10px;">
+            Title goes here dog
+          </p>
+          <p id="overlay_desc" style="color:white;max-width:300px;">
+            bruh sound effect
+
+          </p>
+        </div>
         <div class="col-sm-1">
 
         </div>
 
-          <div class="col-sm-7" id = "stem_logo_cell" style="margin-bottom:10px;">
-              <img id="stem_logo" data-aos="zoom-in-up" data-aos-once="true" data-aos-duration="700"
-    data-aos-easing="ease-in-out" src="qsc/stem_logo_white.png"/>
-          </div>
-
-
-          <div class="col-sm-3  flex_row"  style="align-items:baseline;" >
-              <div class="col-sm-2">
-
-              </div>
-              <div class="col-sm-2"  style="text-align:right;">
-                <p style="padding-right:12px;font-size:16px;font-family: 'Cadiz-Bold';">
-                  while serving there as a graphic designer, the biggest project that i took on was the STEM summer camp
-                </p>
-              </div>
-            <div class="col-sm-6"  style="text-align:left;">
-              <p style="padding-left:12px;font-size:22px;">
-                a newly introduced yearly summer activity for children aged 7-14 that introduces them to fields can be creative in, through activities, games, and workshops
-              </p>
-          </div>
-          <div class="col-sm-2" >
-        </div>
-          </div>
-
-      </div>
-</div>
-
-
-<div class="screen_background" style="background-color:white;">
-      <div class="screen flex_col" style="background-color:white;">
-
-        <div class="col-sm-2" >
-        </div>
-
-        <div class="col-sm-8 flex_row">
-          <div class="col-sm-2" >
-          </div>
-          <div class="col-sm-5" >
-            <img src="qsc/STEM_theme.png" style="width:100%;min-width:350px;max-width:560px;"/>
-          </div>
-          <div class="col-sm-4" style="text-align:left;">
-            <p style="padding-left:20px;max-width: 190px;" data-aos="fade-left" data-aos-duration="1500">
-              for this project, i wanted to embrace the hand-made and crafty theme by embracing handmade and comical visuals
-            </p>
-            <p style="padding-left:20px;margin-top:7px;font-size:18px;color:#d9d9d9;max-width: 200px;" data-aos="fade-left" data-aos-duration="1500">
-              General Ideation - June 2018
-            </p>
-          </div>
-
-        </div>
-
 
 
       </div>
-</div>
-
-
-<div class="screen flex_col">
-
-<div class="col-sm-4">
-
-</div>
-<div class="col-sm-7 flex_row">
-
-  <div class="col-sm-6 flex_col" style="background-color:s;margin-right:20px;">
-    <div class="col-sm-10" style="background-color:s;align-items:center;align-content:center;justify-content:center;">
-      <img src="qsc/mascot.png" alt="bruh" style="width:100%;min-width:350px;max-width:600px;">
     </div>
-    <div class="col-sm-2 flex_row" style="text-align:left;">
 
-      <div class="col-sm-6 flex_col">
-        <div class="col-sm-8" >
-          <p>
-            A Mad Scientist is Still a Scientist
-          </p>
+  </div>
+
+  <div class="screen flex_row fill-width salmon" id="cards">
+
+    <div class="col-sm-3 flex_col backg_reds">
+      <div class="col-sm-7 flex_col backg_reds" style="align-items:center;justify-content:center;">
+        <img src="qsc/guangzhou.png" onclick="open_overlay('qsc/guangzhou.png')" alt="" style="width:90%;max-width:320px;margin-top:30px;" data-aos="fade-right" data-aos-duration="1000">
+      </div>
+      <div class="col-sm-5 flex_col legit_center backg_pinks avenir-black" style="position:relative;">
+        <h2 style="font-size:15em;color:white;position:absolute;line-height:0.7;">wo<br />r k</h2>
+      </div>
+    </div>
+
+    <div class="col-sm-5 flex_col backg_pinks">
+      <div class="col-sm-6 flex_col backg_pinks legit_center">
+        <img src="qsc/cert-mid.jpg" onclick="open_overlay('qsc/cert-mid.jpg')" style="width:75%;z-index:97" data-aos="fade-down" />
+      </div>
+      <div class="col-sm-6 flex_row backg_browns">
+        <div class="col-sm-6 flex_col legit_center backg_reds" style="justify-content:center;align-items:flex-end;">
+          <img src="qsc/volunteer.jpg" onclick="open_overlay('qsc/volunteer.jpg')" alt="" style="width:90%;max-width:600px;  -webkit-box-shadow: 0px 10px 44px -6px rgba(179,177,179,1);
+                -moz-box-shadow: 0px 10px 44px -6px rgba(179,177,179,1);
+                box-shadow: 0px 10px 44px -6px rgba(179,177,179,1);" data-aos="fade-up">
         </div>
-        <div class="col-sm-4" style="color:#d9d9d9;">
-          <p>
-            Mascot Designs
-          </p>
+        <div class="col-sm-6 flex_col backg_blacks" style="justify-content:center;align-items:flex-end;">
+          <img src="qsc/member_card.png" onclick="open_overlay('qsc/member_card.png')" alt="" style="width:85%;margin-right: -15%;max-width:600px;box-shadow: 0 0 0 0 rgba(0,0,0,0);" data-aos="fade-left">
+
         </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 flex_col backg_reds">
+      <div class="col-sm-4 flex_col backg_browns legit_center">
+        <img src="qsc/coupon.jpg" onclick="open_overlay('qsc/coupon.jpg')" alt="" style="width:80%;max-width:600px;" data-aos="fade-left">
+      </div>
+      <div class="col-sm-8 flex_col backg_blacks legit_center" style="position:relative;">
+        <!-- <img src="qsc/notes.png"  alt="" style="width: 70%;max-width:250px;position: absolute;bottom:10%;right:10%;transform: rotate(1deg);box-shadow: -17px 17px 13px -1px rgba(0,0,0,0);" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450"> -->
+        <img src="qsc/snap_filter_phone_x.png" onclick="open_overlay('qsc/snap_filter_phone_x.png')" alt="" style="width: 55%;max-width:250px;margin-top: -100px;box-shadow: -17px 17px 13px -1px rgba(0,0,0,0);" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450">
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <div class="screen flex_row fill-width" id="work_screen">
+
+    <div class="col-sm-6 flex_col" id="cards" style="min-width:500px;margin-top:-100px;justify-content:center;">
+      <div class="col-sm-4 flex_row" style="background-color:reda">
+        <div class="col-sm-6" style="background-color:blacka;">
+          <img src="qsc/volunteer.jpg" onclick="open_overlay('qsc/volunteer.jpg')" alt="" style="width:100%;max-width:300px;z-index:105;" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="250">
+        </div>
+        <div class="col-sm-6 " style="background-color:greena;">
+          <img src="qsc/snap_filter_phone_shad.png" onclick="open_overlay('qsc/snap_filter_phone.png')" alt="" style="width: 60%;max-width:250px;margin-top: -100px ;box-shadow: -17px 17px 13px -1px rgba(0,0,0,0);" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450">
+        </div>
+      </div>
+
+      <div class="col-sm-4 flex_row" style="background-color:pinka;">
+        <div class="col-sm-6 flex_col" style="background-color:browna;justify-content:flex-end;align-content:flex-end;align-items:flex-end;">
+          <img src="qsc/guangzhou.png" onclick="open_overlay('qsc/guangzhou.png')" alt="" style="width:80%;max-width:270px;margin-bottom:-120px;" data-aos="fade-up" data-aos-duration="1000">
+
+        </div>
+        <div class="col-sm-6 flex_col" style="background-color:purplea;justify-content:center;align-items:center;">
+          <img src="qsc/coupon.jpg" onclick="open_overlay('qsc/coupon.jpg')" alt="" style="width:110%;max-width:350px;margin-right:-100px;margin-top:-120px;" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="650">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 flex_col" style="text-align:right;justify-content:center;">
+
+      <p class="cadiz-black" data-aos="fade-left" style="font-size:15em;padding-right:4vw;">work</p>
+
+    </div>
+
+  </div>
+ -->
+
+  <div class="double_screen flex_row" style="margin-top:100px;">
+    <div class="col-sm-1 flex_col">
+
+    </div>
+    <div class="col-sm-3 flex_col" style="text-align:left;">
+
+
+      <div class="col-sm-1 sticky" data-aos="fade-up">
+        <h2 style="font-size:3em;line-height:0.8em;" class="cadiz-black ">the event</h2>
+        <p style="margin-top:10px;">
+          the event took place over a month, with workshops that feature science, robotics, coding, and 3d-printing.
+        </p>
+        <p style="color:#d9d9d9;margin-top:10px;">
+          @qscientific Instagram
+        </p>
+
+      </div>
+
+
+
+
+    </div>
+    <div class="col-sm-1 flex_col">
+
+    </div>
+    <div class="col-sm-7 flex_col">
+
+      <div class="col-sm-3 flex_row" data-aos="fade-down">
+        <img class="event_img" src="qsc/event_1.jpg" />
+      </div>
+
+      <div class="col-sm-3 flex_row" data-aos="fade-up">
+        <img class="event_img" src="qsc/event_2.jpg" />
+      </div>
+
+      <div class="col-sm-3 flex_row" data-aos="fade-up">
+        <img class="event_img" src="qsc/event_5.jpg" />
+      </div>
+
+      <div class="col-sm-3 flex_row" data-aos="fade-up">
+        <img class="event_img" src="qsc/event_3.jpg" />
       </div>
 
     </div>
   </div>
 
-  <div class="col-sm-6 flex_col" style="margin-left:20px;">
-    <div class="col-sm-10 " style="align-items:flex-start;align-content:flex-start;justify-content:center;">
-      <img src="qsc/ideation.png" alt="bruh2" style="width:100%;min-width:350px;max-width:600px;">
-    </div>
-    <div class="col-sm-2 flex_row" style="text-align:left;">
 
-      <div class="col-sm-6 flex_col" >
-        <div class="col-sm-8" >
-          <p>
-            He also has alot of wacky gadgets lying around
+
+
+
+  <div class="screen flex_col ">
+    <div class="col-sm-2">
+
+    </div>
+
+    <div class="col-sm-10 flex_row columnable">
+      <div class="col-sm-9 selection_container legit_center">
+
+        <div class="image" style="position:relative;width:90%;max-width:950px;">
+          <img src="qsc/mural-mid.jpeg" style="width:95%;z-index:97" />
+          <img class="shade" src="qsc/cert-mid.jpg" style="width:45%;position:absolute;top:30px;left:-40px;z-index:60;transform:rotate(20deg);" data-aos="fade-right" />
+
+          <img class="shade" src="qsc/stem-card.png" style="width:17%;position:absolute;bottom:120px;left:-40px;z-index:102;transform:rotate(-30deg);" data-aos="fade-right" />
+        </div>
+
+
+      </div>
+
+      <div class="col-sm-3 flex_col" style="text-align:left;">
+
+        <div class="col-sm-7 pc_spacer">
+
+        </div>
+
+        <div class="col-sm-2 justify_center cadiz-bold">
+          <h2 style="max-width:280px;"> ...and the stage was set! </h2>
+        </div>
+
+
+        <div class="col-sm-3 cadiz">
+          <p style="max-width:250px;font-size:1.1em" id="concept_desc">
+            the event was coming to an end. We prepared participation certificates for each of the groups, and set up a grand reception.
           </p>
         </div>
-        <div class="col-sm-4" style="color:#d9d9d9;">
-          <p>
-            Concept Sketches
-          </p>
-        </div>
+
       </div>
 
     </div>
+
   </div>
-</div>
-<div class="col-sm-1">
-
-</div>
-
-</div>
 
 
-      <div id="overlay"  >
-
-        <div id="overlay_container" class="columnable">
-          <div class="col-sm-1" onclick="close_overlay()" >
-
-          </div>
-          <div class="col-sm-7 flex_col" style="align-items:center;align-content:center;justify-content:center;" id ="image_col" >
-            <img src="qsc/coupon.jpg" onclick="zoom_in()" alt="" style="width:100%;max-width:600px;z-index:101;"  data-aos="fadeinleft" id="zoomed-in">
-          </div>
-          <div class="col-sm-4 flex_col " onclick="close_overlay()" style="text-align:left;align-content:flex-start;">
-
-            <div class="col-sm-9 flex_col ">
-
-            </div>
-            <div class="col-sm-2">
-              <p class="cadiz-bold" id="overlay_title" style="font-size:1.3em;color:white;padding-bottom:10px;">
-                Title goes here dog
-              </p>
-              <p  id="overlay_desc" style="color:white;max-width:300px;">
-                bruh sound effect
-
-              </p>
-            </div>
-            <div class="col-sm-1">
-
-            </div>
-
-
-
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="screen flex_row fill-width" id="work_screen">
-
-        <div class="col-sm-6 flex_col" id= "cards" style="min-width:500px;margin-top:-100px;justify-content:center;">
-          <div class="col-sm-4 flex_row" style="background-color:reda">
-            <div class="col-sm-6" style="background-color:blacka;">
-                <img src="qsc/volunteer.jpg"  onclick="open_overlay('qsc/volunteer.jpg')" alt="" style="width:100%;max-width:300px;z-index:105;" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="250">
-            </div>
-            <div class="col-sm-6 " style="background-color:greena;">
-              <img src="qsc/snap_filter_phone_shad.png"  onclick="open_overlay('qsc/snap_filter_phone.png')" alt="" style="width: 60%;max-width:250px;margin-top: -100px ;box-shadow: -17px 17px 13px -1px rgba(0,0,0,0);" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450">
-            </div>
-          </div>
-
-          <div class="col-sm-4 flex_row" style="background-color:pinka;">
-            <div class="col-sm-6 flex_col" style="background-color:browna;justify-content:flex-end;align-content:flex-end;align-items:flex-end;">
-              <img src="qsc/guangzhou.png"  onclick="open_overlay('qsc/guangzhou.png')" alt="" style="width:80%;max-width:270px;margin-bottom:-120px;" data-aos="fade-up" data-aos-duration="1000">
-
-            </div>
-            <div class="col-sm-6 flex_col" style="background-color:purplea;justify-content:center;align-items:center;">
-              <img src="qsc/coupon.jpg" onclick="open_overlay('qsc/coupon.jpg')" alt="" style="width:110%;max-width:350px;margin-right:-100px;margin-top:-120px;"  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="650">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 flex_col" style="text-align:right;justify-content:center;">
-
-          <p class="cadiz-black" data-aos="fade-left" style="font-size:15em;padding-right:4vw;">work</p>
-
-        </div>
-
-      </div>
-
-
-      <div class="double_screen flex_row">
-        <div class="col-sm-1 flex_col">
-
-        </div>
-        <div class="col-sm-3 flex_col" style="text-align:left;">
-
-
-          <div class="col-sm-1 sticky" data-aos="fade-up">
-            <h2 style="font-size:3em;line-height:0.8em;" class="cadiz-black ">the event</h2>
-            <p  style="margin-top:10px;">
-              the event took place over a month, with workshops that feature science, robotics, coding, and 3d-printing.
-            </p>
-            <p style="color:#d9d9d9;margin-top:10px;">
-              @qscientific Instagram
-            </p>
-
-          </div>
-
-
-
-
-        </div>
-        <div class="col-sm-1 flex_col">
-
-        </div>
-        <div class="col-sm-7 flex_col">
-
-          <div class="col-sm-3 flex_row" data-aos="fade-down">
-            <img class="event_img" src="qsc/event_1.jpg"/>
-          </div>
-
-          <div class="col-sm-3 flex_row" data-aos="fade-up">
-            <img class="event_img" src="qsc/event_2.jpg"/>
-          </div>
-
-          <div class="col-sm-3 flex_row" data-aos="fade-up" >
-            <img class="event_img" src="qsc/event_5.jpg"/>
-          </div>
-
-          <div class="col-sm-3 flex_row" data-aos="fade-up" >
-            <img class="event_img" src="qsc/event_3.jpg"/>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="screen flex_col ">
-            <div class="col-sm-2">
-
-            </div>
-
-            <div class="col-sm-10 flex_row columnable">
-              <div class="col-sm-9 selection_container legit_center" >
-
-                  <div class ="image" style="position:relative;width:90%;max-width:950px;" >
-                    <img  src="qsc/mural-mid.jpeg" style="width:95%;z-index:97"/>
-                      <img class="shade" src="qsc/cert-mid.jpg" style="width:45%;position:absolute;top:30px;left:-40px;z-index:60;transform:rotate(20deg);" data-aos="fade-right" />
-
-                    <img class="shade" src="qsc/stem-card.png" style="width:17%;position:absolute;bottom:120px;left:-40px;z-index:102;transform:rotate(-30deg);" data-aos="fade-right"/>
-                  </div>
-
-
-              </div>
-
-              <div class="col-sm-3 flex_col" style="text-align:left;"  >
-
-                  <div class="col-sm-7 pc_spacer">
-
-                  </div>
-
-                  <div class="col-sm-2 justify_center cadiz-bold" >
-                    <h2 style="max-width:280px;"> ...and the stage was set! </h2>
-                  </div>
-
-
-                  <div class="col-sm-3 cadiz" >
-                    <p style="max-width:250px;font-size:1.1em" id="concept_desc">
-                       the event was coming to an end. We prepared participation certificates for each of the groups, and set up a grand reception.
-                    </p>
-                  </div>
-
-              </div>
-
-            </div>
-
-      </div>
-
-
-      <!-- <div class="screen flex_col">
+  <!-- <div class="screen flex_col">
         <div class="col-sm-1">
 
         </div>
@@ -388,7 +431,7 @@
 
       </div> -->
 
-      <!-- <div class="screen flex_col">
+  <!-- <div class="screen flex_col">
           <div class="col-sm-3">
 
           </div>
@@ -405,184 +448,201 @@
           </div>
       </div>
  -->
-      <div class="screen flex_col">
-          <div class="col-sm-4">
+  <div class="screen flex_col">
+    <div class="col-sm-4">
 
-          </div>
-          <div class="col-sm-8 flex_col">
-            <div class="col-sm-9">
-              <img src="qsc/happy_ending.png" alt="yay!" style="width:100%;min-width:350px;max-width:560px;">
-            </div>
-            <div class="col-sm-3 flex_row" style="text-align:center;justify-content: center;padding-top:20px">
-
-              <div class="col-sm-6 flex_col" style="background-color:white;align-items:center;">
-                <p class="tiempos" style="font-size:1.1em;">
-                  Thanks to the genuine efforts of the QSC team and instructors, the event was a great success, with promises to return next year.
-                </p>
-                <p class="tiempos" style="color:grey;font-size:1em;padding-top:7px;">
-                  August 2018
-                </p>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="col-sm-2">
-
-          </div>
+    </div>
+    <div class="col-sm-8 flex_col">
+      <div class="col-sm-9">
+        <img src="qsc/happy_ending.png" alt="yay!" style="width:100%;min-width:350px;max-width:560px;">
       </div>
+      <div class="col-sm-3 flex_row" style="text-align:center;justify-content: center;padding-top:20px">
 
-
-      <div class="screen flex_col">
-        <div class="col-sm-3">
-
+        <div class="col-sm-6 flex_col" style="background-color:white;align-items:center;">
+          <p class="tiempos" style="font-size:1.1em;">
+            Thanks to the genuine efforts of the QSC team and instructors, the event was a great success, with promises to return next year.
+          </p>
+          <p class="tiempos" style="color:grey;font-size:1em;padding-top:7px;">
+            August 2018
+          </p>
         </div>
-        <div class="col-sm-6 flex_col">
-          <div class="col-sm-8 flex_col" style="align-items:center;align-content:center;justify-content:center;">
-            <img src="rimads/relaxing_shade.png" />
-          </div>
-          <div class="col-sm-4 flex_col" style="text-align:center;align-items:center;align-content:center;justify-content:flex-start;">
-            <h3 class="cadiz" style="font-size:1.8em"> Sorry to interrupt your browsing</h3>
-            <h4 class="cadiz" style="font-size:1.2em;max-width:600px;margin-top:5px;color:#bfbfbf;"> but the rest of this page is still under construction. while you wait, you can enjoy this relaxing photo of clouds passing through</h4>
-          </div>
-        </div>
-        <div class="col-sm-3" >
 
-        </div>
+
       </div>
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+  </div>
 
 
+  <div class="screen flex_col">
+    <div class="col-sm-3">
 
-      <div class="footer cadiz">
-        Copyright © 2019 Ahmed Sameh. All rights reserved
+    </div>
+    <div class="col-sm-6 flex_col">
+      <div class="col-sm-8 flex_col" style="align-items:center;align-content:center;justify-content:center;">
+        <img src="rimads/relaxing_shade.png" />
       </div>
+      <div class="col-sm-4 flex_col" style="text-align:center;align-items:center;align-content:center;justify-content:flex-start;">
+        <h3 class="cadiz" style="font-size:1.8em"> Sorry to interrupt your browsing</h3>
+        <h4 class="cadiz" style="font-size:1.2em;max-width:600px;margin-top:5px;color:#bfbfbf;"> but the rest of this page is still under construction. while you wait, you can enjoy this relaxing photo of clouds passing through</h4>
+      </div>
+    </div>
+    <div class="col-sm-3">
 
-      <div class="page_number tiempos-light" id="page_num">
-          01
-        </div>
-
-        <script>
-        AOS.init();
-
-        var images = new Array()
-        function preload() {
-                console.log("i'm about to load some images!");
-        				for (i = 0; i < preload.arguments.length; i++) {
-        					images[i] = new Image()
-        					images[i].src = preload.arguments[i]
-                  console.log(preload.arguments[i]);
-        				}
-        		}
+    </div>
+  </div>
 
 
 
+  <div class="footer cadiz">
+    Copyright © 2019 Ahmed Sameh. All rights reserved
+  </div>
+
+  <div class="page_number tiempos-light" id="page_num">
+    01
+  </div>
+
+  <script>
+    AOS.init();
+
+    var images = new Array()
+
+    function preload() {
+      console.log("i'm about to load some images!");
+      for (i = 0; i < preload.arguments.length; i++) {
+        images[i] = new Image()
+        images[i].src = preload.arguments[i]
+        console.log(preload.arguments[i]);
+      }
+    }
 
 
 
-        function open_overlay(image) {
-          console.log("i opened overlay");
-          document.getElementById("overlay").style.display = "flex";
-          document.getElementById("zoomed-in").src= image;
-          document.getElementById("zoomed-in").class = image;
-          document.getElementById("cards").style.transform = "perspective(0) rotateX(0) rotateZ(0)";
-          // document.getElementById("cards").style.visibility = "hidden";
 
 
-          document.getElementById("work_screen").style.filter = "blur(5px)";
-          document.getElementById("crumbs").style.filter = "blur(5px)";
-          document.getElementById("page_num").style.filter = "blur(5px)";
 
-          if (image == "qsc/volunteer.jpg" ) {
-              document.getElementById("zoomed-in").style.maxWidth = "600px";
-              document.getElementById("image_col").style.justifyContent = "flex-start";
-              document.getElementById("overlay_desc").innerHTML = "Instagram Poster for a Talk on Effective Argumentation";
-
-            } else if (image == "qsc/guangzhou.png") {
-              document.getElementById("zoomed-in").style.maxWidth = "600px";
-              document.getElementById("image_col").style.justifyContent = "flex-start";
-              document.getElementById("overlay_desc").innerHTML = "Poster advertising a scientific trip to the chinese cities of Guang Zho and Shen Zhen";
-
-          }
-          else if (image == "qsc/snap_filter_phone.png") {
-              console.log("bruh");
-              document.getElementById("zoomed-in").style.maxWidth = "400px";
-              document.getElementById("image_col").style.justifyContent = "center";
-              document.getElementById("overlay_title").innerHTML = "Snapchat Filter";
-
-          } else if (image == "qsc/coupon.jpg") {
-              console.log("coupon");
-              document.getElementById("zoomed-in").style.maxWidth = "2100px";
-              document.getElementById("image_col").style.justifyContent = "center";
-              document.getElementById("overlay_title").innerHTML = "Lunch Coupons";
-
-            }
+    function open_overlay(image) {
+      console.log("i opened overlay");
+      document.getElementById("overlay").style.display = "flex";
+      document.getElementById("zoomed-in").src = image;
+      document.getElementById("zoomed-in").class = image;
+      document.getElementById("cards").style.transform = "perspective(0) rotateX(0) rotateZ(0)";
+      // document.getElementById("cards").style.visibility = "hidden";
 
 
-          var scrollPosition = [
-          self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
-          self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
-          ];
-          var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
-          html.data('scroll-position', scrollPosition);
-          html.data('previous-overflow', html.css('overflow'));
-          html.css('overflow', 'hidden');
-          window.scrollTo(scrollPosition[0], scrollPosition[1]);
+      document.getElementById("cards").style.filter = "blur(5px)";
+      document.getElementById("crumbs").style.filter = "blur(5px)";
+      document.getElementById("page_num").style.filter = "blur(5px)";
 
+      if (image == "qsc/volunteer.jpg") {
+        document.getElementById("zoomed-in").style.maxWidth = "600px";
+        document.getElementById("image_col").style.justifyContent = "flex-start";
+        document.getElementById("overlay_title").innerHTML = "Effective Persuasion Skills:  <br /> a presentation by Marwa Salem"
+        document.getElementById("overlay_desc").innerHTML = "Instagram Poster for a talk presented by one of the volunteers for the event ";
+
+      } else if (image == "qsc/guangzhou.png") {
+        document.getElementById("zoomed-in").style.maxWidth = "600px";
+        document.getElementById("image_col").style.justifyContent = "flex-start";
+        document.getElementById("overlay_title").innerHTML = "Discover China!";
+        document.getElementById("overlay_desc").innerHTML = "Poster advertising a scientific trip to the chinese cities of Guangzho and Shenzhen";
+
+      } else if (image == "qsc/snap_filter_phone_x.png") {
+        console.log("bruh");
+        document.getElementById("zoomed-in").style.maxWidth = "400px";
+        document.getElementById("image_col").style.justifyContent = "center";
+        document.getElementById("overlay_title").innerHTML = "Snapchat Filter";
+        document.getElementById("overlay_desc").innerHTML = "One of the two snapchat filters that I've designed and implemented for the event";
+
+      } else if (image == "qsc/coupon.jpg") {
+        console.log("coupon");
+        document.getElementById("zoomed-in").style.maxWidth = "2100px";
+        document.getElementById("image_col").style.justifyContent = "center";
+        document.getElementById("overlay_title").innerHTML = "Lunch Coupons";
+        document.getElementById("overlay_desc").innerHTML = "These coupons were handed out to the event attendees to cash in at our makeshift food and candy stalls";
+
+      } else if (image == "qsc/member_card.png") {
+        console.log("coupon");
+        document.getElementById("zoomed-in").style.maxWidth = "500px";
+        document.getElementById("image_col").style.justifyContent = "center";
+        document.getElementById("overlay_title").innerHTML = "Attendee Passes";
+        document.getElementById("overlay_desc").innerHTML = "The event was split into three waves of attendees across 5 weeks. Each wave was split into five groups that went around the various workshops and classes";
+
+      } else if (image == "qsc/cert-mid.jpg") {
+        console.log("coupon");
+        document.getElementById("zoomed-in").style.maxWidth = "1200px";
+        document.getElementById("image_col").style.justifyContent = "center";
+        document.getElementById("overlay_title").innerHTML = "Participation Certificate";
+        document.getElementById("overlay_desc").innerHTML = "Certificates were printed on fancy laminated papers, and handed out at the end of the event";
+
+      }
+
+
+      var scrollPosition = [
+        self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+        self.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      ];
+      var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
+      html.data('scroll-position', scrollPosition);
+      html.data('previous-overflow', html.css('overflow'));
+      html.css('overflow', 'hidden');
+      window.scrollTo(scrollPosition[0], scrollPosition[1]);
+
+    }
+
+    function close_overlay() {
+      document.getElementById("overlay").style.display = "none";
+      //document.getElementById("cards").style.transform = "perspective(60em) rotateX(47deg) rotateZ(335deg)";
+      document.getElementById("cards").style.visibility = "visible";
+
+
+      document.getElementById("cards").style.filter = "blur(0px)";
+      document.getElementById("crumbs").style.filter = "blur(0px)";
+      document.getElementById("page_num").style.filter = "blur(0px)";
+
+
+      // unlock scroll position
+      var html = jQuery('html');
+      var scrollPosition = html.data('scroll-position');
+      html.css('overflow', html.data('previous-overflow'));
+      window.scrollTo(scrollPosition[0], scrollPosition[1])
+
+    }
+
+    function zoom_in() {
+      picture = document.getElementById("zoomed-in")
+
+
+
+      if (picture.class == "qsc/volunteer.jpg" || picture.class == "qsc/guangzhou.png") {
+        console.log("voln");
+        if (picture.style.maxWidth == "600px") {
+          picture.style.maxWidth = "1200px"
+          document.getElementById("image_col").style.justifyContent = "flex-start";
+        } else if (picture.style.maxWidth == "1200px") {
+          picture.style.maxWidth = "600px"
+          document.getElementById("image_col").style.justifyContent = "center";
         }
 
-        function close_overlay() {
-          document.getElementById("overlay").style.display = "none";
-          //document.getElementById("cards").style.transform = "perspective(60em) rotateX(47deg) rotateZ(335deg)";
-          document.getElementById("cards").style.visibility = "visible";
+      } else if (picture.class == "qsc/snap_filter_phone_x.png") {
+        console.log("snapchat");
+        if (picture.style.maxWidth == "400px") {
+          picture.style.maxWidth = "650px"
+          document.getElementById("image_col").style.justifyContent = "flex-start";
 
-
-          document.getElementById("work_screen").style.filter = "blur(0px)";
-          document.getElementById("crumbs").style.filter = "blur(0px)";
-          document.getElementById("page_num").style.filter = "blur(0px)";
-
-
-          // unlock scroll position
-          var html = jQuery('html');
-          var scrollPosition = html.data('scroll-position');
-          html.css('overflow', html.data('previous-overflow'));
-          window.scrollTo(scrollPosition[0], scrollPosition[1])
-
+        } else if (picture.style.maxWidth == "650px") {
+          picture.style.maxWidth = "400px"
+          document.getElementById("image_col").style.justifyContent = "center";
         }
 
-        function zoom_in() {
-         picture = document.getElementById("zoomed-in")
-
-
-
-         if (picture.class == "qsc/volunteer.jpg" || picture.class == "qsc/guangzhou.png"  ){
-           console.log("voln");
-           if (picture.style.maxWidth == "600px"){
-             picture.style.maxWidth = "1200px"
-             document.getElementById("image_col").style.justifyContent = "flex-start";
-           } else if (picture.style.maxWidth == "1200px"){
-              picture.style.maxWidth = "600px"
-              document.getElementById("image_col").style.justifyContent = "center";
-            }
-
-         }
-         else if (picture.class  == "qsc/snap_filter_phone.png"){
-           console.log("snapchat");
-           if (picture.style.maxWidth == "400px"){
-             picture.style.maxWidth = "650px"
-             document.getElementById("image_col").style.justifyContent = "flex-start";
-
-           } else if (picture.style.maxWidth == "650px"){
-              picture.style.maxWidth = "400px"
-              document.getElementById("image_col").style.justifyContent = "center";
-            }
-
-         }
-         else if (picture.class  == "qsc/coupon.jpg"){}
+      } else if (picture.class == "qsc/coupon.jpg") {}
 
 
 
 
-        }
-        </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>

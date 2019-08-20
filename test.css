@@ -11,36 +11,36 @@ and because i simply don't believe in templates.
 
 @font-face {
   font-family: 'TiemposHeadline-Bold';
-  src: url('TiemposHeadline-Bold.eot');
-  src: url('TiemposHeadline-Bold.woff2') format('woff2'),
-       url('TiemposHeadline-Bold.woff') format('woff'),
-       url('TiemposHeadline-Bold.ttf') format('truetype'),
-       url('TiemposHeadline-Bold.svg#TiemposHeadline-Bold') format('svg'),
-       url('TiemposHeadline-Bold.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/TiemposHeadline-Bold.eot');
+  src: url('fonts/TiemposHeadline-Bold.woff2') format('woff2'),
+       url('fonts/TiemposHeadline-Bold.woff') format('woff'),
+       url('fonts/TiemposHeadline-Bold.ttf') format('truetype'),
+       url('fonts/TiemposHeadline-Bold.svg#TiemposHeadline-Bold') format('svg'),
+       url('fonts/TiemposHeadline-Bold.eot?#iefix') format('embedded-opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TiemposHeadline-Medium';
-  src: url('TiemposHeadline-Medium.eot');
-  src: url('TiemposHeadline-Medium.woff2') format('woff2'),
-       url('TiemposHeadline-Medium.woff') format('woff'),
-       url('TiemposHeadline-Medium.ttf') format('truetype'),
-       url('TiemposHeadline-Medium.svg#TiemposHeadline-Medium') format('svg'),
-       url('TiemposHeadline-Medium.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/TiemposHeadline-Medium.eot');
+  src: url('fonts/TiemposHeadline-Medium.woff2') format('woff2'),
+       url('fonts/TiemposHeadline-Medium.woff') format('woff'),
+       url('fonts/TiemposHeadline-Medium.ttf') format('truetype'),
+       url('fonts/TiemposHeadline-Medium.svg#TiemposHeadline-Medium') format('svg'),
+       url('fonts/TiemposHeadline-Medium.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TiemposHeadline-Light';
-  src: url('TiemposHeadline-Light.eot');
-  src: url('TiemposHeadline-Light.woff2') format('woff2'),
-       url('TiemposHeadline-Light.woff') format('woff'),
-       url('TiemposHeadline-Light.ttf') format('truetype'),
-       url('TiemposHeadline-Light.svg#TiemposHeadline-Light') format('svg'),
-       url('TiemposHeadline-Light.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/TiemposHeadline-Light.eot');
+  src: url('fonts/TiemposHeadline-Light.woff2') format('woff2'),
+       url('fonts/TiemposHeadline-Light.woff') format('woff'),
+       url('fonts/TiemposHeadline-Light.ttf') format('truetype'),
+       url('fonts/TiemposHeadline-Light.svg#TiemposHeadline-Light') format('svg'),
+       url('fonts/TiemposHeadline-Light.eot?#iefix') format('embedded-opentype');
   font-weight:lighter;
   font-style: normal;
 }
@@ -48,11 +48,11 @@ and because i simply don't believe in templates.
 @font-face {
     font-family: 'Cadiz-Light';
     src: url('CadizWeb-Light.eot');
-    src:url('CadizWeb-Light.woff2') format('woff2'),
-        url('CadizWeb-Light.woff') format('woff'),
-        url('CadizWeb-Light.ttf') format('truetype'),
-        url('CadizWeb-Light.svg#CadizWeb-Light') format('svg'),
-        url('CadizWeb-Light.eot?#iefix') format('embedded-opentype');
+    src:url('fonts/CadizWeb-Light.woff2') format('woff2'),
+        url('fonts/CadizWeb-Light.woff') format('woff'),
+        url('fonts/CadizWeb-Light.ttf') format('truetype'),
+        url('fonts/CadizWeb-Light.svg#CadizWeb-Light') format('svg'),
+        url('fonts/CadizWeb-Light.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -60,38 +60,133 @@ and because i simply don't believe in templates.
 
 @font-face {
   font-family: 'Cadiz-Regular';
-  src: url('CadizWeb-Regular.eot');
-  src: url('CadizWeb-Regular.woff2') format('woff2'),
-       url('CadizWeb-Regular.woff') format('woff'),
-       url('CadizWeb-Regular.ttf') format('truetype'),
-       url('Cadiz-Regular.svg#Cadiz-Regular') format('svg'),
-       url('CadizWeb-Regular.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/CadizWeb-Regular.eot');
+  src: url('fonts/CadizWeb-Regular.woff2') format('woff2'),
+       url('fonts/CadizWeb-Regular.woff') format('woff'),
+       url('fonts/CadizWeb-Regular.ttf') format('truetype'),
+       url('fonts/Cadiz-Regular.svg#Cadiz-Regular') format('svg'),
+       url('fonts/CadizWeb-Regular.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cadiz-Bold';
-  src: url('CadizWeb-Bold.eot');
-  src: url('CadizWeb-Bold.woff2') format('woff2'),
-       url('CadizWeb-Bold.woff') format('woff'),
-       url('CadizWeb-Bold.ttf') format('truetype'),
-       url('Cadiz-Bold.svg#Cadiz-Bold') format('svg'),
-       url('CadizWeb-Bold.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/CadizWeb-Bold.eot');
+  src: url('fonts/CadizWeb-Bold.woff2') format('woff2'),
+       url('fonts/CadizWeb-Bold.woff') format('woff'),
+       url('fonts/CadizWeb-Bold.ttf') format('truetype'),
+       url('fonts/Cadiz-Bold.svg#Cadiz-Bold') format('svg'),
+       url('fonts/CadizWeb-Bold.eot?#iefix') format('embedded-opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cadiz-Black';
-  src: url('CadizWeb-Black.eot');
-  src: url('CadizWeb-Black.woff2') format('woff2'),
-       url('CadizWeb-Black.woff') format('woff'),
-       url('CadizWeb-Black.ttf') format('truetype'),
-       url('Cadiz-Black.svg#Cadiz-Black') format('svg'),
-       url('CadizWeb-Black.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/CadizWeb-Black.eot');
+  src: url('fonts/CadizWeb-Black.woff2') format('woff2'),
+       url('fonts/CadizWeb-Black.woff') format('woff'),
+       url('fonts/CadizWeb-Black.ttf') format('truetype'),
+       url('fonts/Cadiz-Black.svg#Cadiz-Black') format('svg'),
+       url('fonts/CadizWeb-Black.eot?#iefix') format('embedded-opentype');
   font-weight: bolder;
   font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Medium';
+    src: url('fonts/Avenir-Medium.eot');
+    src: url('fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Avenir-Medium.woff2') format('woff2'),
+        url('fonts/Avenir-Medium.woff') format('woff'),
+        url('fonts/Avenir-Medium.ttf') format('truetype'),
+        url('fonts/Avenir-Medium.svg#Avenir-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('fonts/Avenir-Black.eot');
+    src: url('fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Avenir-Black.woff2') format('woff2'),
+        url('fonts/Avenir-Black.woff') format('woff'),
+        url('fonts/Avenir-Black.ttf') format('truetype'),
+        url('fonts/Avenir-Black.svg#Avenir-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('fonts/Avenir-Light.eot');
+    src: url('fonts/Avenir-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Avenir-Light.woff2') format('woff2'),
+        url('fonts/Avenir-Light.woff') format('woff'),
+        url('fonts/Avenir-Light.ttf') format('truetype'),
+        url('fonts/Avenir-Light.svg#Avenir-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('fonts/Avenir-Heavy.eot');
+    src: url('fonts/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Avenir-Heavy.woff2') format('woff2'),
+        url('fonts/Avenir-Heavy.woff') format('woff'),
+        url('fonts/Avenir-Heavy.ttf') format('truetype'),
+        url('fonts/Avenir-Heavy.svg#Avenir-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Typography */
+
+.tiempos{
+  font-family: 'TiemposHeadline-Medium', 'Times New Roman', serif;
+}
+
+.tiempos-bold{
+  font-family: 'TiemposHeadline-Bold', 'Times New Roman', serif;
+  font-style: bold;
+}
+
+.tiempos-light{
+    font-family: 'TiemposHeadline-Light', 'Times New Roman', serif;
+}
+
+.cadiz{
+  font-family: 'Cadiz-Regular', 'Open Sans', sans-serif;
+}
+
+.cadiz-light{
+  font-family: 'Cadiz-Light', 'Open Sans', sans-serif;
+}
+
+.cadiz-bold{
+  font-family: 'Cadiz-Bold', 'Open Sans', sans-serif;
+}
+
+.cadiz-black{
+  font-family: 'Cadiz-Black', 'Open Sans', sans-serif;
+}
+
+.avenir{
+  font-family: 'Avenir-Medium', 'Open Sans', sans-serif;
+}
+
+.avenir-light{
+  font-family: 'Avenir-Light', 'Open Sans', sans-serif;
+}
+
+.avenir-bold{
+  font-family: 'Avenir-Heavy', 'Open Sans', sans-serif;
+}
+
+.avenir-black{
+  font-family: 'Avenir-Black', 'Open Sans', sans-serif;
 }
 
 /* Remove padding and margin */
@@ -229,36 +324,7 @@ html,body{
 
 
 
-/* Typography */
 
-.tiempos{
-  font-family: 'TiemposHeadline-Medium', 'Times New Roman', serif;
-}
-
-.tiempos-bold{
-  font-family: 'TiemposHeadline-Bold', 'Times New Roman', serif;
-  font-style: bold;
-}
-
-.tiempos-light{
-    font-family: 'TiemposHeadline-Light', 'Times New Roman', serif;
-}
-
-.cadiz{
-  font-family: 'Cadiz-Regular', 'Open Sans', sans-serif;
-}
-
-.cadiz-light{
-  font-family: 'Cadiz-Light', 'Open Sans', sans-serif;
-}
-
-.cadiz-bold{
-  font-family: 'Cadiz-Bold', 'Open Sans', sans-serif;
-}
-
-.cadiz-black{
-  font-family: 'Cadiz-Black', 'Open Sans', sans-serif;
-}
 /* Typography Elements */
 
 h1{
@@ -309,6 +375,8 @@ ul, ol{
 
 .breadcrumbs{
   position: fixed;
+  text-align: left;
+  width: 400px;
   top:7%;
   left:3%;
   z-index: 69;
@@ -349,6 +417,27 @@ ul, ol{
 
     margin-top:50px;
       margin-bottom:50px;
+}
+
+
+#dev_container{
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+.snappy{
+  scroll-snap-align: start;
+}
+
+.dev_screen{
+  height: 90vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+
+  margin-top:30px;
+  margin-bottom:30px;
 }
 
 .first_screen{
@@ -509,15 +598,16 @@ width: 100vw !important;
 }
 
 #cards img{
-  -webkit-box-shadow: -17px 17px 13px -1px rgba(0,0,0,0.28);
-  -moz-box-shadow: -17px 17px 13px -1px rgba(0,0,0,0.28);
-  box-shadow: -17px 17px 13px -1px rgba(0,0,0,0.28);
+  -webkit-box-shadow: 0px 10px 44px -6px rgba(179,177,179,0.75);
+  -moz-box-shadow: 0px 10px 44px -6px rgba(179,177,179,0.75);
+  box-shadow: 0px 10px 44px -6px rgba(179,177,179,0.75);
+  border-radius: 5px;
 
   transition: all 0.5s;
 }
 
 #cards img:hover{
-  transform: translateY(-1em);
+  transform: translateY(-1em) rotate(0deg);
 }
 
 #work_screen{
@@ -531,7 +621,6 @@ width: 100vw !important;
   top:40px;
   bottom:20px;
   margin-top: 20px;
-
 }
 
 .sticky-add{
@@ -543,12 +632,18 @@ width: 100vw !important;
 
 }
 
+
 .sticky_concept{
   position: -webkit-sticky;
   position: sticky;
   top:10vh;
   bottom:10vh;
-  margin-bottom:0;
+  margin-bottom:20px;
+}
+
+
+.dev_cards img{
+
 }
 
 .event_img{
@@ -663,7 +758,7 @@ width: 100vw !important;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.95);
   z-index: 99;
 
   filter: blur(0px);
@@ -721,9 +816,18 @@ img.cloud-long {
     animation: move-around-blur 19s 1s infinite;
 }
 
+.fadeout {
+    -webkit-animation: fadeout 2s 0.7s forwards ease-in-out;
+    animation: fadeout 2s 0.7s forwards ease-in-out;
+}
 /* #################### */
 /* Animations my dude */
 /* #################### */
+
+@-webkit-keyframes fadeout{
+    0% { opacity: 1; }
+    100% { opacity: 0;}
+}
 
 @-webkit-keyframes slow-blur{
     0% { filter:blur(0px); }
@@ -784,6 +888,25 @@ img.cloud-long {
 
 
 
+/*=========== Kitchen Sink ==========*/
+.everything_section h2{
+  font-size:50px;
+  margin-left:200px;
+  font-family: 'Avenir-Black', 'Open Sans', sans-serif;
+}
+
+.everything_section h3{
+  margin-left:200px;
+  font-family: 'Cadiz-Bold', 'Open Sans', sans-serif;
+  opacity: 0.7;
+}
+
+.everything_section p{
+  max-width:400px;
+  margin-left:200px;
+  margin-top:7px;
+  opacity: 0.7;
+}
 
 
 /*============= Rimads =============*/
@@ -845,6 +968,10 @@ img.cloud-long {
 
 .salmon{
    background: linear-gradient(0deg, rgba(253,229,222,1) 28%, rgba(255,244,236,1) 100%);
+}
+
+.salmon_reverse{
+   background: linear-gradient(180deg, rgba(253,229,222,1) 28%, rgba(255,244,236,1) 100%);
 }
 
 .done_card{
