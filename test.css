@@ -662,6 +662,14 @@ width: 100vw !important;
 
 }
 
+.light-shade{
+  -webkit-box-shadow: -1px 6px 83px 20px rgba(224,224,224,1);
+  -moz-box-shadow: -1px 6px 83px 20px rgba(224,224,224,1);
+  box-shadow: -1px 6px 83px 20px rgba(224,224,224,1);
+  border-radius: 4px;
+
+}
+
 #offered_got{
   align-items: center;
   align-content: center;
@@ -908,6 +916,22 @@ img.cloud-long {
   opacity: 0.7;
 }
 
+.zoomy{
+  transition: all 1s;
+}
+
+.zoomy:hover{
+  transform: scale(1.05);
+}
+
+
+.floaty{
+  transition: all 1s;
+}
+
+.floaty:hover{
+  transform: translateY(-1em);
+}
 
 /*============= Rimads =============*/
 
