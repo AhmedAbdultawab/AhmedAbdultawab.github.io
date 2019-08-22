@@ -56,7 +56,7 @@
 
         </div>
         <div class="col-sm-7  legit_center ">
-          <video width="75%" autoplay muted preload loop>
+          <video id="artwork" width="75%" autoplay muted preload loop>
             <source src="artwork.mp4" poster="white_poster.png" type="video/mp4">
           There was a really cool video here, but your browser does not support the video tag.
           </video>
@@ -303,6 +303,16 @@
 
         <script>
         AOS.init();
+
+        var videoEl = document.getElementById("artwork");
+
+        videoEl.addEventListener("timeupdate", function () {
+            console.log('checking time...');
+            if (videoEl.currentTime > videoEl.duration - 0.5) {
+                // 0.5 is seconds before end.
+                videoEl.pause();
+            }
+        });
         </script>
   </body>
 </html>
