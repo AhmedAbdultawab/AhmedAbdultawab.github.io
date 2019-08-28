@@ -990,6 +990,8 @@ img.cloud-long {
 
 }
 
+
+
 .project_banner h2{
   font-size: 6em;
   color: #55EEFF;
@@ -1007,6 +1009,25 @@ max-width:300px;
 margin-top:15px;
 }
 
+.skip_button{
+  background-color:#55EEFF;
+  text-decoration: none;
+  color:white;
+  border-radius:30px;
+  height:60px;
+  width:300px;
+  margin-top:-200px;
+
+  transition: all 0.5s;
+
+  -webkit-box-shadow: 0px 6px 50px 3px rgba(207,207,207,0.83);
+-moz-box-shadow: 0px 6px 50px 3px rgba(207,207,207,0.83);
+box-shadow: 0px 6px 50px 3px rgba(207,207,207,0.83);
+}
+
+.skip_button:hover{
+  transform: scale(1.1);
+}
 
 .bullet{
     color: #55EEFF;
