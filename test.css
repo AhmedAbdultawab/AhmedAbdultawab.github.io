@@ -986,7 +986,7 @@ img.cloud-long {
   align-content: center;
   text-align: center;
 
-  height: 30vh;
+  height: 40vh;
 
 }
 
@@ -997,14 +997,26 @@ img.cloud-long {
   color: #55EEFF;
 }
 
+.about_page{
+height:130vh;
+width:85vw;
+}
+
 .about_page h2{
-font-size:3.3em;
+font-size:3.1em;
 line-height:1.1;
+
+background-color: #2fedff;
+color: transparent;
+text-shadow: 6px 6px 0px rgba(255,255,255,0.3);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
 }
 
 .about_page p{
   opacity: 0.9;
-  font-size:1em;
+  font-size:0.95em;
 max-width:300px;
 margin-top:15px;
 }

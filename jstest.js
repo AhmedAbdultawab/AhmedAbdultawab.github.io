@@ -5,7 +5,15 @@ $(document).ready(function () {
       console.log($(this).scrollTop());
       let screen_height =  $('.screen').height() * 0.8;
 
-      if ($(this).scrollTop() > screen_height*4) {
+      if ($(this).scrollTop() > screen_height*8) {
+            $('.page_number').text("09");
+      }else if ($(this).scrollTop() > screen_height*7) {
+            $('.page_number').text("08");
+      }else if ($(this).scrollTop() > screen_height*6) {
+            $('.page_number').text("07");
+      }else if ($(this).scrollTop() > screen_height*5) {
+            $('.page_number').text("06");
+      }else if ($(this).scrollTop() > screen_height*4) {
             $('.page_number').text("05");
       } else if ($(this).scrollTop() > screen_height*3) {
               $('.page_number').text("04");
