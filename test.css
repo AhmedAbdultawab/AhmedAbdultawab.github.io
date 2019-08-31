@@ -239,10 +239,10 @@ html,body{
 @media only screen and (max-width: 670px) {
 
   .screen{
-    filter: blur(1.5px);
+    filter: blur(2px);
   }
   .breadcrumbs{
-    filter: blur(1.5px);
+    filter: blur(2px);
   }
 
   .oops_overlay{
@@ -605,6 +605,13 @@ width: 100vw !important;
   margin-top:5px;
   font-size:  1.25vw;
   color: #FF7878;
+}
+
+.job_screen mark{
+  background-color:white;
+  border-radius:99px;
+  padding:4px 10px 4px 10px;
+  color:#FF7878;
 }
 
 .job_screen a{
