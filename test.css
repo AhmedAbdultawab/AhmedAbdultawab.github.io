@@ -238,6 +238,10 @@ html,body{
 
 @media only screen and (max-width: 670px) {
 
+  .oops_overlay{
+    display: flex !important;
+  }
+
   .selection_container{
     flex-basis:100% !important;
   }
@@ -250,6 +254,10 @@ html,body{
     display: block !important;
     width: 80vw;
 
+  }
+
+  .about_page{
+  height:330vh;
   }
 
   /* this phone spacer will only appear if you're on the phone!*/
@@ -538,6 +546,19 @@ width: 100vw !important;
   transform: perspective(60em) rotateX(45deg) rotateZ(330deg);
 
 } */
+
+
+.oops_overlay{
+  display:none;
+  flex-direction:column;
+  height:105vh;
+  width:100vw;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:100;
+  background-color:white;
+}
 
 .bunny_container{
   width:90%;
@@ -989,8 +1010,6 @@ img.cloud-long {
   height: 40vh;
 
 }
-
-
 
 .project_banner h2{
   font-size: 6em;
