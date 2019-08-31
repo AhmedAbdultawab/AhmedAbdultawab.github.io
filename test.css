@@ -238,8 +238,16 @@ html,body{
 
 @media only screen and (max-width: 670px) {
 
+  .screen{
+    filter: blur(1.5px);
+  }
+  .breadcrumbs{
+    filter: blur(1.5px);
+  }
+
   .oops_overlay{
     display: flex !important;
+    background-color:rgba(255, 255, 255, 0.95) !important ;
   }
 
   .selection_container{
