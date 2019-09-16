@@ -74,7 +74,7 @@
   </div>
 
 
-  <div class=" screen fill-width  flex_row" style="text-align:left;margin-bottom:0px;">
+  <!-- <div class=" screen fill-width  flex_row" style="text-align:left;margin-bottom:0px;">
     <div class="col-sm-5 flex_col">
       <div class="col-sm-6 ">
 
@@ -92,8 +92,29 @@
       <img src="everything/prezel_intro.png" style="width:85%;min-width:400px;max-width:750px;" data-aos="fade-up" data-aos-duration="1000"/>
     </div>
 
-
   </div>
+
+  <div class="screen fill-width flex_col">
+    <div class="col-sm-2"></div>
+
+    <div class="col-sm-8 flex_row ">
+      <div class="col-sm-4 legit_center floaty ">
+        <img class="lighter-shade cw_poster" src="everything/prezel_screen_1.png" style="width:80%;" data-aos="fade-down" data-aos-duration="1000"/>
+      </div>
+
+      <div class="col-sm-4 legit_center floaty ">
+        <img class="lighter-shade cw_poster" src="everything/prezel_screen_2.png" style="width:80%;" data-aos="fade-up" data-aos-duration="1300"/>
+      </div>
+
+      <div class="col-sm-4 legit_center floaty ">
+        <img class=" cw_poster" src="everything/prezel_screen_3.png"  style="width:90%;" data-aos="fade-left" data-aos-duration="1200"/>
+      </div>
+    </div>
+
+    <div class="col-sm-2"></div>
+
+  </div> -->
+
 
 
   <div class="double_screen fill-width  flex_col" style="text-align:left;">
@@ -104,9 +125,54 @@
         </div>
         <div class="col-sm-8 " id="prezel_container">
           <div class="sticky-add everything_section">
-            <h2 id="prezel_title">Charity Week 18'</h2>
-            <h3 id="prezel_subtitle" >Identity + Branding - Fall 2018</h3>
+            <h2 id="prezel_title">Project Prezel</h2>
+            <h3 id="prezel_subtitle" >Graduation Project - Fall 2018</h3>
             <p id="prezel_body">
+              Prezel was designed with the premise of taking raw content and dynamically formatting it into a well-designed (and really pretty) presentation.
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-sm-7  legit_center floaty">
+        <img src="everything/prezel_intro.png" style="width:77%;min-width:400px;max-width:750px;" data-aos="fade-up" data-aos-duration="1000"/>
+      </div>
+
+
+    </div>
+    <div class="col-sm-4 flex_col " style="margin-top:-120px;">
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8 flex_row ">
+        <div class="col-sm-4 legit_center floaty ">
+          <img class="lighter-shade cw_poster" src="everything/prezel_screen_1.png" style="width:80%;" data-aos="fade-down" data-aos-duration="1000"/>
+        </div>
+
+        <div class="col-sm-4 legit_center floaty ">
+          <img class="lighter-shade cw_poster" src="everything/prezel_screen_2.png" style="width:80%;" data-aos="fade-up" data-aos-duration="1300"/>
+        </div>
+
+        <div class="col-sm-4 legit_center floaty ">
+          <img class=" cw_poster" src="everything/prezel_screen_3.png"  style="width:90%;" data-aos="fade-left" data-aos-duration="1200"/>
+        </div>
+      </div>
+
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+
+
+  <div class="double_screen fill-width  flex_col" style="text-align:left;">
+    <div class="col-sm-8 flex_row ">
+      <div class="col-sm-5 flex_col ">
+        <div class="col-sm-4">
+
+        </div>
+        <div class="col-sm-8 " id="cw_container">
+          <div class="sticky-add everything_section">
+            <h2 id="cw_title">Charity Week 18'</h2>
+            <h3 id="cw_subtitle" >Identity + Branding - Fall 2018</h3>
+            <p id="cw_body">
 CW is a yearly charity event across multiple universities over the world. I designed the advertising material and merchandise as part of a mini-campaign for Qatar Univeristy</p>
           </div>
         </div>
@@ -242,8 +308,8 @@ CW is a yearly charity event across multiple universities over the world. I desi
         <img class="clouds_small" src="rimads/relaxing_shade_small.png"  style="display:none;"/>
       </div>
       <div class="col-sm-4 flex_col" style="text-align:center;align-items:center;align-content:center;justify-content:flex-start;">
-        <h3 class="cadiz" style="font-size:1.8em"> Sorry to interrupt your browsing</h3>
-        <h4 class="cadiz" style="font-size:1.2em;max-width:600px;margin-top:5px;color:#bfbfbf;"> but the rest of this page is still under construction. while you wait, you can enjoy this relaxing photo of clouds passing through</h4>
+        <h3 class="cadiz" style="font-size:1.8em"> That's All For Now!</h3>
+        <h4 class="cadiz" style="font-size:1.2em;max-width:400px;margin-top:5px;font-weight: 600;color: #d9d3c1;"> I'm actively updating the site with more content! while you wait, you can enjoy this relaxing photo of clouds passing through</h4>
       </div>
     </div>
     <div class="col-sm-3" >
@@ -305,7 +371,9 @@ CW is a yearly charity event across multiple universities over the world. I desi
       // if (scrollTop > document.getElementById("second_container").offsetTop) {
       //   section = "second"
       // } else
-      if (scrollTop > document.getElementById("prezel_container").offsetTop) {
+      if (scrollTop > document.getElementById("cw_container").offsetTop) {
+          section = "cw"
+        } else if (scrollTop > document.getElementById("prezel_container").offsetTop) {
         section = "prezel"
       }
 
@@ -318,6 +386,25 @@ CW is a yearly charity event across multiple universities over the world. I desi
 
       // console.log(" start boiing at ", prezel_container.offsetTop);
       console.log("scroll top is ", scrollTop);
+
+
+      // if ( (document.body.scrollTop >  section_container.offsetTop + section_container.offsetHeight)|| ( document.documentElement.scrollTop >  section_container.offsetTop + section_container.offsetHeight)) {
+      //   section_title.style.fontSize = "30px";
+      //   section_title.style.opacity = "0";
+      //
+      // }
+      // else if ( (document.body.scrollTop >  section_container.offsetTop + section_container.offsetHeight * 0.4)|| ( document.documentElement.scrollTop >  section_container.offsetTop + section_container.offsetHeight * 0.4)) {
+      //     section_title.style.fontSize = "30px";
+      //     section_title.style.marginLeft = "30px";
+      //     section_title.style.position = "fixed";
+      //     section_title.style.opacity = "1";
+      // } else {
+      //   section_title.style.fontSize = "90px";
+      //           section_title.style.marginLeft = "90px";
+      //           section_title.style.position = "absolute";
+      //           section_title.style.opacity = "1";
+      // }
+
 
       if (scrollTop > section_container.offsetTop &&
         scrollTop < section_container.offsetTop + section_container.offsetHeight - 200) {
@@ -338,10 +425,10 @@ CW is a yearly charity event across multiple universities over the world. I desi
 
       }
 
-      // if (scrollTop >  section_container.offsetTop + section_container.offsetHeight) {
-      //   section_subtitle.style.opacity = 1;
-      //
-      // }
+      if (scrollTop >  section_container.offsetTop + section_container.offsetHeight) {
+        section_subtitle.style.opacity = 1;
+
+      }
 
 
         $('#' + section + '_title').css({
