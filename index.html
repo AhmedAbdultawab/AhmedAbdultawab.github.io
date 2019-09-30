@@ -155,7 +155,7 @@
 
       </div>
       <div class="col-sm-7  legit_center ">
-        <video id="artwork" width="75%" autoplay muted preload loop>
+        <video id="artwork" width="75%" autoplay muted preload>
           <source src="artwork.mp4" poster="white_poster.png" type="video/mp4">
         There was a really cool video here, but your browser does not support the video tag.
         </video>
@@ -1106,7 +1106,7 @@ for this project, i wanted to embrace the hand-made and crafty theme by embracin
   <script>
     AOS.init();
 
-
+    $("#artwork")[0].playbackRate = 1.25;
 
     function highlight(element){
       console.log("get hired");
