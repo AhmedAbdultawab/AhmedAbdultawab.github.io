@@ -415,7 +415,7 @@
  -->
 
 
- <div class="double_screen fill-width  flex_col"  style="text-align:left;">
+ <div class="double_screen fill-width  flex_col"  style="text-align:left;" id="rimads_intro">
    <div class="col-sm-8 flex_row ">
      <div class="col-sm-5 flex_col ">
        <div class="col-sm-4">
@@ -1136,7 +1136,7 @@ for this project, i wanted to embrace the hand-made and crafty theme by embracin
       // }
 
 
-      if (scrollTop > document.getElementById("rimads_page").offsetTop){
+      if (scrollTop > document.getElementById("rimads_intro").offsetTop){
         console.log("braaaaah");
         var stork_wip = document.getElementById("stork_wip");
         stork_wip.classList.add("fadeout")
