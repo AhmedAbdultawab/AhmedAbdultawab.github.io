@@ -421,7 +421,22 @@ ul, ol{
   z-index: 99;
   color: black;
   font-size:24px;
+  transition: all 0.25s;
 }
+
+.page_number:hover{
+
+  background-color:white;
+  -webkit-box-shadow: 0px 4px 24px 0px rgba(176,176,176,0.3);
+  -moz-box-shadow: 0px 4px 24px 0px rgba(176,176,176,0.3);
+  box-shadow: 0px 4px 24px 0px rgba(176,176,176,0.3);
+  border-radius: 15px;
+  padding: 20px;
+  bottom:6.5%;
+  right:3%;
+
+}
+
 
 /* Patti Page */
 
@@ -871,11 +886,34 @@ img.cloud-long {
     -webkit-animation: fadeout 2s 0.7s forwards ease-in-out;
     animation: fadeout 2s 0.7s forwards ease-in-out;
 }
+
+.fadeout_fast {
+    -webkit-animation: fadeout-fast 2s 0.3s forwards ease-in-out;
+    animation: fadeout-fast 2s 0.3s forwards ease-in-out;
+}
+
+.float_around {
+    -webkit-animation: float 7s infinite forwards ease-in-out;
+    animation: float 7s infinite forwards ease-in-out;
+}
+
 /* #################### */
 /* Animations my dude */
 /* #################### */
 
+@-webkit-keyframes float{
+    0% { margin-top:0px; }
+    33% { margin-top:10px; }
+    66% { margin-top: -10px; }
+    100% { margin-top: 0px; }
+}
+
 @-webkit-keyframes fadeout{
+    0% { opacity: 1; }
+    100% { opacity: 0;}
+}
+
+@-webkit-keyframes fadeout-fast{
     0% { opacity: 1; }
     100% { opacity: 0;}
 }
@@ -963,6 +1001,28 @@ img.cloud-long {
   width:80%;
   min-width:250px;
   max-width:750px;
+}
+
+.underline{
+  margin-top:5px;
+  height: 5px;
+  width: 110px;
+  border-radius: 99px;
+  background-color:#FF7878;
+
+  transition: all 0.4s;
+}
+
+.learn_more:hover{
+  margin-bottom: 10px;
+}
+
+.contact_button{
+  transition: all 0.5s;
+}
+
+.contact_button:hover{
+  margin-top: -15px;
 }
 
 .zoomy{

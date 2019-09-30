@@ -1,338 +1,1244 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="test.css">
-    <!-- <link rel="stylesheet" href="flexboxgrid.min.css" type="text/css"> -->
-    <link rel="stylesheet" href="aos.css" >
-    <script src="aos.js"></script>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="jstest.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="prefetch" href="working_on_it.png" as="image">
-    <link rel="prefetch" href="rimads/stork_fly_wip_color.png" as="image">
-    <link rel="prefetch" href="boomerang.mp4" as="video">
-    <link rel="prefetch" href="rimads/stork_fly_color_alt.png" as="image">
+<head>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="aos.css">
+  <script src="aos.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="jstest.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> -->
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+  <!-- Preloading content-->
+  <link rel="preload" href="qsc/STEM_theme.png" as="image">
+  <link rel="prefetch" href="working_on_it.png" as="image">
+  <link rel="prefetch" href="rimads/stork_fly_wip_color.png" as="image">
+  <link rel="prefetch" href="boomerang.mp4" as="video">
+  <link rel="prefetch" href="rimads/stork_fly_color_alt.png" as="image">
+  <link rel="preload" href="jaime_intro.jpg" as="image">
 
-    <title>aaahmed samehhh.</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144581642-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-144581642-1');
-    </script>
+  <title>aaahmed samehhh.</title>
 
-  </head>
-  <body>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144581642-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <div class="breadcrumbs" style="left:5%;">
-      <p class="cadiz">
-        <a href="#">home</a>
-        \
-      </p>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144581642-1');
+  </script>
+
+
+</head>
+
+<body style="background-color:white;overflow-x:hidden;">
+
+
+  <div class="breadcrumbs" id="crumbs" style="z-index:2;">
+
+    <!-- DYNAMIC BREADCRUMBS THOOOO !!!!!!!!-->
+    <div class="avenir small" id="dynamic" style="position:fixed;width:230px;font-size:24px;transform: rotate(0deg)">
+      <a href="index.html#top">home</a> \
+      <a href="#choice" id="page_title" >everything</a>
     </div>
 
+  </div>
 
-    <div  class="oops_overlay" >
-      <div class="col-sm-2"></div>
-      <div class="col-sm-4" style="margin-top:20px;">
-        <img src="small_screen.png" style="width:40%;" alt="">
-      </div>
-      <div class="col-sm-3 legit_center" >
-        <h3 class="cadiz" style="color:#ff7c70;max-width:65%;font-size:1.5em;margin-top:-15px;">Not on the Phone though!</h3>
-        <p style="color:#5c5c5c;max-width:70%;margin-top:10px;font-size:1.05em;">I'm still working on the reponsive bits, please view the website on a Desktop or tablet for now.</p>
-      </div>
-      <div class="col-sm-3"></div>
+
+  <!-- <div class="screen first_screen fill-width flex_col" style="background-color:#FFEFEF;">
+    <div class="col-sm-2">
     </div>
 
+    <div class="col-sm-8 flex_row ">
 
-      <div class=" screen fill-width  columnable first_screen flex_row" style="text-align:left;margin-bottom:0px;height:95vh;">
-        <div class="col-sm-5 flex_col">
-          <div class="col-sm-6 ">
+      <div class="col-sm-12 flex_col" style="text-align:center;align-items:center;">
+          <div class="col-sm-4">
 
           </div>
-          <div class="col-sm-6 everything_section" style="justify-content:flex-start;">
-            <h2 data-aos = "fade-up" data-aos-delay = "50" >Ahmed Sameh</h2>
-            <h3 data-aos = "fade-up" data-aos-delay = "100">April 1996 - Now</h3>
-            <p data-aos = "fade-up" data-aos-delay = "150">
-              <!-- Designer + Developer -->
-              <span style="font-size:0.8em;">
-              (P.S. that's not me in the picture, <a href="resume_aug2019.pdf" target="_blank" style="color:black;">this</a> is me)
+          <div class="col-sm-3 avenir-black"  data-aos="zoom-in" data-aos-delay="150" data-aos-duration="2300" >
+            <h2 style="font-size: 5.3em;line-height:1.1;color:#FFCCCC"> Ahmed<br/>Sameh</h2>
+          </div>
+
+      </div>
+    </div>
+
+    <div class="col-sm-2">
+    </div>
+
+  </div> -->
+
+
+  <!-- <div class=" screen fill-width  flex_row" style="text-align:left;margin-bottom:0px;">
+    <div class="col-sm-5 flex_col">
+      <div class="col-sm-6 ">
+
+      </div>
+      <div class="col-sm-6 everything_section" style="justify-content:flex-start;">
+        <h2 data-aos = "fade-up" data-aos-delay = "50" >Project Prezel</h2>
+        <h3 data-aos = "fade-up" data-aos-delay = "100" >Graduation Project - Fall 2019</h3>
+        <p data-aos = "fade-up" data-aos-delay = "150" style="font-size:1.2em;">
+          Prezel was designed with the premise of taking raw content and dynamically formatting it into a well-designed (and really pretty) presentation.
+        </p>
+      </div>
+
+    </div>
+    <div class="col-sm-7  legit_center floaty">
+      <img src="everything/prezel_intro.png" style="width:85%;min-width:400px;max-width:750px;" data-aos="fade-up" data-aos-duration="1000"/>
+    </div>
+
+  </div>
+
+  <div class="screen fill-width flex_col">
+    <div class="col-sm-2"></div>
+
+    <div class="col-sm-8 flex_row ">
+      <div class="col-sm-4 legit_center floaty ">
+        <img class="lighter-shade cw_poster" src="everything/prezel_screen_1.png" style="width:80%;" data-aos="fade-down" data-aos-duration="1000"/>
+      </div>
+
+      <div class="col-sm-4 legit_center floaty ">
+        <img class="lighter-shade cw_poster" src="everything/prezel_screen_2.png" style="width:80%;" data-aos="fade-up" data-aos-duration="1300"/>
+      </div>
+
+      <div class="col-sm-4 legit_center floaty ">
+        <img class=" cw_poster" src="everything/prezel_screen_3.png"  style="width:90%;" data-aos="fade-left" data-aos-duration="1200"/>
+      </div>
+    </div>
+
+    <div class="col-sm-2"></div>
+
+  </div> -->
+
+
+
+  <div  class="oops_overlay" >
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4" style="margin-top:20px;">
+      <img src="small_screen.png" style="width:40%;" alt="">
+    </div>
+    <div class="col-sm-3 legit_center" >
+      <h3 class="cadiz" style="color:#ff7c70;max-width:65%;font-size:1.5em;margin-top:-15px;">Not on the Phone though!</h3>
+      <p style="color:#5c5c5c;max-width:70%;margin-top:10px;font-size:1.05em;">I'm still working on the reponsive bits, please view the website on a Desktop or tablet for now.</p>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+
+  <div class=" screen fill-width  columnable first_screen flex_row" style="text-align:left;margin-bottom:0px;height:95vh;" id="top">
+      <div class="col-sm-5 flex_col">
+        <div class="col-sm-6 ">
+
+        </div>
+        <div class="col-sm-6 everything_section" style="justify-content:flex-start;">
+          <h2 data-aos = "fade-up" data-aos-delay = "50" >Ahmed Sameh</h2>
+          <h3 data-aos = "fade-up" data-aos-delay = "100">April 1996 - Now</h3>
+          <p data-aos = "fade-up" data-aos-delay = "150">
+            <!-- Designer + Developer -->
+            <span style="font-size:0.8em;">
+            (P.S. that's not me in the picture, <a href="#contact" style="color:black;">this</a> is me)
 </span>
+          </p>
+        </div>
+
+      </div>
+      <div class="col-sm-7  legit_center ">
+        <video id="artwork" width="75%" autoplay muted preload loop>
+          <source src="artwork.mp4" poster="white_poster.png" type="video/mp4">
+        There was a really cool video here, but your browser does not support the video tag.
+        </video>
+      </div>
+
+
+    </div>
+
+    <div class="screen flex_row fill-width" style="margin-bottom:-20px;">
+
+      <div class="col-sm-2 flex_col">
+<div class="col-sm-8">
+
+</div>
+<div class="col-sm-4">
+  <div class="backg_red" style="width:12vw;height:12vw;margin-left:-20%;border-radius:9999px;background:url('bunny_pattern_grey.png');background-size:cover;background-repeat:no-repeat;background-attachment: fixed;"></div>
+</div>
+      </div>
+
+      <div class="col-sm-3 flex_col">
+        <div class="col-sm-1 " >
+        </div>
+        <div class="col-sm-5 flex_col" style="align-content:flex-end;align-items:center;justify-content:center;">
+          <div class="backg_red" style="width:15vw;height:15vw;border-radius:9999px;background:url('bunny_pattern_grey.png');background-size:cover;background-repeat:no-repeat;background-attachment: fixed;"></div>
+
+        </div>
+        <div class="col-sm-3 ">
+
+        </div>
+        <div class="col-sm-3 ">
+
+        </div>
+      </div>
+
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-3 flex_col">
+        <div class="col-sm-4">
+
+        </div>
+        <div class="col-sm-4">
+          <div class="backg_red" style="width:25vw;height:25vw;border-radius:9999px;background:url('bunny_pattern_grey.png');background-size:cover;background-repeat:no-repeat;background-attachment: fixed;"></div>
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+      </div>
+
+      <div class="col-sm-2"></div>
+
+    </div>
+
+
+    <div class="screen fill-width flex_col" style="margin-bottom:-300px;margin-top:-20vh;height:90vh;" id="choice">
+      <div class="col-sm-1"></div>
+
+      <div class="col-sm-4 flex_row legit_center">
+        <a href="old_home.html"  style="text-decoration:none;color: #FF7878;">
+               <h3 class="avenir-bold learn_more" data-aos="slide-down" data-aos-duration="1000" style="transition: all 0.4s;font-size:1.5em;">take me to the old site</h3></a>
+               <div class="underline" data-aos="flip-left" data-aos-duration="1200"></div>
+      </div>
+
+      <div class="col-sm-1"></div>
+
+      <div class="col-sm-6 flex_col">
+        <div class="col-sm-3 ">
+          <p class="cadiz-bold" style="font-size:1.3em;color:#FF7979;" data-aos="fade-up" data-aos-duration="1000" >
+            or scroll down for the all-new
+          </p>
+          <h3 class="avenir-black" data-aos="slide-up" data-aos-duration="1200" style="font-size:4.5em;">Quick View</h3>
+        </div>
+        <div class="col-sm-6">
+          <img src="chevron_bottom.svg" alt="" style="height:40%;margin-bottom:-80px;" data-aos="slide-up" data-aos-duration="1500" data-aos-delay="100">
+        </div>
+      </div>
+
+    </div>
+
+  <div class="double_screen fill-width  flex_col" style="text-align:left;margin-top:0px;">
+    <div class="col-sm-8 flex_row ">
+      <div class="col-sm-5 flex_col ">
+        <div class="col-sm-5">
+        </div>
+        <div class="col-sm-7 " id="prezel_container">
+          <div class="sticky-add everything_section">
+            <h2 id="prezel_title">Project Prezel</h2>
+            <h3 id="prezel_subtitle" >Graduation Project - Fall 2018</h3>
+            <p id="prezel_body">
+              Prezel was designed with the premise of taking raw content and dynamically formatting it into a well-designed (and really pretty) presentation.
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-sm-7  legit_center floaty">
+        <img src="everything/prezel_intro.png" style="width:77%;min-width:400px;max-width:750px;" data-aos="fade-up" data-aos-duration="1000"/>
+      </div>
+
+
+    </div>
+    <div class="col-sm-4 flex_col " style="margin-top:-120px;">
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8 flex_row ">
+        <div class="col-sm-4 legit_center floaty ">
+          <img class="lighter-shade cw_poster" src="everything/prezel_screen_1.png" style="width:80%;" data-aos="fade-down" data-aos-duration="1000"/>
+        </div>
+
+        <div class="col-sm-4 legit_center floaty ">
+          <img class="lighter-shade cw_poster" src="everything/prezel_screen_2.png" style="width:80%;" data-aos="fade-up" data-aos-duration="1300"/>
+        </div>
+
+        <div class="col-sm-4 legit_center floaty ">
+          <img class=" cw_poster" src="everything/prezel_screen_3.png"  style="width:90%;" data-aos="fade-left" data-aos-duration="1200"/>
+        </div>
+      </div>
+
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+
+
+  <div class="double_screen fill-width  flex_col" style="text-align:left;">
+    <div class="col-sm-8 flex_row ">
+      <div class="col-sm-5 flex_col ">
+        <div class="col-sm-4">
+
+        </div>
+        <div class="col-sm-8 " id="cw_container">
+          <div class="sticky-add everything_section">
+            <h2 id="cw_title">Charity Week 18'</h2>
+            <h3 id="cw_subtitle" >Identity + Branding - Fall 2018</h3>
+            <p id="cw_body">
+              CW is a yearly charity event across multiple universities over the world. I designed the advertising material and merchandise as part of a mini-campaign for Qatar Univeristy</p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-sm-7 flex_col">
+        <div class="col-sm-9  legit_center">
+
+          <video width="75%"  class="shade zoomy" autoplay muted preload loop>
+            <source src="boomerang.mp4" poster="boomerang_still.png" type="video/mp4">
+          There was a really cool video here, but your browser does not support the video tag.
+          </video>
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col-sm-4 flex_row " style="margin-top:-120px;">
+      <div class="col-sm-1">
+
+      </div>
+      <div class="col-sm-3 flex_col">
+        <div class="col-sm-7">
+
+        </div>
+        <div class="col-sm-5">
+          <h2 class="cadiz-bold">Print</h2>
+          <p style="max-width:270px;margin-top:10px;">
+            For this event I arrived at the motif of “be their …”, as to communicate to potential attendees how tangible of an effect their contributions could have on those in need.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4  legit_center floaty">
+        <img class="light-shade cw_poster" src="everything/charity_week_1.png" data-aos="fade-up" data-aos-duration="1000"/>
+
+      </div>
+      <div class="col-sm-4  legit_center floaty">
+        <img class="light-shade cw_poster" src="everything/charity_week_2.png" data-aos="fade-up" data-aos-duration="1000"/>
+
+      </div>
+    </div>
+  </div>
+
+<div class="screen fill-width flex_col">
+  <div class="col-sm-2">
+
+  </div>
+
+  <div class="col-sm-8 flex_row ">
+
+    <div class="col-sm-4 legit_center floaty ">
+      <img class="cw_poster" src="everything/cw_event_2.jpg" style="width:70%;" data-aos="fade-down" data-aos-duration="1000"/>
+
+    </div>
+    <div class="col-sm-4 legit_center floaty ">
+      <img class="light-shade cw_poster" src="everything/charity_week_3.png" style="width:75%;" data-aos="fade-up" data-aos-duration="1300"/>
+
+    </div>
+    <div class="col-sm-4 legit_center floaty ">
+      <img class=" cw_poster" src="everything/cw_event_1.jpg"  style="width:75%;" data-aos="fade-left" data-aos-duration="1200"/>
+
+    </div>
+  </div>
+
+  <div class="col-sm-2">
+
+  </div>
+
+</div>
+
+
+<div class="screen fill-width golden flex_col">
+  <div class="col-sm-2">
+
+  </div>
+
+  <div class="col-sm-8 flex_row ">
+
+    <div class="col-sm-4 legit_center floaty ">
+
+    </div>
+    <div class="col-sm-4 legit_center floaty ">
+      <img class="shade cw_poster" src="everything/charity_week_4.png"  data-aos="fade-up" data-aos-duration="1300"/>
+
+    </div>
+    <div class="col-sm-4 legit_center floaty ">
+    </div>
+  </div>
+
+  <div class="col-sm-2">
+
+  </div>
+
+</div>
+
+
+  <!-- <div class="double_screen fill-width  flex_col" style="text-align:left;">
+    <div class="col-sm-8 flex_row ">
+      <div class="col-sm-4 flex_col ">
+        <div class="col-sm-4">
+
+        </div>
+        <div class="col-sm-8 " id="second_container">
+          <div class="sticky-add everything_section">
+            <h2 id="second_title" >Second</h2>
+            <h3 id="second_subtitle">Let's go my dude</h3>
+            <p id="second_body" >
+              can't wait for that brockhampton ginger release on august 23rd
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <div class="col-sm-4 flex_col ">
+
+    </div>
+  </div>
+ -->
+
+
+ <div class="double_screen fill-width  flex_col"  style="text-align:left;">
+   <div class="col-sm-8 flex_row ">
+     <div class="col-sm-5 flex_col ">
+       <div class="col-sm-4">
+
+       </div>
+       <div class="col-sm-8" id="rimads_container">
+         <div class="sticky-add everything_section">
+           <h2 id="rimads_title">Rimads Qatar</h2>
+           <h3 id="rimads_subtitle">Identity + Branding, iOS Development - 2019</h3>
+           <p id="rimads_body">
+             rimads is a medical startup that has a vision of using innovations in computer science in order to provide a new way for users to interact with medicine         </div>
+       </div>
+
+
+     </div>
+     <div class="col-sm-7 flex_col">
+       <div class="col-sm-9  legit_center " style="position:relative;">
+
+         <img src="rimads/stork_fly_color_alt.png" id="stork_done" style="width:50%;min-width:400px;margin-left: -30px;position:absolute;border-radius:7px;" />
+         <img src="rimads/stork_fly_wip_color.png" id="stork_wip" style="width:50%;min-width:400px;margin-left: -30px;position:absolute;border-radius:7px;" />
+
+       </div>
+     </div>
+
+
+   </div>
+
+   <div class="col-sm-4 flex_row " style="margin-top:-120px;">
+
+     <!-- <div class="col-sm-1">
+
+     </div>
+
+     <div class="col-sm-10 flex_row">
+
+       <div class="col-sm-4 flex_col" style="justify-content:center;align-items:flex-start;z-index:120;">
+         <img src="rimads/red_ball.png" data-aos="fade-right" data-aos-duration="1000" style="width:80%;">
+       </div>
+
+       <div class="col-sm-4 flex_col" style="text-align:center;">
+
+         <div class="col-sm-3 flex_col" style="align-content:flex-end;justify-content:flex-end;">
+           <img src="rimads/cloud_a.png" data-aos="fade-right" data-aos-duration="1400" alt="" style="width:25%;align-self:flex-end;">
+         </div>
+
+         <div class="col-sm-2 flex_col" style="align-items:center;justify-content: center;align-content:center;">
+           <p class="avenir" style="margin-bottom:-0.7em;font-size:1.5em;">
+             what's a
+           </p>
+           <h1 class="avenir-black" style="font-size:4em;"> rimads </h1>
+         </div>
+         <div class="col-sm-4 flex_col" style="align-items:center;">
+           <p style="max-width:300px;">
+             rimads is a medical startup that has a vision of using innovations in computer science in order to provide a new way for users to interact with medicine
+           </p>
+
+
+         </div>
+         <div class="col-sm-1 flex_col" style="justify-content:center;">
+           <img src="rimads/cloud_a.png" data-aos="fade-left" data-aos-duration="1400" alt="" style="width:25%;align-self:flex-start;">
+         </div>
+
+         <div class="col-sm-2">
+
+         </div>
+       </div>
+
+       <div class="col-sm-4 flex_col" style="justify-content:center;align-items:flex-end;">
+         <img src="rimads/blue_ball.png" data-aos="fade-left" data-aos-duration="1000" style="width:80%;">
+       </div>
+     </div>
+
+     <div class="col-sm-1">
+
+     </div> -->
+
+
+     <div class="col-sm-1">
+
+     </div>
+     <div class="col-sm-3 flex_col" style="text-align:left;">
+       <div class="col-sm-7">
+       </div>
+
+       <!-- <div class="col-sm-5">
+         <h2 class="cadiz-bold">Development</h2>
+         <p style="max-width:270px;margin-top:10px;">
+         I worked on <b>Stork</b>, an app that connects users to health experts and delivers their health purchases to their doorsteps
+       </div> -->
+
+       <div class="col-sm-5" >
+         <h2 class="cadiz-bold">Iconography</h2>
+         <p style="max-width:270px;margin-top:10px;">
+           a big challenge was changing the way shopping for health products is viewed through playful and colorful iconography.         </p>
+       </div>
+     </div>
+
+     <div class="col-sm-4  legit_center ">
+       <img class=" cw_poster"  src="rimads/iconography.png" data-aos="fade-up" data-aos-duration="1000"/>
+     </div>
+
+     <div class="col-sm-4  legit_center floaty">
+       <img class=" cw_poster" src="stowork.png" style="width:73%;" data-aos="fade-up" data-aos-duration="1000"/>
+     </div>
+
+
+   </div>
+ </div>
+
+
+<!-- <div class="screen fill-width flex_row">
+</div> -->
+
+ <div class="screen fill-width flex_row " >
+
+
+
+   <div class="col-sm-4 flex_col" style="align-content:flex-start;align-items: flex-start;justify-content:center;" data-aos="fade-right" data-aos-duration="1000">
+     <img class=" cw_poster"  src="rimads/red_ball.png"  style="width:75%;margin-top:-120px;" />
+
+   </div>
+
+
+   <div class="col-sm-4 flex_col legit_center"  data-aos="fade-up" data-aos-delay ="100" data-aos-duration ="1200" >
+     <div style="position:relative;width:300px;height:600px;">
+       <!-- 191 = 404 * 0.95 * 0.5 -->
+
+       <video width="95%" height="95%" id="preview" style="border-radius:20px;width: 129%;position: absolute;left: 50%;margin-left: -192px;top: 50%;margin-top: -340px;" autoplay muted preload loop>
+         <source src="stork_preview.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+       </video>
+
+       <img src="phone_temp_alt2.png" style="width: 129%;position: absolute;left: 50%;margin-left: -192px;top: 50%;margin-top: -384px;"/>
+       <img src="not_yet_alt.png" style="position:absolute;left:35px;top:30%;width:80%;transform:rotate(10deg);"/>
+     </div>
+   </div>
+
+
+   <div class="col-sm-3 flex_col" style="text-align:left;">
+     <div class="col-sm-2"> </div>
+     <div class="col-sm-6">
+         <!-- <span style="font-style:italic;">I've redisgned the app to have as much breathing room as possible.</span> This meant using a combination of overflowing whitespace and subtle highlights, while keeping buttons and interactable objects colorful and contrasty.     </div> -->
+         <h2 class="cadiz-bold">Development</h2>
+         <p style="max-width:270px;margin-top:10px;">
+         I worked on <b>Stork</b>, an app that connects users to health experts and delivers their health purchases to their doorsteps
+         <!-- <br /> <br /><span style="color:#c4c4c4;margin-top:15px;"> loading </p> -->
+
+       </p>
+      </div>
+   </div>
+
+   <div class="col-sm-1">
+
+   </div>
+
+
+
+ </div>
+
+
+
+
+ <!-- <div class="screen fill-width flex_row " >
+
+   <div class="col-sm-2">   </div>
+
+
+   <div class="col-sm-9 flex_col"  data-aos="fade-up" data-aos-delay ="100" data-aos-duration ="1200" >
+     <div class="col-sm-4 flex_row">
+       <div class="col-sm-4 legit_center ">
+         <img src="rimads/logo_intersect.png" style="width:80%;"alt="" data-aos="fade-down" data-aos-delay ="50" data-aos-duration ="1000">
+       </div>
+       <div class="col-sm-8 legit_center ">
+         <img src="rimads/logo_candy.png" style="width:80%;"alt=""  data-aos="fade-left" data-aos-delay ="100" data-aos-duration ="1200">
+       </div>
+
+     </div>
+
+     <div class="col-sm-4 flex_row">
+       <div class="col-sm-4 legit_center ">
+         <img src="rimads/logo_final.png" style="width:90%;margin-left:-100px;" alt=""  data-aos="fade-right" data-aos-delay ="200" data-aos-duration ="1600">
+       </div>
+       <div class="col-sm-4 legit_center " >
+         <h2 class="cadiz-bold">Finding Rimads</h2>
+         <p style="max-width:290px;margin-top:10px;font-size:1.09em;">
+          The rebranding aimed to target negative user perceptions towards a time old process. The logo steers away from the negative stigmas associated with receiving medical assistance towards the relief of getting help.
+       </p>
+       </div>
+       <div class="col-sm-4 legit_center ">
+         <img src="rimads/logo_blue_box.png" style="width:70%;margin-bottom:-20%;"alt=""  data-aos="zoom-in" data-aos-delay ="50" data-aos-duration ="1000">
+       </div>
+     </div>
+
+     <div class="col-sm-4 flex_row">
+       <div class="col-sm-4 legit_center ">
+         <img src="rimads/logo_red_box.png" style="width:35%;margin-right:-50%;" alt="" data-aos="fade-up" data-aos-delay ="300" data-aos-duration ="900" >
+       </div>
+       <div class="col-sm-4 legit_center ">
+         <img src="rimads/logo_white_text.png" style="width:95%;margin-right:-70%;transform:rotate(5deg);" alt=""  data-aos="fade-left" data-aos-delay ="100" data-aos-duration ="1200">
+       </div>
+       <div class="col-sm-4 legit_center "></div>
+     </div>
+   </div>
+
+   <div class="col-sm-1"></div>
+
+ </div> -->
+
+
+ <div class="screen fill-width flex_row " >
+
+    <div class="col-sm-1">
+
+    </div>
+
+   <div class="col-sm-2 flex_col">
+     <div class="col-sm-8"></div>
+     <div class="col-sm-4" style="text-align:left;">
+       <h2 class="cadiz-bold">Finding Rimads</h2>
+       <p style="max-width:290px;margin-top:10px;font-size:1.09em;">
+        The rebranding aimed to target negative user perceptions towards a time old process. The logo steers away from the negative stigmas associated with receiving medical assistance towards the relief of getting help.
+     </p>
+     </div>
+
+        </div>
+
+
+   <div class="col-sm-9 flex_col "  data-aos="fade-up" data-aos-delay ="100" data-aos-duration ="1200" >
+
+     <div class="col-sm-4 flex_row">
+       <div class="col-sm-4 legit_center ">
+
+       </div>
+       <div class="col-sm-8 legit_center ">
+         <img src="rimads/logo_candy.png" style="width:80%;"alt="">
+       </div>
+
+     </div>
+
+     <div class="col-sm-4 flex_row">
+       <div class="col-sm-4 legit_center ">
+         <img src="rimads/logo_final.png" style="width:80%;"alt="">
+       </div>
+       <div class="col-sm-4 legit_center " style="text-align:left;align-content:flex-start;align-items:flex-start;">
+         <img src="rimads/logo_white_text.png" style="width:90%;transform:rotate(5deg);margin-top:-10%;"alt="">
+       </div>
+       <div class="col-sm-4 legit_center ">
+         <img src="rimads/logo_blue_box.png" style="width:70%;"alt="">
+       </div>
+     </div>
+
+     <div class="col-sm-4 flex_row">
+       <div class="col-sm-4 legit_center ">
+         <img src="rimads/logo_red_box.png" style="width:40%;margin-top:-30%;margin-right:-70%;"alt="">
+       </div>
+       <div class="col-sm-4 legit_center ">
+                  <img src="rimads/logo_intersect.png" style="width:80%;margin-right:-70%;"alt="">
+       </div>
+       <div class="col-sm-4 legit_center "></div>
+     </div>
+   </div>
+
+
+
+ </div>
+
+ <div class="screen fill-width salmon flex_col" style="margin-bottom:0px;">
+   <div class="col-sm-2">
+
+   </div>
+
+   <div class="col-sm-8 flex_row ">
+
+     <div class="col-sm-2"> </div>
+     <div class="col-sm-3 legit_center floaty ">
+       <img class="cw_poster" src="rimads/rimads_phone_1_red.png" style="width:99%;margin-right:70px;" data-aos="fade-down" data-aos-duration="1000"/>
+
+     </div>
+     <div class="col-sm-3 legit_center floaty ">
+       <img class="cw_poster" src="rimads/rimads_phone_2_red.png" style="width:99%;" data-aos="fade-up" data-aos-duration="1300"/>
+
+     </div>
+     <div class="col-sm-3 legit_center floaty ">
+       <img class=" cw_poster" src="rimads/rimads_phone_3_red.png"  style="width:99%;margin-left:70px;" data-aos="fade-left" data-aos-duration="1200"/>
+
+     </div>
+          <div class="col-sm-2"> </div>
+   </div>
+
+   <div class="col-sm-2">
+
+   </div>
+
+ </div>
+
+
+ <div class="screen fill-width flex_col" id="rimads_page" style="margin-top:0px;">
+   <div class="col-sm-3"></div>
+
+   <div class="col-sm-5 flex_row legit_center">
+     <a href="rimads.html"  style="text-decoration:none;color: #FF7878;">
+            <h3 class="avenir-bold learn_more" data-aos="slide-down" data-aos-duration="1000" style="transition: all 0.4s;">learn more about project stork</h3></a>
+            <div class="underline" data-aos="flip-left" data-aos-duration="1200"></div>
+   </div>
+
+   <div class="col-sm-4 flex_col">
+     <div class="col-sm-1 " style="position:relative;"> </div>
+     <div class="col-sm-3 ">
+       <h3 class="avenir-bold" data-aos="fade-up" data-aos-duration="1200">or keep going</h3>
+     </div>
+     <div class="col-sm-6 ">
+       <img src="chevron_bottom.svg" alt="" style="height:38%;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+     </div>
+   </div>
+
+ </div>
+
+
+ <div class="double_screen fill-width  flex_col" style="text-align:left;">
+   <div class="col-sm-8 flex_row ">
+     <div class="col-sm-5 flex_col ">
+       <div class="col-sm-5">
+
+       </div>
+       <div class="col-sm-8" id="qsc_container">
+         <div class="sticky-add everything_section">
+           <h2 id="qsc_title">Qatar Sci Club</h2>
+           <h3 id="qsc_subtitle"> Graphic Design - Summer 2018</h3>
+           <p id="qsc_body">
+             As a graphic designer, the biggest project that i took on was the STEM summer camp: a newly introduced yearly summer activity for children aged 7-14 that introduces them to fields can be creative in, through activities, games, and workshops </div>
+       </div>
+
+
+     </div>
+     <div class="col-sm-7 legit_center floaty">
+       <img src="qsc/mascot.png" style="width:73%;min-width:400px;max-width:750px;border-radius:20px;" data-aos="fade-up" data-aos-duration="1000"/>
+     </div>
+
+
+   </div>
+   <div class="col-sm-4 flex_row " style="margin-top:-120px;">
+     <div class="col-sm-1">
+
+     </div>
+     <div class="col-sm-3 flex_col">
+       <div class="col-sm-6">
+
+       </div>
+       <div class="col-sm-6">
+         <h2 class="cadiz-bold">The Event</h2>
+         <p style="max-width:270px;margin-top:10px;">
+           the event took place over a month, with workshops that feature science, robotics, coding, and 3d-printing.
+           <br /> <br /><span style="color:#c4c4c4;margin-top:15px;"> <a href="https://www.instagram.com/qscientific/?hl=en" style="color:#c4c4c4;text-decoration:none;"> @qscientific  </a>Instagram  </span>       </p>
+       </div>
+     </div>
+     <div class="col-sm-4  legit_center zoomy">
+       <img class="light-shade cw_poster" style="width:95%;" src="qsc/event_1.jpg" data-aos="fade-up" data-aos-duration="1000"/>
+
+     </div>
+     <div class="col-sm-4  legit_center zoomy">
+       <img class="light-shade cw_poster" src="qsc/event_2.jpg" data-aos="fade-up" data-aos-duration="1000"/>
+
+     </div>
+   </div>
+ </div>
+
+
+ <div class="screen fill-width flex_col" style="margin-top:-90px;margin-bottom:0px;">
+   <div class="col-sm-2">
+
+   </div>
+
+   <div class="col-sm-8 flex_row ">
+
+     <div class="col-sm-4 legit_center flex_col">
+
+       <div class="col-sm-8">
+
+       </div>
+       <div class="col-sm-4" style="text-align:left;">
+         <h2 class="cadiz-bold">Print</h2>
+         <p style="max-width:270px;margin-top:10px;">
+for this project, i wanted to embrace the hand-made and crafty theme by embracing hand-drawn and comical visuals
+           <br /> <br /><span style="color:#c4c4c4;margin-top:15px;"> posters, concepts, and advertising material </span>       </p>
+       </div>
+
+     </div>
+     <div class="col-sm-4 legit_center flex_col">
+
+       <div class="col-sm-10 zoomy legit_center">
+         <img class="cw_poster" src="qsc/stem_logo_trans.png" style="width:110%;" data-aos="zoom-in" data-aos-duration="1300"/>
+       </div>
+
+       <div class="col-sm-2 floaty" >
+         <img class="light-shade cw_poster" src="qsc/coupon.jpg" style="width:80%;border-radius:10px;" />
+
+       </div>
+     </div>
+
+     <div class="col-sm-4 legit_center flex_col " style="position:relative;">
+       <div class="floaty">
+         <img class="light-shade cw_poster " src="qsc/STEM_theme.png"  style="width:60%;margin-bottom:-50px;margin-right:-25px;" data-aos="fade-left" data-aos-duration="1200"/>
+       </div>
+       <div class="floaty">
+         <img class="shade cw_poster" src="qsc/guangzhou.jpg" style="width:50%;margin-left:-120px;margin-bottom:-50px;" data-aos="fade-down" data-aos-duration="1000"/>
+
+</div>
+     </div>
+   </div>
+
+   <div class="col-sm-2">
+
+   </div>
+
+ </div>
+
+
+ <div class="screen flex_row" id="qsc_page" >
+
+    <div class="col-sm-5 flex_col">
+      <div class="col-sm-4">
+
+      </div>
+      <div class="col-sm-8 flex_col">
+        <div class="col-sm-9 flex_row">
+          <div class="col-sm-1">
+
+          </div>
+          <div class="col-sm-10">
+          <img src="qsc/happy_ending.png" alt="yay!" style="width:100%;min-width:350px;">
+          </div>
+          <div class="col-sm-1">
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-3 flex_row" style="text-align:left;margin-top:-20px;align-content:flex-start;align-items:flex-start;">
+          <div class="col-sm-1">
+
+          </div>
+          <div class="col-sm-6 flex_col" style="background-color:white;">
+            <p class="tiempos" style="font-size:1.1em;">
+              Thanks to the genuine efforts of the QSC team and instructors, the event was a great success, with promises to return next year.
+            </p>
+            <p class="tiempos" style="color:grey;font-size:1em;padding-top:7px;">
+              August 2018
             </p>
           </div>
 
         </div>
-        <div class="col-sm-7  legit_center ">
-          <video id="artwork" width="75%" autoplay muted preload loop>
-            <source src="artwork.mp4" poster="white_poster.png" type="video/mp4">
-          There was a really cool video here, but your browser does not support the video tag.
-          </video>
-        </div>
-
 
       </div>
+      <div class="col-sm-2">
 
-
-
-
-      <div class="footer cadiz">
-        Copyright © 2019 Ahmed Sameh. All rights reserved
       </div>
+    </div>
 
-    <!-- <div class="screen first_screen flex_col" style="justify-content:center;align-content:center;align-items:center;margin-bottom:0;">
 
-      <div style="position:relative;width:37%;max-width:950px;min-width:350px">
-        <p style="font-size:1.15em;font-weight:lighter;line-height:0.9em;color:black;position:absolute;z-index:99;top:50%;left:50%;transform: translate(-50%, -50%);" class="cadiz slow_blur" data-aos-duration = 2000>
-          ahmed<br />
-          sameh<span style="font-size:1.3em;color:#FF6B6B;">.</span>
+   <div class="col-sm-7 flex_col">
+     <div class="col-sm-2"></div>
+
+     <div class="col-sm-5 flex_row legit_center">
+       <a href="qsc.html"  style="text-decoration:none;color: #FF7878;">
+              <h3 class="avenir-bold learn_more" data-aos="slide-down" data-aos-duration="1000" style="transition: all 0.4s;">learn more about the STEM event</h3></a>
+              <div class="underline" data-aos="flip-left" data-aos-duration="1200"></div>
+     </div>
+
+     <div class="col-sm-4 flex_col">
+       <div class="col-sm-3 " style="position:relative;"> </div>
+       <div class="col-sm-3 ">
+         <h3 class="avenir-bold" data-aos="fade-up" data-aos-duration="1200">or keep going</h3>
+       </div>
+       <div class="col-sm-6 ">
+         <img src="chevron_bottom.svg" alt="" style="height:38%;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+       </div>
+     </div>
+
+   </div>
+
+ </div>
+
+
+ <!-- <div class="screen fill-width flex_col">
+   <div class="col-sm-3"></div>
+
+   <div class="col-sm-5 flex_row legit_center">
+     <a href="qsc.html"  style="text-decoration:none;color: #FF7878;">
+            <h3 class="avenir-bold learn_more" data-aos="slide-down" data-aos-duration="1000" style="transition: all 0.4s;">learn more about the STEM event</h3></a>
+            <div class="underline" data-aos="flip-left" data-aos-duration="1200"></div>
+   </div>
+
+   <div class="col-sm-4 flex_col">
+     <div class="col-sm-3 " style="position:relative;"> </div>
+     <div class="col-sm-3 ">
+       <h3 class="avenir-bold" data-aos="fade-up" data-aos-duration="1200">or keep going</h3>
+     </div>
+     <div class="col-sm-6 ">
+       <img src="chevron_bottom.svg" alt="" style="height:38%;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+     </div>
+   </div>
+
+ </div> -->
+
+   <div class="double_screen fill-width  flex_col" style="text-align:left;height:280vh;margin-top:-120px;">
+     <div class="col-sm-6 flex_row ">
+       <div class="col-sm-5 flex_col ">
+         <div class="col-sm-5">
+
+         </div>
+         <div class="col-sm-7 " id="jaime_container">
+           <div class="sticky-add everything_section">
+             <h2 id="jaime_title">Jaime.</h2>
+             <h3 id="jaime_subtitle"> Fashion + Branding - Spring 2018</h3>
+             <p id="jaime_body">
+               Jaime, pronounced <span class="tiempos"> /Jame/ </span>, is a practice in fashion design, branding, and trend observing. The premise of the project was to assume the role of a brand contracting a t-shirt and denim line. I wanted to not only found a fictional brand, but also give it its distinctive and demanding brand identity </p>
+           </div>
+         </div>
+
+
+       </div>
+       <div class="col-sm-7  legit_center floaty">
+         <img src="jaime_intro.jpg"   style="width:55%;min-width:400px;max-width:750px;" data-aos="fade-up" data-aos-duration="1000"/>
+       </div>
+
+
+     </div>
+     <div class="col-sm-6 flex_col" style="margin-top:-70px;">
+       <div class="col-sm-4  flex_row">
+         <div class="col-sm-8 "></div>
+         <div class="col-sm-4  legit_center">
+           <img src="it_does_work.png" style="width:95%;margin-right:-13vw;"/>
+         </div>
+       </div>
+
+       <div class="col-sm-4  flex_row">
+         <div class="col-sm-4"></div>
+         <div class="col-sm-4  legit_center">
+           <img src="it_does_work.png" style="width:95%;"/>
+         </div>
+         <div class="col-sm-4 flex_col" style="text-align:left;">
+           <div class="col-sm-8">
+           </div>
+           <div class="col-sm-4" style="align-items:flex-start;align-content:flex-start;">
+             <p style="font-size:13px;color:white;">
+               jaime does<br />work.
+             </p>
+           </div>
+         </div>
+       </div>
+
+
+       <div class="col-sm-4  flex_row">
+         <div class="col-sm-4  legit_center">
+           <img src="it_does_work.png" style="width:95%;margin-left:-15vw"/>
+         </div>
+         <div class="col-sm-8 "></div>
+       </div>
+     </div>
+   </div>
+
+
+   <div class="screen flex_row" style="height:270px;margin-top:10vh;margin-bottom:20vh;" id="#jaime_works" >
+     <div class="col-sm-5" style="align-items:flex-end;align-content:flex-end;justify-content:center;text-align:right;">
+       <h2 class="avenir-black" style="font-size:4.7em;line-height:1.15;color:black;margin-right:20px;"><span style="margin-right:-22px;">Jaime. </span> <br /> Really <br /> Works</h2>
+     </div>
+
+     <div class="col-sm-2"></div>
+
+     <div class="col-sm-3 legit_center" style="text-align:left;">
+       <p style="max-width:400px;font-size:1em;">
+         Jaime utilizes repetition, symbolic iconography through recognizable visuals, and heavy contrast, inspired by artist and photographer Andrew B Meyers. It tows the line between uniformity and chaos.       </p>
+     </div>
+
+     <div class="col-sm-1"></div>
+   </div>
+
+   <div class="screen flex_col" style="height:300px;">
+     <div class="col-sm-8 flex_col" style="align-items:flex-end;align-content:flex-end;;justify-content:flex-end;">
+       <img src="jaime_malice.png" style="width:8%;"/>
+     </div>
+     <div class="col-sm-4 flex_col"  style="margin-top:20px;align-items:flex-end;align-content:flex-end;">
+       <p style="font-weight:bold;font-size: 1.25em;color:#d9d3c1 ;">
+         more info on jaime. is coming...
+       </p>
+     </div>
+   </div>
+
+
+<!--
+<div class="screen fill-width flex_col" style="height:140vh;">
+</div> -->
+
+
+
+
+  <!-- <div class=" screen fill-width  flex_row" style="text-align:left;margin-bottom:0px;">
+    <div class="col-sm-5 flex_col">
+      <div class="col-sm-6 ">
+
+      </div>
+      <div class="col-sm-6 everything_section" style="justify-content:flex-start;">
+        <h2 data-aos = "fade-up" data-aos-delay = "50" >Ahmed Sameh</h2>
+        <h3 data-aos = "fade-up" data-aos-delay = "100" >April 1996 - Now</h3>
+        <p data-aos = "fade-up" data-aos-delay = "150" style="font-size:0.8em;">
+          (P.S. that's not me in the picture)
         </p>
-      </div> -->
-
-
-
-
-
-
-
-      <!-- <div class="screen" id="selection">
-          <div style="display:flex;flex-basis:49%;align-items: center; justify-content: flex-end;">
-            <a href="rimads.html" data-aos="fade-up" ><img  style="max-width:270px;" class="thumbnail" id="rimads" onmouseover="this.src='rimads_thumb_highlighted.png'" onmouseout="this.src='rimads_thumb.png'" border="0" src= "rimads_thumb.png"/></a>
-          </div>
-          <div style="display:flex;flex-basis:2%;">
-          </div>
-          <div style="display:flex;flex-basis:49%;align-items: center; justify-content: flex-start;;">
-              <a href="qsc.html" data-aos="fade-down"> <img style="max-width:270px;" class="thumbnail" id="qsc" onmouseover="this.src='qsc_thumb_highlighted.png'" onmouseout="this.src='qsc_thumb.png'" border="0" src= "qsc_thumb.png"/> </a>
-          </div>
-      </div> -->
-
-      <!-- <div class="screen flex_row fill-width phoney" style="background-color:#FFF9D8;margin-bottom:0;margin-left:0;height: 95vh;">
-
-          <div class="flex_row col-sm-9 selection_container" style="justify-content: flex-start;align-items:flex-end;padding:0;">
-
-            <div class ="image"style="position:relative;width:80%;max-width:950px;">
-              <img src="bruh_front.png" style="position: absolute; width:100%; left:0; bottom:0; z-index:99;pointer-events:none;"/>
-              <img src="bruh_back.png" style="position: absolute; width:100%; left:0; bottom:0;z-index:50;"/>
-            </div>
-
-
-
-            <div class="flex_col cadiz-black text" style="height:85%;position:relative;right:0;text-align:left;min-width: 200px;margin-left:-220px;">
-              <a class="job" style="flex-basis:25%;z-index:100;" href="jaime.html"> jaime.</a>
-              <a class="job" style="flex-basis:45%;z-index:70;font-size:5em !important;"  href="qsc.html"> Qatar Sci <br />Club</a>
-              <a class="job"  style="flex-basis:30%;z-index:100;" href="rimads.html"> Rimads <br />Qatar</a>
-
-            </div>
-          </div>
-
-
-      </div> -->
-
-      <div class="footer cadiz">
-
       </div>
 
-      <div class="screen job_screen flex_row fill-width columnable" style=" background:url('bunny_pattern_grey.png');
-        background-size:cover;
-        background-repeat:no-repeat;
-        background-attachment: fixed;
-        text-align: left;height: 95vh;margin:0 !important;">
+    </div>
+    <div class="col-sm-7  legit_center ">
+      <video width="70%"  class=" zoomy" autoplay muted preload loop>
+        <source src="artwork.mp4" type="video/mp4">
+      There was a really cool video here, but your browser does not support the video tag.
+      </video>
+    </div>
 
 
+  </div>
 
+ -->
 
-          <div class="flex_col col-sm-4 ">
-            <div class="flex_col col-sm-4 " >
 
-            </div>
-            <div class="flex_col col-sm-6" style="justify-content:center;align-items:center;" >
+ <!-- <div class="screen flex_col">
+   <div class="col-sm-3">
 
-                <div class="bunny_container">
-                  <div class="circle-hidden"></div>
-                </div>
+   </div>
+   <div class="col-sm-6 flex_col">
+     <div class="col-sm-8 flex_col" style="align-items:center;align-content:center;justify-content:center;">
+       <img class="clouds" src="rimads/relaxing_shade.png"/>
+       <img class="clouds_small" src="rimads/relaxing_shade_small.png"  style="display:none;"/>
+     </div>
+     <div class="col-sm-4 flex_col" style="text-align:center;align-items:center;align-content:center;justify-content:flex-start;">
+       <h3 class="cadiz" style="font-size:1.8em"> That's All For Now!</h3>
+       <h4 class="cadiz" style="font-size:1.2em;max-width:400px;margin-top:5px;font-weight: 600;color: #d9d3c1;"> I'm actively updating the site with more content! while you wait, you can enjoy this relaxing photo of clouds passing through</h4>
+     </div>
+   </div>
+   <div class="col-sm-3" >
 
-            </div>
-            <div class="flex_col col-sm-2" >
+   </div>
+ </div> -->
 
-            </div>
-          </div>
+ <div class="screen legit_center flex_row fill-width" id="contact" style="background-color:#FFEFEF;margin-bottom:0px;height:95vh;">
+   <div class="col-sm-4">
 
-          <div class="flex_col col-sm-3 " style="">
+   </div>
+   <div class="col-sm-4 flex_row">
+     <div class="col-sm-3">
 
-            <div class="flex_col col-sm-4" >
+     </div>
+     <div class="col-sm-2 flex_col legit_center">
+       <a href="sameh_Aug2019b.pdf" target="_blank" class="contact_button">
+         <img src="resume.png" style="width:80%;" alt="">
+         <img src="resume_label.svg" style="height:20px;margin-top:20px;" alt="">
+       </a>
 
-            </div>
+     </div>
+     <div class="col-sm-2 flex_col legit_center">
+      <a href="http://linkedin.com/in/ahmedsamehcmu/" target="_blank" class="contact_button">
+         <img src="linkedin.png" style="width:80%;" alt="">
+        <img src="linkedin_label.svg" style="height:28px;margin-top:20px;" alt="">
+      </a>
+     </div>
+     <div class="col-sm-2 flex_col legit_center">
+       <a href="mailto:ahmedsamehcmu@gmail.com?Subject=You%27re%20Hired%21" target="_blank" class="contact_button" >
+         <img src="mail.png" style="width:80%;" alt="">
+        <img src="mail_label.png" id="mail_label" style="height:32px;margin-top:20px;" alt="">
+       </a>
 
-            <div class="flex_col col-sm-3 " >
-              <a href="qsc.html">
-                <h2>Qatar<br />Sci Club</h2>
-                <h3> identity, graphic design</h3>
-              </a>
-            </div>
+     </div>
+     <div class="col-sm-3">
 
-
-            <div class="flex_col col-sm-3 " >
-              <a href="rimads.html">
-                <h2>Rimads <br />Qatar</h2>
-                <h3>identity, UI design,<br /> iOS development</h3>
-              </a>
-            </div>
-
-            <div class="flex_col col-sm-2 " >
-
-            </div>
-
-          </div>
-
-
-
-          <div class="flex_col col-sm-3 " style="">
-            <div class="flex_col col-sm-4 " >
-
-            </div>
-
-            <div class="flex_col col-sm-3 " >
-              <a href="jaime.html">
-                <h2><br />jaime.</h2>
-                <h3>branding, fashion design</h3>
-              </a>
-            </div>
-
-            <div class="flex_col col-sm-3 " >
-
-                <div style="position:relative;">
-                  <!-- <img src="brb.png" style="position:absolute;left:20px;top:20px;height:65%;transform:rotate(10deg);"/> -->
-                  <a href="everything.html">
-                  <h2>more<br />design!</h2>
-                  <h3>art, design </h3>
-                    </a>
-                </div>
-
-
-            </div>
-
-            <div class="flex_col col-sm-2 " >
-
-            </div>
-          </div>
-
-          <div class="col-sm-2">
-
-          </div>
-
-        <!-- <div class="flex_row" style="background-color:rgba(0, 0, 0, 0.75);position:absolute;top:0;left:0;height:100%;width:100%;">
-
-
-          <div class="flex_col col-sm-4 ">
-            <div class="flex_col col-sm-4 " >
-
-            </div>
-            <div class="flex_col col-sm-6" style="justify-content:center;align-items:center;" >
-
-                <div class="bunny_container">
-                  <div class="circle-hidden"></div>
-                </div>
-
-            </div>
-            <div class="flex_col col-sm-2" >
-
-            </div>
-          </div>
-
-          <div class="flex_col col-sm-3 " style="">
-
-            <div class="flex_col col-sm-4" >
-
-            </div>
-
-            <div class="flex_col col-sm-3 " >
-              <a href="qsc.html">
-                <h2 style="color:#252525;">Qatar<br />Sci Club</h2>
-                <h3 >identity, graphic design</h3>
-              </a>
-            </div>
-
-
-            <div class="flex_col col-sm-3 " >
-              <a href="rimads.html">
-                <h2 style="color:#252525;">Rimads <br />Qatar</h2>
-                <h3 >identity, UI design,<br /> iOS development </h3>
-              </a>
-            </div>
-
-            <div class="flex_col col-sm-2 " >
-
-            </div>
-
-          </div>
-
-
-
-          <div class="flex_col col-sm-3 " style="">
-            <div class="flex_col col-sm-4 " >
-
-            </div>
-
-            <div class="flex_col col-sm-3 " >
-              <a href="jaime.html">
-                <h2 style="color:#252525;" ><br />jaime.</h2>
-                <h3 >branding, fashion design</h3>
-              </a>
-            </div>
-
-            <div class="flex_col col-sm-3 " >
-
-                <div style="position:relative;">
-                  <a href="everything.html">
-                  <h2 style="color:#252525;" >small<br />projects</h2>
-                  <h3 >art, design </h3>
-                    </a>
-                </div>
-
-
-            </div>
-
-            <div class="flex_col col-sm-2 " >
-
-            </div>
-          </div>
-
-          <div class="col-sm-2">
-
-          </div>
-        </div> -->
-
-      </div>
-
-
-      <div class="page_number tiempos-light">
-          01
-        </div>
-
-        <script>
-        AOS.init();
-
-        var videoEl = document.getElementById("artwork");
-
-        videoEl.addEventListener("timeupdate", function () {
-            console.log('checking time...');
-            if (videoEl.currentTime > videoEl.duration - 0.5) {
-                // 0.5 is seconds before end.
-                videoEl.pause();
-            }
+     </div>
+   </div>
+   <div class="col-sm-4">
+
+   </div>
+ </div>
+
+   <div class="footer cadiz" style="background-color:#FFEFEF;">
+     Copyright © 2019 Ahmed Sameh. All rights reserved
+   </div>
+
+  <div class="page_number tiempos-light" id="page_num">
+    01
+  </div>
+
+  <script>
+    AOS.init();
+
+
+
+    function highlight(element){
+      console.log("get hired");
+      element.style.mixBlendMode = "color-burn"
+    }
+
+    function dehighlight(element){
+        console.log("get fired");
+        element.style.mixBlendMode = ""
+    }
+
+
+
+
+
+
+    $(window).scroll(function() {
+
+      var scrollTop = $(window).scrollTop();
+      var section = ""
+
+
+      // if (scrollTop > document.getElementById("jaime_works").offsetTop){
+      //   $("#jaime_title")[0].style.position = "fixed";
+      // }else{
+      //   $("#jaime_title")[0].style.position = "static";
+      // }
+
+
+      if (scrollTop > document.getElementById("rimads_page").offsetTop){
+        console.log("braaaaah");
+        var stork_wip = document.getElementById("stork_wip");
+        stork_wip.classList.add("fadeout")
+      }
+
+      if (scrollTop > document.getElementById("jaime_container").offsetTop) {
+          section = "jaime"
+        } else if (scrollTop > document.getElementById("qsc_container").offsetTop) {
+          section = "qsc"
+        } else if (scrollTop > document.getElementById("rimads_container").offsetTop) {
+          section = "rimads"
+        } else if (scrollTop > document.getElementById("cw_container").offsetTop) {
+          section = "cw"
+        } else if (scrollTop > document.getElementById("prezel_container").offsetTop) {
+        section = "prezel"
+      }
+
+      if (section != "") {
+
+      var section_container = document.getElementById(section + "_container")
+      var section_title = document.getElementById(section + "_title")
+      var section_subtitle = document.getElementById(section + "_subtitle")
+      var section_body = document.getElementById(section + "_body")
+
+      // console.log(" start boiing at ", prezel_container.offsetTop);
+      console.log("scroll top is ", scrollTop);
+
+
+      // if ( (document.body.scrollTop >  section_container.offsetTop + section_container.offsetHeight)|| ( document.documentElement.scrollTop >  section_container.offsetTop + section_container.offsetHeight)) {
+      //   section_title.style.fontSize = "30px";
+      //   section_title.style.opacity = "0";
+      //
+      // }
+      // else if ( (document.body.scrollTop >  section_container.offsetTop + section_container.offsetHeight * 0.4)|| ( document.documentElement.scrollTop >  section_container.offsetTop + section_container.offsetHeight * 0.4)) {
+      //     section_title.style.fontSize = "30px";
+      //     section_title.style.marginLeft = "30px";
+      //     section_title.style.position = "fixed";
+      //     section_title.style.opacity = "1";
+      // } else {
+      //   section_title.style.fontSize = "90px";
+      //           section_title.style.marginLeft = "90px";
+      //           section_title.style.position = "absolute";
+      //           section_title.style.opacity = "1";
+      // }
+
+
+
+      if (scrollTop > section_container.offsetTop &&
+        scrollTop < section_container.offsetTop + section_container.offsetHeight - 200) {
+        var index = ((scrollTop - section_container.offsetTop ) / (section_container.offsetHeight - 200));
+        console.log(index);
+        fontsize = 50 - 25 * index;
+        margin_left = 240 - 200  * index;
+        margin_bottom = -25  * index;
+        if (margin_left <120){
+          margin_left = 120
+        }
+        section_subtitle.style.opacity = 0.8 - index;
+        section_body.style.opacity = 0.8 - index;
+      }
+
+      if (scrollTop > section_container.offsetTop + section_container.offsetHeight - 200 &&
+        scrollTop <  section_container.offsetTop + section_container.offsetHeight) {
+        fontsize = 25;
+        margin_left = 120;
+        section_subtitle.style.opacity = 0;
+        section_body.style.opacity = 0;
+
+       // if (section == "jaime"){
+       //   $("#dynamic").style.fontSize = "20px";
+       //   $("#dynamic").classList = "avenir-black small";
+       //    $("#page_title").innerHTML = "bruh";
+       // }else {
+       //   $("#dynamic").style.fontSize = "20px";
+       //   $("#dnynamic").classList = "avenir-black small";
+       // }
+      }
+
+      if (scrollTop >  section_container.offsetTop + section_container.offsetHeight) {
+        section_subtitle.style.opacity = 1;
+
+      }
+
+
+        $('#' + section + '_title').css({
+          'font-size': fontsize + "px",
+          'margin-left': margin_left + "px",
+                    'margin-bottom': margin_bottom + "px",
         });
-        </script>
-  </body>
+
+        $('#' + section + '_subtitle').css({
+          'margin-left': margin_left + "px",
+        });
+
+
+        $('#' + section + '_body').css({
+          'margin-left': margin_left + "px",
+        });
+
+      }
+    })
+  </script>
+</body>
+
 </html>

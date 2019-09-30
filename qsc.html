@@ -40,7 +40,7 @@
 
     <!-- DYNAMIC BREADCRUMBS THOOOO !!!!!!!!-->
     <div class="cadiz" id="dynamic" style="position:fixed;width:200px;font-size:30px;transform: rotate(0deg)">
-      <a href="index.html#selection">home</a> \
+      <a href="index.html#qsc_page">home</a> \
       <a href="#">QSC</a>
     </div>
     <!-- <p class="tiempos" >
@@ -50,6 +50,22 @@
       </p> -->
   </div>
 
+
+<!-- <div class="screen flex_col legit_center">
+  <h2 class="avenir-black" style="font-size:4.5em;color:#424242;  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 4px 1px rgba(255,255,255,0.05);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;">How Would You Like<br />to View the Projects?</h2>
+  <div style="width:300px;height:150px;position:relative;">
+    <img src="switcher_backg.png" onclick="switcher()" style="width: 245px;position:absolute;top:0px;left:50%;margin-left:-125px;"alt="">
+    <img src="switcher_button_history.png" id="switcher_button" class="chrono" onclick="switcher()" style="width: 150px;position:absolute;top:-25px;left:0;margin-left:25px;transition: all 0.7s;"alt="">
+    <img src="switcher_label_history.png" id="switcher_label" class="chrono"  style="height: 30px;position:absolute;bottom:-15px;left:50%;margin-left:-85px;transition: all 0.7s;"alt="">
+
+  </div>
+
+</div> -->
 
   <div class="screen first_screen">
 
@@ -475,7 +491,7 @@
     </div>
   </div>
 
-
+<!--
   <div class="screen flex_col">
     <div class="col-sm-3">
 
@@ -490,6 +506,25 @@
       </div>
     </div>
     <div class="col-sm-3">
+
+    </div>
+  </div> -->
+
+  <div class="screen flex_col">
+    <div class="col-sm-3">
+
+    </div>
+    <div class="col-sm-6 flex_col">
+      <div class="col-sm-8 flex_col" style="align-items:center;align-content:center;justify-content:center;">
+        <img class="clouds" src="rimads/relaxing_shade.png"/>
+        <img class="clouds_small" src="rimads/relaxing_shade_small.png"  style="display:none;"/>
+      </div>
+      <div class="col-sm-4 flex_col" style="text-align:center;align-items:center;align-content:center;justify-content:flex-start;">
+        <h3 class="cadiz" style="font-size:1.8em"> That's All For Now!</h3>
+        <h4 class="cadiz" style="font-size:1.2em;max-width:400px;margin-top:5px;font-weight: 600;color: #d9d3c1;"> I'm actively updating the site with more content! while you wait, you can enjoy this relaxing photo of clouds passing through</h4>
+      </div>
+    </div>
+    <div class="col-sm-3" >
 
     </div>
   </div>
@@ -521,7 +556,24 @@
 
 
 
+    function switcher(){
+        var button = document.getElementById("switcher_button");
+        var label = document.getElementById("switcher_label");
 
+        if (button.class == "chrono"){
+          console.log("switching from chrono");
+          button.class = "scope";
+          button.src = "switcher_button_scope.png";
+          label.src = "switcher_label_scope.png";
+          button.style.marginLeft = "125px";
+        }else{
+          console.log("switching from scope");
+          button.class = "chrono";
+          button.src = "switcher_button_history.png";
+          label.src = "switcher_label_history.png";
+          button.style.marginLeft = "25px";
+        }
+    }
 
     function open_overlay(image) {
       console.log("i opened overlay");

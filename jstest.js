@@ -1,3 +1,9 @@
+$(window).bind("pageshow", function(event) {
+    if (event.originalEvent.persisted) {
+        console.log("reloaded page!");
+        window.location.reload();
+    }
+});
 
 $(document).ready(function () {
 
@@ -5,7 +11,15 @@ $(document).ready(function () {
       console.log($(this).scrollTop());
       let screen_height =  $('.screen').height() * 0.8;
 
-      if ($(this).scrollTop() > screen_height*8) {
+      if ($(this).scrollTop() > screen_height*12) {
+            $('.page_number').text(". . .");}
+      else if ($(this).scrollTop() > screen_height*11) {
+            $('.page_number').text("12");}
+      else if ($(this).scrollTop() > screen_height*10) {
+            $('.page_number').text("11");}
+      else if ($(this).scrollTop() > screen_height*9) {
+            $('.page_number').text("10");}
+      else if ($(this).scrollTop() > screen_height*8) {
             $('.page_number').text("09");
       }else if ($(this).scrollTop() > screen_height*7) {
             $('.page_number').text("08");
@@ -33,8 +47,9 @@ $(window).scroll(function () {
   var breadcrumb = document.getElementById('dynamic');
   var start_size = 30
   var end_size = 20
-  var end_margin_left = 0
-  var end_margin_top = 0
+  var end_margin_left = 3
+  var margin_top = 7
+  var end_margin_top = 12
 
   if (breadcrumb == null){
     return;
@@ -44,15 +59,18 @@ $(window).scroll(function () {
   if(breadcrumb.classList.contains('small')) {
     start_size = 27;
     end_size = 19;
-    end_margin_left = -50;
-    end_margin_top = 40;
+    end_margin_left = -3.2;
+    end_margin_top = 11;
   }
 
   if (scrollTop < 200) {
       fontsize = start_size;
+      margin_left = 3
       rotate = 0
   } else if (scrollTop > 800) {
       fontsize = end_size;
+      margin_left = end_margin_left
+      margin_top = end_margin_top
       rotate = -90
   } else {
       fontsize = start_size - (start_size - end_size) * (((scrollTop - 200)) / 600);
@@ -68,7 +86,8 @@ $(window).scroll(function () {
   $('#dynamic').css({
       'font-size': fontsize + "px",
       'transform': "rotate(" +rotate + "deg)",
-
-      'margin-top': margin_top + "px",
+      'left': margin_left + "%",
+      'top': margin_top + "%",
   });
+
 })
