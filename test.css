@@ -416,8 +416,8 @@ ul, ol{
 .bunny_cont{
     position: absolute;
     /* clip: rect(auto,auto,auto,auto); */
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: circle();
+    clip-path: circle();
     overflow: hidden;
     width: 23vw;
     height: 23vw;
@@ -428,8 +428,6 @@ ul, ol{
 .small_bunny{
   width:16vw !important;
   height:16vw !important;
-  -webkit-clip-path: polygon(0 0, 120% 0, 120% 120%, 0 120%) !important;
-  clip-path: polygon(0 0, 120% 0, 120% 120%, 0 120%) !important;
 }
 
 .side_bunny{
