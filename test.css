@@ -419,28 +419,24 @@ ul, ol{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     overflow: hidden;
-    width: 30vw;
-    height: 45vh;
+    width: 23vw;
+    height: 23vw;
     border-radius:999px;
-    max-height: 350px;
-    max-width: 350px ;
+
 }
 
 .small_bunny{
-  width:25vw !important;
-  height:30vh !important;
-  max-height: 200px !important;
-  max-width: 200px !important;
+  width:16vw !important;
+  height:16vw !important;
   -webkit-clip-path: polygon(0 0, 120% 0, 120% 120%, 0 120%) !important;
   clip-path: polygon(0 0, 120% 0, 120% 120%, 0 120%) !important;
 }
 
 .side_bunny{
-  width:13vw !important;
-  height:20vh !important;
+  width:11vw !important;
+  height:11vw !important;
   margin-left: -2% !important;
-  max-height: 170px !important;
-  max-width: 170px !important;
+
 }
 
 .bunny_image{
