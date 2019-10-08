@@ -7,12 +7,15 @@
   <script src="aos.js"></script>
   <script src="jquery-3.3.1.min.js"></script>
   <script src="jstest.js"></script>
+  <script type="text/javascript" src="rulez.min.js"></script>
+  <script src="jquery.backstretch.min.js"></script>
+  <script src="simpleParallax.min.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Preloading content-->
   <link rel="preload" href="qsc/STEM_theme.png" as="image">
-  <link rel="prefetch" href="working_on_it.png" as="image">
+  <!-- <link rel="prefetch" href="working_on_it.png" as="image"> -->
   <link rel="prefetch" href="rimads/stork_fly_wip_color.png" as="image">
   <link rel="prefetch" href="boomerang.mp4" as="video">
   <link rel="prefetch" href="rimads/stork_fly_color_alt.png" as="image">
@@ -46,6 +49,9 @@
 
 <body style="background-color:white;overflow-x:hidden;">
 
+  <div class="ruler-vertical" >
+      <svg id="svgV"  style="width:100%;height:100%;" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
 
   <div class="breadcrumbs" id="crumbs" style="z-index:2;">
 
@@ -170,8 +176,10 @@
 <div class="col-sm-8">
 
 </div>
-<div class="col-sm-4">
-  <div class="backg_red" style="width:12vw;height:12vw;margin-left:-20%;border-radius:9999px;background:url('bunny_pattern_grey.png');background-size:cover;background-repeat:no-repeat;background-attachment: fixed;"></div>
+<div class="col-sm-4" >
+  <div class="bunny_cont side_bunny">
+    <div class="bunny_image" ></div>
+  </div>
 </div>
       </div>
 
@@ -179,8 +187,10 @@
         <div class="col-sm-1 " >
         </div>
         <div class="col-sm-5 flex_col" style="align-content:flex-end;align-items:center;justify-content:center;">
-          <div class="backg_red" style="width:15vw;height:15vw;border-radius:9999px;background:url('bunny_pattern_grey.png');background-size:cover;background-repeat:no-repeat;background-attachment: fixed;"></div>
-
+          <!-- <div class="backg_red" style="width:15vw;height:15vw;border-radius:999px;background-image:url('bunny_pattern_grey.png');background-size:cover;background-repeat:no-repeat;"></div> -->
+          <div class="bunny_cont small_bunny">
+            <div class="bunny_image" ></div>
+          </div>
         </div>
         <div class="col-sm-3 ">
 
@@ -197,7 +207,9 @@
 
         </div>
         <div class="col-sm-4">
-          <div class="backg_red" style="width:25vw;height:25vw;border-radius:9999px;background:url('bunny_pattern_grey.png');background-size:cover;background-repeat:no-repeat;background-attachment: fixed;"></div>
+          <div class="bunny_cont">
+            <div class="bunny_image"></div>
+          </div>
         </div>
         <div class="col-sm-4">
 
@@ -643,36 +655,36 @@
         </div>
 
 
-   <div class="col-sm-9 flex_col "  data-aos="fade-up" data-aos-delay ="100" data-aos-duration ="1200" >
+   <div class="col-sm-9 flex_col "  >
 
      <div class="col-sm-4 flex_row">
        <div class="col-sm-4 legit_center ">
 
        </div>
        <div class="col-sm-8 legit_center ">
-         <img src="rimads/logo_candy.png" style="width:80%;"alt="">
+         <img src="rimads/logo_candy.png" style="width:80%;"alt="" data-aos="fade-left" data-aos-delay ="100" data-aos-duration ="1200">
        </div>
 
      </div>
 
      <div class="col-sm-4 flex_row">
        <div class="col-sm-4 legit_center ">
-         <img src="rimads/logo_final.png" style="width:80%;"alt="">
+         <img src="rimads/logo_final.png" style="width:80%;"alt="" data-aos="fade-left" data-aos-delay ="100" data-aos-duration ="1200">
        </div>
-       <div class="col-sm-4 legit_center " style="text-align:left;align-content:flex-start;align-items:flex-start;">
-         <img src="rimads/logo_white_text.png" style="width:90%;transform:rotate(5deg);margin-top:-10%;"alt="">
+       <div class="col-sm-4 legit_center " style="text-align:left;align-content:flex-start;align-items:flex-start;" data-aos="slide-up" data-aos-delay ="100" data-aos-duration ="700">
+         <img src="rimads/logo_white_text.png" style="width:90%;transform:rotate(5deg);margin-top:-10%;"alt="" style="width:80%;"alt="" >
        </div>
        <div class="col-sm-4 legit_center ">
-         <img src="rimads/logo_blue_box.png" style="width:70%;"alt="">
+         <img src="rimads/logo_blue_box.png" style="width:70%;"alt="" style="width:80%;"alt="" data-aos="fade-up"  data-aos-duration ="1500">
        </div>
      </div>
 
      <div class="col-sm-4 flex_row">
        <div class="col-sm-4 legit_center ">
-         <img src="rimads/logo_red_box.png" style="width:40%;margin-top:-30%;margin-right:-70%;"alt="">
+         <img src="rimads/logo_red_box.png" style="width:40%;margin-top:-30%;margin-right:-70%;"alt="" data-aos="fade-right" data-aos-delay ="200" data-aos-duration ="1500">
        </div>
        <div class="col-sm-4 legit_center ">
-                  <img src="rimads/logo_intersect.png" style="width:80%;margin-right:-70%;"alt="">
+                  <img src="rimads/logo_intersect.png" style="width:80%;margin-right:-70%;"alt="" data-aos="fade-left" data-aos-delay ="100" data-aos-duration ="2000">
        </div>
        <div class="col-sm-4 legit_center "></div>
      </div>
@@ -845,7 +857,7 @@ for this project, i wanted to embrace the hand-made and crafty theme by embracin
 
           </div>
           <div class="col-sm-10">
-          <img src="qsc/happy_ending.png" alt="yay!" style="width:100%;min-width:350px;">
+          <img src="qsc/happy_ending.jpg" alt="yay!" style="width:100%;min-width:350px;">
           </div>
           <div class="col-sm-1">
 
@@ -1108,19 +1120,56 @@ for this project, i wanted to embrace the hand-made and crafty theme by embracin
 
     $("#artwork")[0].playbackRate = 1.25;
 
-    function highlight(element){
-      console.log("get hired");
-      element.style.mixBlendMode = "color-burn"
-    }
 
-    function dehighlight(element){
-        console.log("get fired");
-        element.style.mixBlendMode = ""
-    }
+    // $("#bunny_up").backstretch({scale: "cover"});
 
 
+    // Parallax -------------
+
+    var image = document.getElementsByClassName('parallaxy');
+    new simpleParallax(image, {
+    	overflow: true,
+      scale:1.2,
+	    orientation: 'right'
+    });
+
+    // End of Parallax ------
+
+    // Rulers -------------
+
+    var rulezV = new Rulez({
+      element: document.getElementById('svgV'),
+      layout: 'vertical',
+      divisionDefaults: {
+        className: 'rulez-rect rulez-grey'
+      },    divisions: [
+        {
+            pixelGap: 10,
+            lineLength: 7,
+        },
+        {
+            pixelGap: 100,
+            lineLength: 13,
+        }
+    ],
+      texts: [
+        {
+          pixelGap: 100,
+          rotation: 90,
+          offset: 20,
+          lineLength: 5,
+          className: 'rulez-text rulez-grey'
+        }
+      ]
+    });
+    rulezV.render();
+    var scroll = window;
+    scroll.addEventListener('scroll', function () {
+      rulezV.scrollTo(scroll.scrollY);
+    });
 
 
+    // End of Rulers -------------
 
 
     $(window).scroll(function() {
@@ -1137,7 +1186,7 @@ for this project, i wanted to embrace the hand-made and crafty theme by embracin
 
 
       if (scrollTop > document.getElementById("rimads_intro").offsetTop){
-        console.log("braaaaah");
+        // console.log("braaaaah");
         var stork_wip = document.getElementById("stork_wip");
         stork_wip.classList.add("fadeout")
       }
@@ -1162,7 +1211,7 @@ for this project, i wanted to embrace the hand-made and crafty theme by embracin
       var section_body = document.getElementById(section + "_body")
 
       // console.log(" start boiing at ", prezel_container.offsetTop);
-      console.log("scroll top is ", scrollTop);
+      // console.log("scroll top is ", scrollTop);
 
 
       // if ( (document.body.scrollTop >  section_container.offsetTop + section_container.offsetHeight)|| ( document.documentElement.scrollTop >  section_container.offsetTop + section_container.offsetHeight)) {
@@ -1187,7 +1236,7 @@ for this project, i wanted to embrace the hand-made and crafty theme by embracin
       if (scrollTop > section_container.offsetTop &&
         scrollTop < section_container.offsetTop + section_container.offsetHeight - 200) {
         var index = ((scrollTop - section_container.offsetTop ) / (section_container.offsetHeight - 200));
-        console.log(index);
+        // console.log(index);
         fontsize = 50 - 25 * index;
         margin_left = 240 - 200  * index;
         margin_bottom = -25  * index;
