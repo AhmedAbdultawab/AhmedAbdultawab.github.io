@@ -10,6 +10,7 @@
   <script type="text/javascript" src="rulez.min.js"></script>
   <script src="jquery.backstretch.min.js"></script>
   <script src="simpleParallax.min.js"></script>
+  <script src="fittext.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -31,6 +32,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <title>aaahmed samehhh.</title>
+
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144581642-1"></script>
   <script>
@@ -149,7 +151,7 @@
 
         </div>
         <div class="col-sm-6 everything_section" style="justify-content:flex-start;">
-          <h2 data-aos = "fade-up" data-aos-delay = "50" >Ahmed Sameh</h2>
+          <h2 data-aos = "fade-up" data-aos-delay = "50">Ahmed Sameh</h2>
           <h3 data-aos = "fade-up" data-aos-delay = "100">April 1996 - Now</h3>
           <p data-aos = "fade-up" data-aos-delay = "150">
             <!-- Designer + Developer -->
@@ -221,9 +223,25 @@
     </div>
 
 
-    <div class="screen fill-width flex_col" style="margin-bottom:-300px;margin-top:-20vh;height:90vh;" id="choice">
-      <div class="col-sm-1"></div>
 
+
+
+    <div class="big_text_container">
+      <header>
+        <h1 class="fittext " style="margin-bottom:0px;">I believe good Design is not merely visual.  </h1>
+        <h1 class="fittext " data-aos="fade" style="margin-top:0px;margin-bottom:0px;">It's the obligiation to direct every minute </h1>
+        <h1 class="fittext " data-aos="fade" style="margin-top:0px;margin-bottom:0px;"> aspect of your product towards presenting a simply </h1>
+        <h1 class="fittext " data-aos="fade" style="margin-top:0px;"> enjoyable and fulfilling experience.  </h1>
+      </header>
+    </div>
+
+
+
+    <div class="screen fill-width flex_col" style="margin-bottom:-100px;margin-top:150px;height:70vh;" id="choice">
+      <!-- <div class="col-sm-4"></div> -->
+
+
+      <div class="col-sm-1"></div>
       <div class="col-sm-4 flex_row legit_center">
         <a href="old_home.html"  style="text-decoration:none;color: #FF7878;">
                <h3 class="avenir-bold learn_more" data-aos="slide-down" data-aos-duration="1000" style="transition: all 0.4s;font-size:1.5em;">take me to the old site</h3></a>
@@ -273,15 +291,15 @@
 
       <div class="col-sm-8 flex_row ">
         <div class="col-sm-4 legit_center floaty ">
-          <img class="lighter-shade cw_poster" src="everything/prezel_screen_1.png" style="width:80%;" data-aos="fade-down" data-aos-duration="1000"/>
+          <img class="lighter-shade cw_poster" src="everything/prezel_screen_1.png" style="width:75%;" data-aos="fade-down" data-aos-duration="1000"/>
         </div>
 
         <div class="col-sm-4 legit_center floaty ">
-          <img class="lighter-shade cw_poster" src="everything/prezel_screen_2.png" style="width:80%;" data-aos="fade-up" data-aos-duration="1300"/>
+          <img class="lighter-shade cw_poster" src="everything/prezel_screen_2.png" style="width:75%;" data-aos="fade-up" data-aos-duration="1300"/>
         </div>
 
         <div class="col-sm-4 legit_center floaty ">
-          <img class=" cw_poster" src="everything/prezel_screen_3.png"  style="width:90%;" data-aos="fade-left" data-aos-duration="1200"/>
+          <img class=" cw_poster" src="everything/prezel_screen_3.png"  style="width:85%;" data-aos="fade-left" data-aos-duration="1200"/>
         </div>
       </div>
 
@@ -1116,9 +1134,11 @@ for this project, i wanted to embrace the hand-made and crafty theme by embracin
   </div>
 
   <script>
+
+    fitText(document.getElementsByClassName('fittext'), 1.05);
     AOS.init();
 
-    $("#artwork")[0].playbackRate = 1.4;
+    $("#artwork")[0].playbackRate = 1.6;
 
 
     // $("#bunny_up").backstretch({scale: "cover"});
