@@ -1106,6 +1106,12 @@ img.cloud-long {
   max-width:750px;
 }
 
+.small_phone{
+  width:50%;
+  min-width:250px;
+  max-width:750px;
+}
+
 .underline{
   margin-top:5px;
   height: 5px;
@@ -1159,6 +1165,20 @@ img.cloud-long {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+
+.legit_start{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.legit_end{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .smooth{
