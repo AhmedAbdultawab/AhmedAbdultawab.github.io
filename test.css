@@ -1151,6 +1151,24 @@ img.cloud-long {
   transform: translateY(-1em);
 }
 
+
+/*============== Gucci =============*/
+
+#changing_text{
+  transition: all 0.4s;
+  font-size:1.2em;
+  margin: 0 0.3em 0 0.3em;
+  text-decoration: underline;
+  user-select: none;
+  color:#FF7878;
+}
+
+#changing_text:hover{
+  font-size:1.4em;
+}
+
+
+
 /*============= Rimads =============*/
 
 .justify_center{
